@@ -5,7 +5,7 @@ const Index = () => (
     <Container height="100vh">
 
 
-        Morana
+        Morana website
     </Container>
 )
 
