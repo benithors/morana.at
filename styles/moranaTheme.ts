@@ -12,7 +12,16 @@ const breakpoints = createBreakpoints({
 
 const moranaTheme = extendTheme({
   colors: {
-    black: '#16161D',
+    brand: {
+      main: "#5F05AB",
+      secondary: "#4CE6C4",
+      mainText: "#FFFFFF",
+      900: "#1a202c",
+      black:"#1E1014",
+      error:"#FF0000",
+      white:"#FFFFFF",
+      focusBorderColor:"blue",
+    },
   },
   fonts,
   breakpoints,
