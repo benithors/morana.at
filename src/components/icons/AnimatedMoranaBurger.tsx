@@ -3,9 +3,9 @@ import {motion, SVGMotionProps} from "framer-motion";
 
 const Path = (props: JSX.IntrinsicAttributes & SVGMotionProps<SVGPathElement> & React.RefAttributes<SVGPathElement>) => (
     <motion.path
-        fill="#1E1014"
+        fill="white"
         strokeWidth="2.7"
-        stroke="hsl(0, 0%, 0%)"
+        stroke="white"
         strokeLinecap="round"
         initial={false}
         {...props}
@@ -19,10 +19,11 @@ interface IProps {
 export const MenuToggle = (props: IProps) => {
     const animate = props.showMenu ? "open" : "closed";
     return (
-        <svg width="40" height="60" viewBox="0 0 40 30">
+        <svg width="40" height="54px" viewBox="0 0 40 30" fill="blue">
             <Path
+                fill="blue"
                 variants={{
-                    closed: {d: "M 2 1.5 L 33 1.5"},
+                    closed: {d: "M 2 1.5 L 33 1.5" },
                       open: {d: "M 2 28 L 33 1.5"}
                 }}
                 animate={animate}

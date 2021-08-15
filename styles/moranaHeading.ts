@@ -1,4 +1,4 @@
-const homieHeading = {
+const moranaHeading = {
     // The styles all button have in common
     baseStyle: {},
     // Two sizes: sm and md
@@ -9,32 +9,29 @@ const homieHeading = {
     // Two variants: outline and solid
     variants: {
         header1: {
-            fontWeight: "800",
-            fontStyle: "normal",
-            color: "brand.black",
-            fontSize: "46px",
-            lineHeight:"63px",
-            fontFamily: "Nunito"
+            fontStyle: "regular",
+            color: "brand.white",
+            fontSize: "20px",
+            fontWeight:"400",
+            fontFamily: "Fugaz One"
         },
         header2: {
-            fontWeight: "800",
+            fontWeight: "400",
             fontStyle: "normal",
-            color: "brand.black",
-            fontSize: "30px",
-            lineHeight:"41px",
-            fontFamily: "Nunito"
+            color: "brand.secondary",
+            fontSize: "40px",
+            fontFamily: "Fugaz One"
         },
         header3: {
-            fontWeight: "800",
+            fontWeight: "400",
             fontStyle: "normal",
-            color: "brand.black",
-            fontSize: "20px",
-            lineHeight:"25px",
-            fontFamily: "quicksand"
+            color: "brand.white",
+            fontSize: "22px",
+            fontFamily: "Fugaz One"
         },
     },
     // The default size and variant values
     defaultProps: {},
 }
 
-export default homieHeading
+export default moranaHeading

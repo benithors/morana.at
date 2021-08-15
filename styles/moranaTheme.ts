@@ -1,5 +1,6 @@
 import { extendTheme } from '@chakra-ui/react'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
+import moranaHeading from "./moranaHeading";
 
 const fonts = { mono: `'Menlo', monospace` }
 
@@ -21,7 +22,10 @@ const moranaTheme = extendTheme({
       error:"#FF0000",
       white:"#FFFFFF",
       focusBorderColor:"blue",
-    },
+    }
+  },
+  components: {
+    Heading: moranaHeading,
   },
   fonts,
   breakpoints,

@@ -1,7 +1,7 @@
 import {ChakraProvider} from '@chakra-ui/react'
 
-import moranaTheme from '../moranaTheme'
 import Head from "next/head";
+import moranaTheme from "../../styles/moranaTheme";
 
 function MyApp({ Component, pageProps }) {
   return (
