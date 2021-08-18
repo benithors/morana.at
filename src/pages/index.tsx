@@ -6,8 +6,8 @@ import MoranaImageContainer from "../components/MoranaImageContainer";
 import MoranaButton from "../components/MoranaButton";
 
 
-export default function Index(props) {
-    const [isLargerThan1280] = useMediaQuery("(min-width: 1280px)")
+export default function Index() {
+    const [isLargerThan1280] = useMediaQuery("(min-width: 1280px)");
     return (
 
         <Container height="100vh">
@@ -89,7 +89,7 @@ export default function Index(props) {
                                 Get in touch!
                             </MoranaButton>
                         </Box>
-                        <Box >
+                        <Box>
 
                             <MoranaImageContainer/>
                         </Box>

@@ -1,7 +1,7 @@
 import * as React from "react";
-import {motion, SVGMotionProps} from "framer-motion";
+import {motion} from "framer-motion";
 
-const Path = (props: JSX.IntrinsicAttributes & SVGMotionProps<SVGPathElement> & React.RefAttributes<SVGPathElement>) => (
+const Path = (props) => (
     <motion.path
         fill="white"
         strokeWidth="2.7"
@@ -23,8 +23,8 @@ export const MenuToggle = (props: IProps) => {
             <Path
                 fill="blue"
                 variants={{
-                    closed: {d: "M 2 1.5 L 33 1.5" },
-                      open: {d: "M 2 28 L 33 1.5"}
+                    closed: {d: "M 2 1.5 L 33 1.5"},
+                    open: {d: "M 2 28 L 33 1.5"}
                 }}
                 animate={animate}
 
@@ -41,7 +41,7 @@ export const MenuToggle = (props: IProps) => {
             <Path
                 variants={{
                     closed: {d: "M 2 28 L 33 28 "},
-                    open:   {d: "M 2 1.5 L 33 28 "}
+                    open: {d: "M 2 1.5 L 33 28 "}
                 }}
                 animate={animate}
             />

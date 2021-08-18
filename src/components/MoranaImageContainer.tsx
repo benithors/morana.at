@@ -1,11 +1,9 @@
 import Image from 'next/image'
 import {Box} from "@chakra-ui/react";
 
-interface IProps {
 
-}
 
-const MoranaImageContainer = (props: IProps) => {
+const MoranaImageContainer = () => {
     return (
 <Box zIndex={5}>
 

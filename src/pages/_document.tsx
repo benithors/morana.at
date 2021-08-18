@@ -5,24 +5,19 @@ export default class Document extends NextDocument {
         return (
             <Html>
                 <Head>
-
                     <meta charSet="utf-8"/>
-
                     <meta name="apple-mobile-web-app-status-bar-style" content="#4CE6C4"/>
                     <meta name="theme-color" content="#4CE6C4"/>
                     <meta name="description" content="Oana Moraru - Agile Consultant • Freelancer"/>
                     <meta name="apple-mobile-web-app-title" content="Morana"/>
                     <link
-                        href="https://fonts.googleapis.com/css2?family=Fugaz+One"
+                        href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=optional"
                         rel="stylesheet"
                     />
-
                     <link
-                        href="https://fonts.googleapis.com/css2?family=ABeeZee:400"
+                        href="https://fonts.googleapis.com/css2?family=ABeeZee&display=optional"
                         rel="stylesheet"
                     />
-
-
                 </Head>
                 <body >
                 <Main />

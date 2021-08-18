@@ -6,11 +6,8 @@ import {MenuToggle} from "./icons/AnimatedMoranaBurger";
 export const headerHeight: number = 54
 export const headerHeightPx = ["54px", "80px"];
 
-interface IProps {
 
-}
-
-const Heady = (props: IProps) => {
+const Heady = () => {
     const [isLargerThan1280] = useMediaQuery("(min-width: 800px)")
     const ptArray = ["15px", "27px"];
     return (
