@@ -1,33 +1,35 @@
 import React from 'react'
-import {Box, Center, Heading} from "@chakra-ui/react";
+import {Box, Heading, Text, useMediaQuery} from "@chakra-ui/react";
 import Image from 'next/image'
 import {MenuToggle} from "./icons/AnimatedMoranaBurger";
+
 export const headerHeight: number = 54
-export const headerHeightPx = 54 + "px"
+export const headerHeightPx = ["54px", "80px"];
 
 interface IProps {
 
 }
 
 const Heady = (props: IProps) => {
-
+    const [isLargerThan1280] = useMediaQuery("(min-width: 800px)")
+    const ptArray = ["15px", "27px"];
     return (
         <Box
-            flexShrink={0}
             display="flex"
             flexDirection="row"
-            justifyContent="space-around"
-            alignItems={"center"}
             minH={headerHeightPx}
             height={headerHeightPx}
-            bg="brand.main"
-            w="100%"
+            bg="brand.maintransparent"
+            w="100vw"
+            maxW={"100vw"}
             position={"fixed"}
             top={0}
             zIndex={10}
+            justifyContent={"space-around"}
+
         >
-            <Box height={headerHeightPx}>
-                <Box height={headerHeightPx} pl={"0.5em"} pr={"0.5em"}>
+            <Box height={headerHeightPx} >
+                <Box height={headerHeightPx} pl={"0.5em"} pr={"0.5em"} pt={["0px", "12px"]} >
                     <Image
                         src="/static/images/moranaIcon.svg"
                         width={61}
@@ -36,14 +38,43 @@ const Heady = (props: IProps) => {
                     />
                 </Box>
             </Box>
-            <Box height={headerHeightPx} flexGrow={1} pt={"15px"}>
+            <Box height={headerHeightPx} pt={ptArray}  flexGrow={1} >
                 <Heading variant="header1">
                     Morana.at
                 </Heading>
             </Box>
-            <Box height={headerHeightPx}pr={"0.5em"} >
-                    <MenuToggle />
-            </Box>
+            {isLargerThan1280 ? <Box display="flex"
+                                     flexDirection="row"
+                                     pr={"3em"}
+                                     justifyContent={"flex-end"}
+                                     width={"20em"}
+                                     minW={"20em"}
+                                      >
+                    <Box height={headerHeightPx} pt={ptArray} width={"100px"}>
+                        <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
+                            Services
+                        </Text>
+                    </Box>
+                    <Box height={headerHeightPx} pt={ptArray} width={"100px"}>
+                        <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"}>
+                            About
+                        </Text>
+                    </Box>
+                    <Box height={headerHeightPx} pt={ptArray} width={"100px"}>
+                        <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
+                            Contact
+                        </Text>
+                    </Box>
+                </Box>
+
+
+                :
+
+
+                <Box height={headerHeightPx} pr={"0.5em"} pt={["0px", "15px"]} >
+                    <MenuToggle/>
+                </Box>
+            }
 
 
         </Box>

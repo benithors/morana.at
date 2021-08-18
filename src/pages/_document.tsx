@@ -18,14 +18,14 @@ export default class Document extends NextDocument {
                     />
 
                     <link
-                        href="https://fonts.googleapis.com/css2?family=ABeeZee"
+                        href="https://fonts.googleapis.com/css2?family=ABeeZee:400"
                         rel="stylesheet"
                     />
 
 
                 </Head>
-                <body>
-                <Main/>
+                <body >
+                <Main />
                 <NextScript/>
                 </body>
             </Html>
