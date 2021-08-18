@@ -16,7 +16,7 @@ export default function Index(props) {
 
                     <Box zIndex={0} position={"absolute"}>
                         <svg width="100vw" preserveAspectRatio="none" height="729" viewBox="0 0 375 729" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0V723.677C0 723.677 244.452 767.203 375 605.324V0H0Z" fill="#5F05AB"/>
+                            <path fillRule="evenodd" clipRule="evenodd" d="M0 0V723.677C0 723.677 244.452 767.203 375 605.324V0H0Z" fill="#5F05AB"/>
                         </svg>
                     </Box>
 
