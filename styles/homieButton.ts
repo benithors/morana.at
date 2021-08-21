@@ -7,7 +7,9 @@ const homieButton = {
         background:"brand.secondary",
         fontFamily:"Fugaz One",
         textDecoration:"underLine",
-        fontWeight:"400"
+        fontWeight:"400",
+        borderRadius:"30px 0px"
+
 
     },
 

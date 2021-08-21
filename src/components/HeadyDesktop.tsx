@@ -7,22 +7,25 @@ export const headerHeight: number = 54
 
 const HeadyDesktop = () => {
     return (
+        <Box display="flex"
+             flexDirection="column"
+             w={"100%"}
+             alignItems={"center"}  >
         <SimpleGrid
             minH={"80px"}
             height={"80px"}
             bg="brand.maintransparent"
-            w="100vw"
             position={"fixed"}
             top={0}
             zIndex={10}
-            minChildWidth="20px"
-        minW={"1024px"}>
-
-            <Box height={"80px"} display="flex"
-                 w={"589px"}
+            columns={2}
+             >
+            <Box height={"80px"}
+                 display="flex"
                  flexDirection="row"
-                 justifySelf={"center"}
-                 >
+                 width={"602px"}
+
+            >
                 <Box height={"80px"} pt={"12px"}>
                     <Image
                         src="/static/images/moranaIcon.svg"
@@ -40,7 +43,9 @@ const HeadyDesktop = () => {
 
             <Box display="flex"
                  flexDirection="row"
-                 paddingLeft={"5em"}>
+                 justifySelf={"center"}
+                 pl={"5em"}
+                >
 
                 <Box height={"80px"} pt={"27px"} width={"100px"}>
                     <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
@@ -60,6 +65,7 @@ const HeadyDesktop = () => {
             </Box>
 
         </SimpleGrid>
+        </Box>
 
 
     )

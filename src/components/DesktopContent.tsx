@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Button, Center, Heading, SimpleGrid, Text} from "@chakra-ui/react";
+import {Box, Button, Heading, SimpleGrid, Text} from "@chakra-ui/react";
 import HeadyDesktop from "./HeadyDesktop";
 import MoranaImageContainer from "./MoranaImageContainer";
 
@@ -17,41 +17,40 @@ const DesktopContent = () => {
     return (
         <Box display="flex"
              flexDirection="column"
-             w={"100vw"}
-             minW={"1024px"}
-            bg={"grey"}
-        >
-            <HeadyDesktop />
+             w={"100%"}
+             alignItems={"center"}>
+            <HeadyDesktop/>
 
             <DesktopBackgroundOne/>
 
-            <SimpleGrid pt={"10em"} minChildWidth="820px" >
+            <SimpleGrid pt={"10em"} columns={[1, 2]}>
 
-                <Box justifySelf={"center"} bg={"aqua"}>
-                    <Heading variant="header2" pt={"35px"} fontSize={"76px"}>
+                <Box display="flex"
+                     flexDirection="column"
+                     width={"602px"}>
+
+                    <Heading variant="header2" pt={"25px"} fontSize={"76px"}>
                         Oana Moraru
                     </Heading>
-                    <Heading variant="header3" pt={"35px"} fontSize={"40px"}>
+                    <Heading variant="header3" pt={"10px"} fontSize={"40px"}>
                         Agile Consultant • Freelancer
                     </Heading>
-                    <Box w={"589px"}>
+                    <Box w={"589px"} pt={"50px"} pb={"35px"}>
 
                         <Text variant={"primary"}
                               fontSize={"18px"}
-                              alignItems={"center"}
-                              display={"flex"}
-                              verticalAlign={"center"}
                               lineHeight={"24px"}
                         >
                             I am an IT Product Owner, Scrum Master, UX-Designer and Team Lead searching for Frontend Software Development Projects with a positive impact on environment or society.
                         </Text>
-                    </Box>
-                    <Button variant={"desktop"}>
+                    </Box >
+                    <Button variant={"desktop"} >
                         Get in touch!
                     </Button>
 
                 </Box>
-                <Box justifySelf={"center"} bg={"aqua"}>
+                <Box width={"464px"}
+                justifySelf={"center"} >
                     <MoranaImageContainer width={464} height={448} imagePath={"/static/images/OanaMain.png"}/>
                 </Box>
             </SimpleGrid>
