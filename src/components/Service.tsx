@@ -30,7 +30,7 @@ const MoranaService = (props: IProps) => {
             </Center>
 
             <Box>
-                <Heading variant="services" pt={"25px"}>
+                <Heading variant="heading4" pt={"25px"} color={"black"}>
                     {props.title}
                 </Heading>
             </Box>

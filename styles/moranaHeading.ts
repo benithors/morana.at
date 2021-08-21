@@ -29,15 +29,14 @@ const moranaHeading = {
             fontSize: "22px",
             fontFamily: "Fugaz One"
         },
-        services:{
+        heading4:{
             fontStyle: "normal",
             fontWeight: "400",
             fontSize: "24px",
             size:"26px",
-            color:"black",
+
             textAlign:"center",
             fontFamily: "Fugaz One",
-
         }
     },
     // The default size and variant values

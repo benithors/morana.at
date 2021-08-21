@@ -11,11 +11,11 @@ export default class Document extends NextDocument {
                     <meta name="description" content="Oana Moraru - Agile Consultant • Freelancer"/>
                     <meta name="apple-mobile-web-app-title" content="Morana"/>
                     <link
-                        href="https://fonts.googleapis.com/css2?family=Fugaz+One"
+                        href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap"
                         rel="stylesheet"
                     />
                     <link
-                        href="https://fonts.googleapis.com/css2?family=ABeeZee"
+                        href="https://fonts.googleapis.com/css2?family=ABeeZee&display=swap"
                         rel="stylesheet"
                     />
                 </Head>

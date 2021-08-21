@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Heading, Text, useMediaQuery} from "@chakra-ui/react";
+import {Box, Heading} from "@chakra-ui/react";
 import Image from 'next/image'
 import {MenuToggle} from "./icons/AnimatedMoranaBurger";
 
@@ -24,8 +24,8 @@ const HeadyMobile = () => {
             justifyContent={"space-around"}
 
         >
-            <Box height={headerHeightPx} >
-                <Box height={headerHeightPx} pl={"0.5em"} pr={"0.5em"} pt={["0px", "12px"]} >
+            <Box height={headerHeightPx}>
+                <Box height={headerHeightPx} pl={"0.5em"} pr={"0.5em"} pt={["0px", "12px"]}>
                     <Image
                         src="/static/images/moranaIcon.svg"
                         width={61}
@@ -34,16 +34,16 @@ const HeadyMobile = () => {
                     />
                 </Box>
             </Box>
-            <Box height={headerHeightPx} pt={ptArray}  flexGrow={1} >
+            <Box height={headerHeightPx} pt={ptArray} flexGrow={1}>
                 <Heading variant="header1">
                     Morana.at mobile
                 </Heading>
             </Box>
 
 
-                <Box height={headerHeightPx} pr={"0.5em"} pt={["0px", "15px"]} >
-                    <MenuToggle/>
-                </Box>
+            <Box height={headerHeightPx} pr={"0.5em"} pt={["0px", "15px"]}>
+                <MenuToggle/>
+            </Box>
 
 
         </Box>
