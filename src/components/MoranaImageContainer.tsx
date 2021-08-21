@@ -16,7 +16,7 @@ const MoranaImageContainer = (props: IProps) => {
     return (
         <Box zIndex={5} minW={width}>
 
-            <Box position={"absolute"} pl={["0.4em", "0.7em"]} pt={["0.6em", "1em"]} minW={width}>
+            <Box position={"absolute"} pl={["0.7em"]} pt={["1em"]} minW={width}>
                 <Image
                     src={props.imagePath}
                     width={props.width}

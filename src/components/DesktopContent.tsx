@@ -6,15 +6,16 @@ import MoranaService from "./Service";
 import Experience from "./Experience";
 
 function DesktopBackgroundOne() {
-    return <Box minW={"1024px"} zIndex={-1} position={"absolute"} top={0} left={0} width={"100%"} overflow={"hidden"} lineHeight={0}>
-        <svg width={"100%"} height="754" preserveAspectRatio="none" viewBox="0 0 1440 754" fill="none" xmlns="http://www.w3.org/2000/svg">
+    return <Box minW={"1024px"} zIndex={-1} position={"absolute"} top={0} left={0} width={"100%"} overflow={"hidden"} lineHeight={0}
+    height={["1100","754"]}>
+        <svg width={"100%"} height="100%" preserveAspectRatio="none" viewBox="0 0 1440 754" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 754V0H1440C1440 509.115 764.123 734.654 0 754Z" fill="#5F05AB"/>
         </svg>
     </Box>;
 }
 
 function DesktopBackgroundTwo() {
-    return <Box minW={"1024px"} zIndex={-1} position={"absolute"} top={["2787px", "1450px", "1187px"]} left={0} width={"100%"} overflow={"hidden"} lineHeight={0} height={["3237", "2437", "2137"]}>
+    return <Box minW={"1024px"} zIndex={-1} position={"absolute"} top={["2287px", "1450px", "1187px"]} left={0} width={"100%"} overflow={"hidden"} lineHeight={0} height={["4037", "2437", "2137"]}>
 
         <svg width={"100%"} height={"100%"} preserveAspectRatio="none" viewBox="0 0 1440 2137" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 963V396.5C93 490 697.18 614.643 1124 407.211C1216 362.5 1375.2 231.12 1441 0V963H0Z" fill="#4CE6C4"/>
@@ -73,7 +74,7 @@ const DesktopContent = () => {
                 <Box width={"464px"}
                      pt={["3em", "0em"]}
                      justifySelf={"center"}>
-                    <MoranaImageContainer width={464} height={448} imagePath={"/static/images/OanaMain.png"}/>
+                    <MoranaImageContainer width={464} height={448} imagePath={"/static/images/Oana1.png"}/>
                 </Box>
             </SimpleGrid>
 
@@ -160,7 +161,7 @@ const DesktopContent = () => {
 
             <DesktopBackgroundTwo/>
 
-            <SimpleGrid pt={"9em"} columns={[1, 2]}>
+            <SimpleGrid pt={["9em"]} columns={[1, 2]}>
                 <Box display={"flex"} width={"602px"} pt={"110px"}>
                     <Heading variant="services" textAlign={"start"} color={"brand.secondary"}>
                         /
@@ -177,7 +178,7 @@ const DesktopContent = () => {
                 <Box width={"464px"}
                      pt={["3em", "0em"]}
                      justifySelf={"center"}>
-                    <MoranaImageContainer width={464} height={448} imagePath={"/static/images/OanaMain.png"}/>
+                    <MoranaImageContainer width={464} height={448} imagePath={"/static/images/Oana2.png"}/>
                 </Box>
                 <Box display="flex"
                      flexDirection="column"
@@ -311,7 +312,7 @@ const DesktopContent = () => {
             <Box width={"464px"}
                  pt={["3em", "0em"]}
                  justifySelf={"center"}>
-                <MoranaImageContainer width={464} height={448} imagePath={"/static/images/OanaMain.png"}/>
+                <MoranaImageContainer width={464} height={448} imagePath={"/static/images/oana3.png"}/>
             </Box>
 
             <DesktopBackgroudThree/>
