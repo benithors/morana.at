@@ -7,5 +7,3 @@ B
 src/pages/_app.tsx,2\e\2eefa41a18ed6ea3f58b3748f9e5559a28e77646
 E
 styles/moranaText.tsx,8\c\8c010d8c7f67b376853bfcffb905908ee6238df4
-G
-styles/moranaHeading.ts,c\5\c540dfbdd74959ffd77a00e931e4428153ccd2a8

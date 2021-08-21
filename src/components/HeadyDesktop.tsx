@@ -26,15 +26,15 @@ const HeadyDesktop = () => {
                  width={"602px"}
 
             >
-                <Box height={"80px"} pt={"12px"}>
+                <Box height={"80px"} >
                     <Image
-                        src="/static/images/moranaIcon.svg"
-                        width={61}
-                        height={53}
+                        src="/static/images/moranaIcon.png"
+                        width={100}
+                        height={87}
                         alt={"Morana"}
                     />
                 </Box>
-                <Box height={"80px"} pt={"27px"} flexGrow={1}>
+                <Box height={"80px"} pt={"28px"} flexGrow={1}>
                     <Heading variant="header1">
                         Morana.at desktop
                     </Heading>
