@@ -2,14 +2,15 @@ import { extendTheme } from '@chakra-ui/react'
 import { createBreakpoints } from '@chakra-ui/theme-tools'
 import moranaHeading from "./moranaHeading";
 import moranaText from "./moranaText";
+import homieButton from "./homieButton";
 
 const fonts = { mono: `'Menlo', monospace` }
 
 const breakpoints = createBreakpoints({
-  sm: "32em",
-  md: "80em",
-  lg: "80em",
-  xl: "80em",
+  sm: "80em",
+  md: "90em",
+  lg: "90em",
+  xl: "90em",
 
 })
 
@@ -30,6 +31,7 @@ const moranaTheme = extendTheme({
   components: {
     Heading: moranaHeading,
     Text: moranaText,
+    Button: homieButton,
   },
   fonts,
   breakpoints,
