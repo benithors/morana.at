@@ -6,29 +6,28 @@ export const headerHeight: number = 54
 
 
 const HeadyDesktop = () => {
+    const height = ["54px","54px","80px"];
     return (
         <Box display="flex"
              flexDirection="column"
-             w={"100%"}
+             w={"100vw"}
              alignItems={"center"}
-             bg="brand.maintransparent"
-             minH={"80px"}
-             height={"80px"}
+             bg="red"
+             minH={height}
+             height={height}
              position={"fixed"}
              top={0}
              zIndex={10}
         >
             <SimpleGrid
-
                 columns={2}
-
             >
-                <Box height={"80px"}
+                <Box height={height}
                      display="flex"
                      flexDirection="row"
                      width={"602px"}
                 >
-                    <Box height={"80px"}>
+                    <Box height={height}>
                         <Image
                             src="/static/images/moranaIcon.png"
                             width={100}
@@ -36,9 +35,9 @@ const HeadyDesktop = () => {
                             alt={"Morana"}
                         />
                     </Box>
-                    <Box height={"80px"} pt={"28px"} flexGrow={1}>
+                    <Box height={height} pt={"28px"} flexGrow={1}>
                         <Heading variant="header1">
-                            Morana.at desktop
+                            Morana.at
                         </Heading>
                     </Box>
                 </Box>
@@ -49,17 +48,17 @@ const HeadyDesktop = () => {
                      pl={"5em"}
                 >
 
-                    <Box height={"80px"} pt={"27px"} width={"100px"}>
+                    <Box height={height} pt={"27px"} width={"100px"}>
                         <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
                             Services
                         </Text>
                     </Box>
-                    <Box height={"80px"} pt={"27px"} width={"100px"}>
+                    <Box height={height} pt={"27px"} width={"100px"}>
                         <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"}>
                             About
                         </Text>
                     </Box>
-                    <Box height={"80px"} pt={"27px"} width={"100px"}>
+                    <Box height={height} pt={"27px"} width={"100px"}>
                         <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
                             Contact
                         </Text>

@@ -7,8 +7,8 @@ import Experience from "./Experience";
 import Image from "next/image";
 
 function DesktopBackgroundOne() {
-    return <Box zIndex={-1} position={"absolute"} top={0} left={0} width={"100%"} overflow={"hidden"} lineHeight={0}
-                height={["1400", "754","850"]}>
+    return <Box zIndex={-1} position={"absolute"} top={0} left={0} width={["800px", "100%"]} overflow={"hidden"} lineHeight={0}
+                height={["800px", "754", "850"]}>
         <svg width={"100%"} height="100%" preserveAspectRatio="none" viewBox="0 0 1440 754" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 754V0H1440C1440 509.115 764.123 734.654 0 754Z" fill="#5F05AB"/>
         </svg>
@@ -16,7 +16,7 @@ function DesktopBackgroundOne() {
 }
 
 function DesktopBackgroundTwo() {
-    return <Box  zIndex={-1} position={"absolute"} top={["2287px", "1450px", "1187px"]} left={0} width={"100%"} overflow={"hidden"} lineHeight={0} height={["4037", "2437", "2137"]}>
+    return <Box zIndex={-1} position={"absolute"} top={["2287px", "1450px", "1187px"]} left={0} width={"100%"} overflow={"hidden"} lineHeight={0} height={["4037", "2437", "2137"]}>
 
         <svg width={"100%"} height={"100%"} preserveAspectRatio="none" viewBox="0 0 1440 2137" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 963V396.5C93 490 697.18 614.643 1124 407.211C1216 362.5 1375.2 231.12 1441 0V963H0Z" fill="#4CE6C4"/>
@@ -40,45 +40,52 @@ const DesktopContent = () => {
         <SimpleGrid display="flex"
                     flexDirection="column"
                     w={"100%"}
-                    alignItems={"center"}>
+                    alignItems={"center"}
+        overflowX={"hidden"}>
             <HeadyDesktop/>
 
             <DesktopBackgroundOne/>
 
 
-            <SimpleGrid pt={["5em", "10em"]} columns={[1, 2]}>
+            <SimpleGrid pt={["5em", "5em", "10em"]} columns={[1, 2]} overflowX={"hidden"}>
 
                 <Box display="flex"
                      flexDirection="column"
-                     width={"602px"}>
+                     width={["100%", "602px", "602px"]}
+                     justifyContent={"center"}>
 
-                    <Heading variant="header2" pt={"25px"} fontSize={"76px"}>
+                    <Heading variant="header2" pt={"25px"} fontSize={["40px", "60px", "76px"]} textAlign={["center", "center", "start"]}>
                         Oana Moraru
                     </Heading>
-                    <Heading variant="header3" pt={"10px"} fontSize={"40px"}>
+                    <Heading variant="header3" pt={"10px"} fontSize={["20px", "30px", "40px"]} textAlign={["center", "center", "start"]}>
                         Agile Consultant • Freelancer
                     </Heading>
-                    <Box w={"589px"} pt={"50px"} pb={"35px"}>
 
-                        <Text variant={"primary"}
-                              fontSize={"18px"}
-                              lineHeight={"24px"}
-                        >
-                            I am an IT Product Owner, Scrum Master, UX-Designer and Team Lead searching for Frontend Software Development Projects with a positive impact on environment or society.
-                        </Text>
-                    </Box>
-                    <Box bg={"green"}  order={[1,0]}>
-                        <Button variant={"desktop"} >
+
+                    <Text w={["50vw", "589px", "589px"]} variant={"primary"}
+                          fontSize={["14px", "18px"]}
+                          lineHeight={["17px", "24px"]}
+                          textAlign={["center", "center", "start"]}
+                          order={[1, 0]}
+                          pt={"50px"}
+                          pb={"35px"}
+                          alignSelf={["center", "center", "flex-start"]}>
+
+                        I am an IT Product Owner, Scrum Master, UX-Designer and Team Lead searching for Frontend Software Development Projects with a positive impact on environment or society.
+                    </Text>
+                    <Box order={[2, 2, 0, 0]} alignSelf={["center", "center", "flex-start"]}>
+                        <Button variant={"desktop"}>
                             Get in touch!
                         </Button>
                     </Box>
 
-                    <Box width={"464px"}
-                         pt={["3em", "5em"]}
-                         pl={["0","40em","45em"]}
-                         justifySelf={"center"}
-                         position={["relative","absolute"]}
-                   >
+                    <Box
+                        pt={["3em", "5em"]}
+                        pl={["0", "0", "15em", "45em"]}
+
+                        position={["relative", "relative", "relative", "absolute"]}
+                        alignSelf={"center"}
+                    >
                         <MoranaImageContainer width={464} height={448} imagePath={"/static/images/Oana1.png"}/>
                     </Box>
                 </Box>
@@ -277,9 +284,10 @@ const DesktopContent = () => {
                 <Box display={"flex"}
                      flexDirection="row"
                      pt={"25px"}
-                     width={["600px", "1203px"]}
+                     width={["100%", "600px", "1203px"]}
+
                 >
-                    <Heading variant="header2" fontSize={["35px", "76px"]} color={"black"} display={"inline"} whiteSpace={"break-spaces"}>
+                    <Heading variant="header2" fontSize={["35px", "76px"]} color={"black"} display={"inline"} whiteSpace={"break-spaces"} textAlign={["center", "start", "start"]}>
                         <Text as={"span"}>
                             Does this{' '}
                         </Text>
@@ -292,7 +300,7 @@ const DesktopContent = () => {
                     </Heading>
                 </Box>
 
-                <Box width={["500px", "1203px"]}>
+                <Box width={["100%", "500px", "1203px"]}>
 
                     <Heading variant="header2" fontSize={["35px", "76px"]} color={"black"} display={"inline"} whiteSpace={"break-spaces"}>
                         <Text as={"span"}>
@@ -309,14 +317,14 @@ const DesktopContent = () => {
 
 
             <SimpleGrid pt={"1em"} columns={[1, 2]}>
-                <Box width={"602px"} pt={"25px"}>
+                <Box width={["100%", "602px"]} pt={"25px"}>
                     <Button variant={"desktop"}>
                         Get in touch!
                     </Button>
                 </Box>
             </SimpleGrid>
             <MoranaImageContainer width={464} height={448} imagePath={"/static/images/oana3.png"}/>
-            <Box width={["600px", "1203px"]}
+            <Box width={["100%", "600px", "1203px"]}
                  pt={["3em", "0em"]}
                  justifySelf={"center"}
                  display={"flex"}
@@ -324,7 +332,7 @@ const DesktopContent = () => {
 
                  justifyContent={"space-between"}
             >
-                <Box display={"flex"} flexDirection={"row"}  alignSelf={"flex-end"}>
+                <Box display={"flex"} flexDirection={"row"} alignSelf={"flex-end"}>
                     <Box pt={"3px"} pr={"2em"}>
                         <Image
                             src={"/static/images/mail.png"}
@@ -345,13 +353,13 @@ const DesktopContent = () => {
                 </Box>
 
                 <Box display={"flex"} flexDirection={"row"} justifyContent={"space-between"} pt={"7em"}>
-                    <Box >
+                    <Box>
 
                         <Text fontSize={"20px"} fontFamily={"AbeeZee"}>
                             Copyright @Morana.at
                         </Text>
                     </Box>
-                    <Box  >
+                    <Box>
                         <Text color={"brand.secondary"} fontSize={"20px"} fontFamily={"AbeeZee"}>
                             Privacy
                         </Text>

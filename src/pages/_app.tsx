@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps }) {
     <ChakraProvider resetCSS theme={moranaTheme}>
         <Head>
             <title>Morana</title>
-           <meta name="viewport" content="initial-scale=1.0, width=device-width, viewport-fit=cover"/>
+           <meta name="viewport" content="width=device-width, height=device-height"/>
         </Head>
         <Component {...pageProps} />
     </ChakraProvider>

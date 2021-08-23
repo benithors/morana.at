@@ -7,10 +7,11 @@ import homieButton from "./homieButton";
 const fonts = { mono: `'Menlo', monospace` }
 
 const breakpoints = createBreakpoints({
-  sm: "80em",
-  md: "90em",
-  lg: "90em",
-  xl: "90em",
+  sm: "30em",
+  md: "48em",
+  lg: "62em",
+  xl: "80em",
+  "2xl": "96em",
 
 })
 
