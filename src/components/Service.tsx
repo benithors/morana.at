@@ -17,7 +17,6 @@ const MoranaService = (props: IProps) => {
         <Box display={"flex"}
              flexDirection="column"
              justifyContent={"center"}
-             minW={props.width}
              minH={props.height}>
 
             <Center>

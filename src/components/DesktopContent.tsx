@@ -4,10 +4,11 @@ import HeadyDesktop from "./HeadyDesktop";
 import MoranaImageContainer from "./MoranaImageContainer";
 import MoranaService from "./Service";
 import Experience from "./Experience";
+import Image from "next/image";
 
 function DesktopBackgroundOne() {
-    return <Box minW={"1024px"} zIndex={-1} position={"absolute"} top={0} left={0} width={"100%"} overflow={"hidden"} lineHeight={0}
-    height={["1100","754"]}>
+    return <Box zIndex={-1} position={"absolute"} top={0} left={0} width={"100%"} overflow={"hidden"} lineHeight={0}
+                height={["1400", "754","850"]}>
         <svg width={"100%"} height="100%" preserveAspectRatio="none" viewBox="0 0 1440 754" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 754V0H1440C1440 509.115 764.123 734.654 0 754Z" fill="#5F05AB"/>
         </svg>
@@ -15,7 +16,7 @@ function DesktopBackgroundOne() {
 }
 
 function DesktopBackgroundTwo() {
-    return <Box minW={"1024px"} zIndex={-1} position={"absolute"} top={["2287px", "1450px", "1187px"]} left={0} width={"100%"} overflow={"hidden"} lineHeight={0} height={["4037", "2437", "2137"]}>
+    return <Box  zIndex={-1} position={"absolute"} top={["2287px", "1450px", "1187px"]} left={0} width={"100%"} overflow={"hidden"} lineHeight={0} height={["4037", "2437", "2137"]}>
 
         <svg width={"100%"} height={"100%"} preserveAspectRatio="none" viewBox="0 0 1440 2137" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 963V396.5C93 490 697.18 614.643 1124 407.211C1216 362.5 1375.2 231.12 1441 0V963H0Z" fill="#4CE6C4"/>
@@ -26,7 +27,7 @@ function DesktopBackgroundTwo() {
 }
 
 function DesktopBackgroudThree() {
-    return <Box minW={"1024px"} zIndex={-1} position={"absolute"} top={["6787px", "4747px", "4047px"]} left={0} width={"100%"} overflow={"hidden"} lineHeight={0} height={["524", "524", "524"]}>
+    return <Box zIndex={-1} position={"absolute"} top={["6787px", "4747px", "4047px"]} left={"25%"} width={"75%"} overflow={"hidden"} lineHeight={0} height={["524", "524", "524"]}>
         <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1094 524" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1095 524H0C306.336 162.767 751.64 -33.719 1095 4.76702V524Z" fill="#4CE6C4"/>
             <path d="M1095 524H33C270.88 267.145 795.272 61.6621 1095 135.05V524Z" fill="#5F05AB"/>
@@ -66,16 +67,22 @@ const DesktopContent = () => {
                             I am an IT Product Owner, Scrum Master, UX-Designer and Team Lead searching for Frontend Software Development Projects with a positive impact on environment or society.
                         </Text>
                     </Box>
-                    <Button variant={"desktop"}>
-                        Get in touch!
-                    </Button>
+                    <Box bg={"green"}  order={[1,0]}>
+                        <Button variant={"desktop"} >
+                            Get in touch!
+                        </Button>
+                    </Box>
 
+                    <Box width={"464px"}
+                         pt={["3em", "5em"]}
+                         pl={["0","40em","45em"]}
+                         justifySelf={"center"}
+                         position={["relative","absolute"]}
+                   >
+                        <MoranaImageContainer width={464} height={448} imagePath={"/static/images/Oana1.png"}/>
+                    </Box>
                 </Box>
-                <Box width={"464px"}
-                     pt={["3em", "0em"]}
-                     justifySelf={"center"}>
-                    <MoranaImageContainer width={464} height={448} imagePath={"/static/images/Oana1.png"}/>
-                </Box>
+
             </SimpleGrid>
 
             <SimpleGrid pt={"9em"} columns={[1, 2]}>
@@ -308,12 +315,54 @@ const DesktopContent = () => {
                     </Button>
                 </Box>
             </SimpleGrid>
-
-            <Box width={"464px"}
+            <MoranaImageContainer width={464} height={448} imagePath={"/static/images/oana3.png"}/>
+            <Box width={["600px", "1203px"]}
                  pt={["3em", "0em"]}
-                 justifySelf={"center"}>
-                <MoranaImageContainer width={464} height={448} imagePath={"/static/images/oana3.png"}/>
+                 justifySelf={"center"}
+                 display={"flex"}
+                 flexDir={"column"}
+
+                 justifyContent={"space-between"}
+            >
+                <Box display={"flex"} flexDirection={"row"}  alignSelf={"flex-end"}>
+                    <Box pt={"3px"} pr={"2em"}>
+                        <Image
+                            src={"/static/images/mail.png"}
+                            width={65}
+                            height={65}
+                            alt={"Mail"}
+                        />
+
+                    </Box>
+                    <Box>
+                        <Image
+                            src={"/static/images/linkedin.png"}
+                            width={65}
+                            height={65}
+                            alt={"Linkedin"}
+                        />
+                    </Box>
+                </Box>
+
+                <Box display={"flex"} flexDirection={"row"} justifyContent={"space-between"} pt={"7em"}>
+                    <Box >
+
+                        <Text fontSize={"20px"} fontFamily={"AbeeZee"}>
+                            Copyright @Morana.at
+                        </Text>
+                    </Box>
+                    <Box  >
+                        <Text color={"brand.secondary"} fontSize={"20px"} fontFamily={"AbeeZee"}>
+                            Privacy
+                        </Text>
+
+                    </Box>
+
+                </Box>
+
+
             </Box>
+
 
             <DesktopBackgroudThree/>
 

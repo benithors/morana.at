@@ -13,7 +13,7 @@ const Experience = (props: IProps) => {
         <Box display={"flex"}
              flexDirection="column"
              justifyContent={"center"}
-             width={["602px", "500px"]}
+             width={["601px","587px","397px"]}
         >
             <Box>
                 <Heading variant="heading4" pt={"25px"} color={"white"}>
