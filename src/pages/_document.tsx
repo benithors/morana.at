@@ -19,7 +19,7 @@ export default class Document extends NextDocument {
                         rel="stylesheet"
                     />
                 </Head>
-                <body style={{overflowX: "hidden",height: "100vh"}}>
+                <body style={{overflowX: "hidden",height: "100vh",backgroundColor:"#f5eeed"}}>
                 <Main  />
                 <NextScript/>
                 </body>
