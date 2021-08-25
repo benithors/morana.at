@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Heading} from "@chakra-ui/react";
+import {Box, GridItem, Heading} from "@chakra-ui/react";
 
 
 interface IProps {
@@ -10,12 +10,15 @@ interface IProps {
 const Experience = (props: IProps) => {
 
     return (
+        <GridItem display={"flex"}
+                  flexDirection="column">
         <Box display={"flex"}
+             alignSelf={["center", "center", "flex-start"]}
              flexDirection="column"
              justifyContent={"start"}
-        >
+             w={["300px", "370px", "340px", "400px","320px"]}>
             <Box>
-                <Heading textAlign={["start","start","center"]} variant="heading4" pt={"25px"} color={"white"} fontSize={["24px","24px","24px","26px"]}>
+                <Heading textAlign={"start"} variant="heading4" pt={"25px"} color={"white"} fontSize={["24px","24px","24px","26px"]}>
                     {props.title}
                 </Heading>
             </Box>
@@ -26,6 +29,7 @@ const Experience = (props: IProps) => {
 
 
         </Box>
+        </GridItem>
     );
 }
 

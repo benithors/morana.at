@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, SimpleGrid} from "@chakra-ui/react";
+import {Box, Button, SimpleGrid} from "@chakra-ui/react";
 import HeadyDesktop from "./HeadyDesktop";
 import ServicesSection from "../sections/ServicesSection";
 import IntroSection from "../sections/IntroSection";
@@ -73,7 +73,15 @@ const DesktopContent = () => {
 
                 <ExpierenceSection/>
 
+                <Button variant={"desktop"}
+                        fontSize={["24px","24px","30px"]}
+                        width={["245px","245px","339px","339px","339px"]}
+                        height={["64px","64px","67px","67px","67px"]}
+                        display={["none","none","flex"]}
 
+                >
+                    Download Resume
+                </Button>
                 <ContactSection/>
 
 

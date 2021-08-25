@@ -14,7 +14,7 @@ interface IProps {
 const MoranaService = (props: IProps) => {
     return (
         <Box display={"flex"}
-
+             w={["100%","210px","310px","410px","100%"]}
              flexDirection="column"
              justifyContent={"flex-start"}
              minH={"130px"}>

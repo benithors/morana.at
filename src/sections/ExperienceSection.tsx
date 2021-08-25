@@ -3,24 +3,26 @@ import Experience from "../components/Experience";
 import React from "react";
 
 export default function ExpierenceSection() {
-    const servicesFontSize = ["14px","15px","16px","20px"];
-    return  <>
-    <SimpleGrid
+    const servicesFontSize = ["14px", "15px", "16px", "20px"];
+    return <SimpleGrid
+
         width={["80%", "80%", "85%", "85%"]}
         maxW={["100%", "100%", "1024px"]}
-        pt={"5em"}  columns={[1, 1, 2,2,3]}  spacing={10} pb={"35px"} bg={"black"}>
+        pt={"5em"} columns={[1, 1, 2, 2, 3]} spacing={10} pb={"35px"} bg={"black"}>
 
 
-        <Experience
-            title={"Experience"}>
-            <UnorderedList fontFamily={"ABeeZee"} pt={"17px"}  color={"white"} spacing={"20px"} fontSize={servicesFontSize}>
-                <ListItem>Freelance Product Owner, Scrum Master, UX/UI-Designer at Morana.at</ListItem>
-                <ListItem>Team Lead, Lead Product Owner, Scrum Master at XXXLdigital</ListItem>
-                <ListItem>Business Analyst, Requirements Engineer, UX/Usability Expert and Trainer at BearingPoint</ListItem>
-                <ListItem>Team Lead, Product Owner, Scrum Master, PMO at IBM</ListItem>
-                <ListItem>Software Developer at IBM</ListItem>
-            </UnorderedList>
-        </Experience>
+
+            <Experience
+                title={"Experience"}>
+                <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} color={"white"} spacing={"20px"} fontSize={servicesFontSize}>
+                    <ListItem>Freelance Product Owner, Scrum Master, UX/UI-Designer at Morana.at</ListItem>
+                    <ListItem>Team Lead, Lead Product Owner, Scrum Master at XXXLdigital</ListItem>
+                    <ListItem>Business Analyst, Requirements Engineer, UX/Usability Expert and Trainer at BearingPoint</ListItem>
+                    <ListItem>Team Lead, Product Owner, Scrum Master, PMO at IBM</ListItem>
+                    <ListItem>Software Developer at IBM</ListItem>
+                </UnorderedList>
+            </Experience>
+
 
 
         <Experience
@@ -37,12 +39,12 @@ export default function ExpierenceSection() {
         </Experience>
 
         <Button variant={"desktop"}
-                fontSize={["24px","24px","30px"]}
-                width={["245px","245px","339px","339px","339px"]}
-                height={["64px","64px","67px","67px","67px"]}
+                fontSize={["24px", "24px", "30px"]}
+                width={["245px", "245px", "339px", "339px", "339px"]}
+                height={["64px", "64px", "67px", "67px", "67px"]}
                 justifySelf={["center", "center", "center"]}
-                display={["flex","flex","none"]}
-                >
+                display={["flex", "flex", "none"]}
+        >
             Download Resume
         </Button>
 
@@ -56,21 +58,7 @@ export default function ExpierenceSection() {
         </Experience>
 
 
-
-
-
-
-
     </SimpleGrid>
-        <Button variant={"desktop"}
-                fontSize={["24px","24px","30px"]}
-                width={["245px","245px","339px","339px","339px"]}
-                height={["64px","64px","67px","67px","67px"]}
-                display={["none","none","flex"]}
 
-        >
-            Download Resume
-        </Button>
 
-    </>
 }

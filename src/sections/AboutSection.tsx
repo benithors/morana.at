@@ -8,9 +8,7 @@ export function AboutSection() {
         <>
             <SimpleGrid
                 width={["80%", "80%", "85%", "85%"]}
-                maxW={["100%", "100%", "1024px"]}
-
-            >
+                maxW={["100%", "100%", "1024px"]} >
             <Box display={"flex"} flexDirection={"row"} pt={"9em"} colSpan={[1, 1, 7, 7]}>
                 <Heading fontSize={SectionHeaderSizes}
                          variant="services"
@@ -40,7 +38,7 @@ export function AboutSection() {
                     flexDirection={"row"}
                     position={["relative", "relative", "relative", "relative"]}
                     boxSizing={"border-box"}
-                    w={["310px", "310px","310px", "352px", "403px"]}
+                    w={["300px", "310px","310px", "352px", "403px"]}
                     maxW={"510px"}
                 >
                     <MoranaImageContainer imagePath={"/static/images/Oana2.png"}/>
@@ -50,14 +48,13 @@ export function AboutSection() {
                           flexDirection="column"
                           zIndex={2}
                           colSpan={[1, 1, 6, 7]}
-
                 >
                     <Heading variant="header2"
                              pt={["25px", "25px", "0px", "0px"]}
                              fontSize={["40px", "50px", "50px", "50px", "76px"]}
                              textAlign={["center", "center", "start"]}
                              alignSelf={["center", "center", "flex-start"]}
-                    w={["80%","80%","100%","85%","100%"]}>
+                    w={["100%", "400px", "326px", "480px"]}>
                         My heart beats agile!
                     </Heading>
 
@@ -71,7 +68,7 @@ export function AboutSection() {
                         <MoranaImageContainer imagePath={"/static/images/Oana2.png"}/>
                     </Box>
 
-                    <Text w={["310px", "400px", "85%", "480px"]}
+                    <Text w={["300px", "370px", "326px", "480px"]}
                           variant={"primary"}
                           fontSize={["14px", "16px", "14px", "18px"]}
                           lineHeight={["17px", "20px", "20px", "24px"]}
@@ -81,11 +78,12 @@ export function AboutSection() {
                         Hi, I am Oana! - very open and determined, a go-getter, who achieves the goals she sets her mind to. Always giving 110%, I am reliable and autonomous, more than happy to take on the responsibility of my team and/or product.
                     </Text>
                     <Text variant={"primary"}
-                          w={["310px", "400px", "85%", "480px"]}
+                          w={["300px", "370px", "326px", "480px"]}
                           fontSize={["14px", "16px", "14px", "18px"]}
                           lineHeight={["17px", "20px", "20px", "24px"]}
-                          alignSelf={["center", "center", "flex-start"]}
-                          pt={["2em", "2em", "2em", "2em"]}>
+                          textAlign={["start", "start", "start"]}
+                          pt={["2em", "2em", "2em", "2em"]}
+                          alignSelf={["center", "center", "flex-start"]}>
                         I bring structure, transparence and drive into your projects & teams, helping you reach your business goals in a timely and highly qualitative manner.
                     </Text>
 

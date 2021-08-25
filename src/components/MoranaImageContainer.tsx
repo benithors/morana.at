@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import {Box, Center} from "@chakra-ui/react";
+import {Box} from "@chakra-ui/react";
 
 
 interface IProps {
@@ -11,9 +11,9 @@ interface IProps {
 const MoranaImageContainer = (props: IProps) => {
 
     return (
-        <Box zIndex={5} minW={"300px"}  w={"inherit"} h={"inherit"}>
+        <Box zIndex={5} minW={"300px"} w={"inherit"} h={"inherit"}>
 
-            <Box position={"absolute"} width={"95%"} height={"95%"} pl={"0.4em"} pt={"0.3em"}  >
+            <Box position={"absolute"} width={"95%"} height={"95%"} pl={"0.4em"} pt={"0.3em"}>
                 <Image
                     src={props.imagePath}
                     width={496}
