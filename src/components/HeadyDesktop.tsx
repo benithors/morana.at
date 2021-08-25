@@ -53,7 +53,7 @@ const HeadyDesktop = () => {
                 <GridItem colSpan={[1, 1, 6, 6]}
                           display={["none", "none", "flex"]}
                           flexDirection="row"
-                          justifySelf={"center"}
+                          justifySelf={"end"}
                           pl={"5em"}
                 >
 

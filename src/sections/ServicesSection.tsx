@@ -11,7 +11,7 @@ export default function ServicesSection() {
             width={["80%", "80%", "85%", "85%"]}
             maxW={["100%", "100%", "1024px"]}
         >
-            <Box display={"flex"} flexDirection={"row"} pt={"9em"} colSpan={[1, 1, 7, 7]}>
+            <Box display={"flex"} flexDirection={"row"} pt={["11em","11em","11em","8em","1em"]} colSpan={[1, 1, 7, 7]}>
                 <Heading fontSize={SectionHeaderSizes}
                         variant="services"
                          textAlign={"center"}

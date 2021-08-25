@@ -8,8 +8,11 @@ export function AboutSection() {
         <>
             <SimpleGrid
                 width={["80%", "80%", "85%", "85%"]}
-                maxW={["100%", "100%", "1024px"]} >
-            <Box display={"flex"} flexDirection={"row"} pt={"9em"} colSpan={[1, 1, 7, 7]}>
+                maxW={["100%", "100%", "1024px"]}
+                zIndex={2}
+                pt={["18em","15em"]}>
+            <Box display={"flex"} flexDirection={"row"}
+                 colSpan={[1, 1, 7, 7]}>
                 <Heading fontSize={SectionHeaderSizes}
                          variant="services"
                          textAlign={"center"}
@@ -19,6 +22,7 @@ export function AboutSection() {
 
                 <Heading fontSize={SectionHeaderSizes}
                          lineHeight={"23px"}
+                         color={"white"}
                          variant="services" textAlign={"center"} whiteSpace={"break-spaces"}>
                     {" "} About
                 </Heading>
@@ -29,7 +33,7 @@ export function AboutSection() {
                         width={["80%", "80%", "85%", "85%"]}
                         maxW={["100%", "100%", "1024px"]}
                         columns={[0, 0, 12, 12]}
-                        bg={"black"}
+                        zIndex={2}
             >
 
                 <GridItem
@@ -40,6 +44,7 @@ export function AboutSection() {
                     boxSizing={"border-box"}
                     w={["300px", "310px","310px", "352px", "403px"]}
                     maxW={"510px"}
+
                 >
                     <MoranaImageContainer imagePath={"/static/images/Oana2.png"}/>
                 </GridItem>
@@ -54,7 +59,7 @@ export function AboutSection() {
                              fontSize={["40px", "50px", "50px", "50px", "76px"]}
                              textAlign={["center", "center", "start"]}
                              alignSelf={["center", "center", "flex-start"]}
-                    w={["100%", "400px", "326px", "480px"]}>
+                    w={["300px", "300px", "380px", "380px", "660px"]}>
                         My heart beats agile!
                     </Heading>
 
@@ -68,7 +73,7 @@ export function AboutSection() {
                         <MoranaImageContainer imagePath={"/static/images/Oana2.png"}/>
                     </Box>
 
-                    <Text w={["300px", "370px", "326px", "480px"]}
+                    <Text   w={["300px", "300px", "380px", "380px", "600px"]}
                           variant={"primary"}
                           fontSize={["14px", "16px", "14px", "18px"]}
                           lineHeight={["17px", "20px", "20px", "24px"]}
@@ -78,7 +83,7 @@ export function AboutSection() {
                         Hi, I am Oana! - very open and determined, a go-getter, who achieves the goals she sets her mind to. Always giving 110%, I am reliable and autonomous, more than happy to take on the responsibility of my team and/or product.
                     </Text>
                     <Text variant={"primary"}
-                          w={["300px", "370px", "326px", "480px"]}
+                          w={["300px", "300px", "380px", "380px", "600px"]}
                           fontSize={["14px", "16px", "14px", "18px"]}
                           lineHeight={["17px", "20px", "20px", "24px"]}
                           textAlign={["start", "start", "start"]}

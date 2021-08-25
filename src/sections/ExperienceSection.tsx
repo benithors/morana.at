@@ -5,10 +5,10 @@ import React from "react";
 export default function ExpierenceSection() {
     const servicesFontSize = ["14px", "15px", "16px", "20px"];
     return <SimpleGrid
-
+        zIndex={2}
         width={["80%", "80%", "85%", "85%"]}
         maxW={["100%", "100%", "1024px"]}
-        pt={"5em"} columns={[1, 1, 2, 2, 3]} spacing={10} pb={"35px"} bg={"black"}>
+        pt={"5em"} columns={[1, 1, 2, 2, 3]} spacing={10} pb={"35px"}>
 
 
 
@@ -41,9 +41,10 @@ export default function ExpierenceSection() {
         <Button variant={"desktop"}
                 fontSize={["24px", "24px", "30px"]}
                 width={["245px", "245px", "339px", "339px", "339px"]}
-                height={["64px", "64px", "67px", "67px", "67px"]}
-                justifySelf={["center", "center", "center"]}
+                height={["50px", "50px", "67px", "67px", "67px"]}
+                justifySelf={"center"}
                 display={["flex", "flex", "none"]}
+               mt={"0.5em"}
         >
             Download Resume
         </Button>

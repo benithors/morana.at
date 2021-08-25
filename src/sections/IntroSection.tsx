@@ -44,7 +44,7 @@ export default function IntroSection() {
                 <Button variant={"desktop"}
                         fontSize={["24px","24px","30px"]}
                         width={["245px","245px","339px","339px","339px"]}
-                        height={["64px","64px","67px","67px","67px"]} order={[2, 2, 0, 0]} alignSelf={["center", "center", "flex-start"]}>
+                        height={["50px","50px","67px","67px","67px"]} order={[2, 2, 0, 0]} alignSelf={["center", "center", "flex-start"]}>
                     Get in touch!
                 </Button>
 
@@ -63,11 +63,12 @@ export default function IntroSection() {
                 colSpan={[1,1,5,5]}
                 display={["none", "none", "flex"]}
                 flexDirection={"row"}
-                position={["relative", "relative", "absolute", "absolute"]}
+                position={["relative", "relative", "relative", "relative"]}
                 boxSizing={"border-box"}
-                w={["310px", "310px", "40vw", "40vw"]}
+                w={["310px", "310px", "330px", "370px","510px"]}
                 maxW={"510px"}
-                right={["0em","0em","15%","10%"]}
+                maxH={"510px"}
+                right={["0em","0em","5%","8%","0em"]}
             >
                 <MoranaImageContainer imagePath={"/static/images/Oana1.png"}/>
             </GridItem>

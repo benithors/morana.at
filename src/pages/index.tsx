@@ -14,13 +14,7 @@ class Index extends React.Component<WithUserAgentProps> {
     render() {
         const {ua} = this.props
         return (
-            <>
-                {ua.isMobile ? (
-                    <DesktopContent/>
-                ) : (
-                    <DesktopContent/>
-                )}
-            </>
+            <DesktopContent/>
         )
     }
 }

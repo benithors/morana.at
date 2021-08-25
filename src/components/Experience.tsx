@@ -18,7 +18,7 @@ const Experience = (props: IProps) => {
              justifyContent={"start"}
              w={["300px", "370px", "340px", "400px","320px"]}>
             <Box>
-                <Heading textAlign={"start"} variant="heading4" pt={"25px"} color={"white"} fontSize={["24px","24px","24px","26px"]}>
+                <Heading textAlign={"start"} variant="heading4" pt={"25px"} color={"white"} fontSize={["18px","20px","24px","26px"]}>
                     {props.title}
                 </Heading>
             </Box>
