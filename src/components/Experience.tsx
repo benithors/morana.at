@@ -12,11 +12,10 @@ const Experience = (props: IProps) => {
     return (
         <Box display={"flex"}
              flexDirection="column"
-             justifyContent={"center"}
-             width={["601px","587px","397px"]}
+             justifyContent={"start"}
         >
             <Box>
-                <Heading variant="heading4" pt={"25px"} color={"white"}>
+                <Heading textAlign={["start","start","center"]} variant="heading4" pt={"25px"} color={"white"} fontSize={["24px","24px","24px","26px"]}>
                     {props.title}
                 </Heading>
             </Box>

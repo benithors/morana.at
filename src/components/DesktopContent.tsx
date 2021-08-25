@@ -3,6 +3,10 @@ import {Box, SimpleGrid} from "@chakra-ui/react";
 import HeadyDesktop from "./HeadyDesktop";
 import ServicesSection from "../sections/ServicesSection";
 import IntroSection from "../sections/IntroSection";
+import {AboutSection} from "../sections/AboutSection";
+import ExpierenceSection from '../sections/ExperienceSection';
+import ContactSection from "../sections/ContactSection";
+import FooterSection from "../sections/FooterSection";
 
 function DesktopBackgroundOne() {
     return <Box zIndex={1} position={"absolute"} top={[0, 0, 0, "inherit"]} left={[0, 0, 0, "inherit"]} alignSelf={"center"} width={["100%", "100%", "100%", "100%"]} overflow={"hidden"} lineHeight={0}
@@ -64,17 +68,16 @@ const DesktopContent = () => {
 
                 <ServicesSection/>
 
-                <DesktopBackgroundTwo/>
-                {/*<AboutSection/>*/}
+                {/*<DesktopBackgroundTwo/>*/}
+                <AboutSection/>
 
-                {/*<Button variant={"desktop"}>*/}
-                {/*    Download Resume*/}
-                {/*</Button>*/}
-
-                {/*<ContactSection/>*/}
+                <ExpierenceSection/>
 
 
-                {/*<FooterSection/>*/}
+                <ContactSection/>
+
+
+                <FooterSection/>
 
 
                 {/*<DesktopBackgroudThree/>*/}

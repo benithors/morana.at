@@ -1,96 +1,101 @@
-import {Box, Heading, ListItem, SimpleGrid, Text, UnorderedList} from "@chakra-ui/react";
+import {Box, GridItem, Heading, SimpleGrid, Text} from "@chakra-ui/react";
 import MoranaImageContainer from "../components/MoranaImageContainer";
-import Experience from "../components/Experience";
 import React from "react";
+import {SectionHeaderSizes} from "../components/ResponsiveSizes";
 
 export function AboutSection() {
-    return <>
-        <SimpleGrid pt={["9em"]} columns={[1, 2]}>
-            <Box display={"flex"} width={"602px"} pt={"110px"}>
-                <Heading variant="services" textAlign={"start"} color={"brand.secondary"}>
+    return (
+        <>
+            <SimpleGrid
+                width={["80%", "80%", "85%", "85%"]}
+                maxW={["100%", "100%", "1024px"]}
+
+            >
+            <Box display={"flex"} flexDirection={"row"} pt={"9em"} colSpan={[1, 1, 7, 7]}>
+                <Heading fontSize={SectionHeaderSizes}
+                         variant="services"
+                         textAlign={"center"}
+                         color={"brand.secondary"}>
                     /
                 </Heading>
 
-                <Heading variant="services" textAlign={"start"} whiteSpace={"break-spaces"} color={"white"}>
+                <Heading fontSize={SectionHeaderSizes}
+                         lineHeight={"23px"}
+                         variant="services" textAlign={"center"} whiteSpace={"break-spaces"}>
                     {" "} About
                 </Heading>
             </Box>
-        </SimpleGrid>
+            </SimpleGrid>
 
+            <SimpleGrid pt={["1em", "2em", "10em"]}
+                        width={["80%", "80%", "85%", "85%"]}
+                        maxW={["100%", "100%", "1024px"]}
+                        columns={[0, 0, 12, 12]}
+                        bg={"black"}
+            >
 
-        <SimpleGrid pt={["2em", "5em"]} columns={[1, 2]}>
-            <Box width={"464px"}
-                 pt={["3em", "0em"]}
-                 justifySelf={"center"}>
-                <MoranaImageContainer imagePath={"/static/images/Oana2.png"}/>
-            </Box>
-            <Box display="flex"
-                 flexDirection="column"
-                 width={"602px"}>
+                <GridItem
+                    colSpan={[1, 1, 6, 5]}
+                    display={["none", "none", "flex"]}
+                    flexDirection={"row"}
+                    position={["relative", "relative", "relative", "relative"]}
+                    boxSizing={"border-box"}
+                    w={["310px", "310px","310px", "352px", "403px"]}
+                    maxW={"510px"}
+                >
+                    <MoranaImageContainer imagePath={"/static/images/Oana2.png"}/>
+                </GridItem>
 
-                <Heading variant="header2" pt={"25px"} fontSize={"76px"}>
-                    My heart beats agile
-                </Heading>
+                <GridItem display={"flex"}
+                          flexDirection="column"
+                          zIndex={2}
+                          colSpan={[1, 1, 6, 7]}
 
-                <Box w={"589px"} pt={"50px"} pb={"35px"}>
+                >
+                    <Heading variant="header2"
+                             pt={["25px", "25px", "0px", "0px"]}
+                             fontSize={["40px", "50px", "50px", "50px", "76px"]}
+                             textAlign={["center", "center", "start"]}
+                             alignSelf={["center", "center", "flex-start"]}
+                    w={["80%","80%","100%","85%","100%"]}>
+                        My heart beats agile!
+                    </Heading>
 
-                    <Text variant={"primary"}
-                          fontSize={"18px"}
-                          lineHeight={"24px"}
+                    <Box
+                        display={["flex", "flex", "none"]}
+                        position={["relative", "relative", "relative", "absolute"]}
+                        alignSelf={"center"}
+                        boxSizing={"border-box"}
+                        w={["310px", "310px", "340px", "340px"]}
                     >
+                        <MoranaImageContainer imagePath={"/static/images/Oana2.png"}/>
+                    </Box>
+
+                    <Text w={["310px", "400px", "85%", "480px"]}
+                          variant={"primary"}
+                          fontSize={["14px", "16px", "14px", "18px"]}
+                          lineHeight={["17px", "20px", "20px", "24px"]}
+                          textAlign={["start", "start", "start"]}
+                          pt={["2em", "2em", "2em", "2em"]}
+                          alignSelf={["center", "center", "flex-start"]}>
                         Hi, I am Oana! - very open and determined, a go-getter, who achieves the goals she sets her mind to. Always giving 110%, I am reliable and autonomous, more than happy to take on the responsibility of my team and/or product.
                     </Text>
                     <Text variant={"primary"}
-                          fontSize={"18px"}
-                          lineHeight={"24px"}
-                          pt={"30px"}
-                    >
-
+                          w={["310px", "400px", "85%", "480px"]}
+                          fontSize={["14px", "16px", "14px", "18px"]}
+                          lineHeight={["17px", "20px", "20px", "24px"]}
+                          alignSelf={["center", "center", "flex-start"]}
+                          pt={["2em", "2em", "2em", "2em"]}>
                         I bring structure, transparence and drive into your projects & teams, helping you reach your business goals in a timely and highly qualitative manner.
                     </Text>
-                </Box>
 
 
-            </Box>
 
-        </SimpleGrid>
-
-
-        <SimpleGrid pt={"5em"} columns={[1, 2, 3]} spacing={10} pb={"35px"}>
-            <Experience
-                title={"Work & Life"}>
-                <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} fontSize={"20px"} color={"white"} spacing={"20px"}>
-                    <ListItem>over 5 years of experience in software development projects, agile process management, user centered product development, usability and team leading</ListItem>
-                    <ListItem>confident working in a range of roles from product ownership, to UI/UX Frontend app & website design, requirements engineering, coaching and leading a team with Scrum</ListItem>
-                    <ListItem>Outside of work, I&apos;m a singer in the rock band ARDENITE, painter, trainer, sports enthusiast and dog mom</ListItem>
-                </UnorderedList>
-            </Experience>
+                </GridItem>
 
 
-            <Experience
-                title={"Experience"}>
-                <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} fontSize={"20px"} color={"white"} spacing={"20px"}>
-                    <ListItem>Freelance Product Owner, Scrum Master, UX/UI-Designer at Morana.at</ListItem>
-                    <ListItem>Team Lead, Lead Product Owner, Scrum Master at XXXLdigital</ListItem>
-                    <ListItem>Business Analyst, Requirements Engineer, UX/Usability Expert and Trainer at BearingPoint</ListItem>
-                    <ListItem>Team Lead, Product Owner, Scrum Master, PMO at IBM</ListItem>
-                    <ListItem>Software Developer at IBM</ListItem>
-                </UnorderedList>
-            </Experience>
+            </SimpleGrid>
 
-            <Experience
-                title={"Capabilities\n"}>
-                <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} fontSize={"20px"} color={"white"} spacing={"20px"}>
-                    <ListItem>Agile Process Management</ListItem>
-                    <ListItem>Product Ownership</ListItem>
-                    <ListItem>UX-Design & Usability</ListItem>
-                    <ListItem>Requirements Engineering</ListItem>
-                    <ListItem>Leadership skills</ListItem>
-                    <ListItem>esponsibility Continuous improvement</ListItem>
-                    <ListItem>Recruiting</ListItem>
-                </UnorderedList>
-            </Experience>
-
-        </SimpleGrid>
-    </>;
-}
+        </>
+    )
+};

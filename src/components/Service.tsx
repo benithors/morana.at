@@ -12,12 +12,12 @@ interface IProps {
 }
 
 const MoranaService = (props: IProps) => {
-
     return (
         <Box display={"flex"}
+
              flexDirection="column"
-             justifyContent={"center"}
-             minH={props.height}>
+             justifyContent={"flex-start"}
+             minH={"130px"}>
 
             <Center>
                 <Image
@@ -29,7 +29,7 @@ const MoranaService = (props: IProps) => {
             </Center>
 
             <Box>
-                <Heading variant="heading4" pt={"25px"} color={"black"}>
+                <Heading variant="heading4" pt={"25px"} color={"black"} fontSize={["24px","24px","24px","26px"]}>
                     {props.title}
                 </Heading>
             </Box>

@@ -5,7 +5,7 @@ import React from "react";
 export default function IntroSection() {
     return (
         <SimpleGrid pt={["4em", "4em", "10em"]}
-                    width={["95%", "95%", "85%", "85%"]}
+                    width={["80%", "80%", "85%", "85%"]}
                     maxW={["100%", "100%", "1024px"]}
                     columns={[0, 0, 12, 12]}
         >
@@ -29,7 +29,7 @@ export default function IntroSection() {
                 </Heading>
 
 
-                <Text w={["310px", "400px", "85%","480px"]}
+                <Text w={["310px", "400px", "360px","480px"]}
                       variant={"primary"}
                       fontSize={["14px", "16px", "14px", "18px"]}
                       lineHeight={["17px", "20px", "20px", "24px"]}
@@ -63,7 +63,7 @@ export default function IntroSection() {
                 colSpan={[1,1,5,5]}
                 display={["none", "none", "flex"]}
                 flexDirection={"row"}
-                position={["relative", "relative", "relative", "relative"]}
+                position={["relative", "relative", "absolute", "absolute"]}
                 boxSizing={"border-box"}
                 w={["310px", "310px", "40vw", "40vw"]}
                 maxW={"510px"}
