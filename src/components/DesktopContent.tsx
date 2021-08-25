@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Button, Heading, ListItem, SimpleGrid, Text, UnorderedList} from "@chakra-ui/react";
+import {Box, Button, GridItem, Heading, ListItem, SimpleGrid, Text, UnorderedList} from "@chakra-ui/react";
 import HeadyDesktop from "./HeadyDesktop";
 import MoranaImageContainer from "./MoranaImageContainer";
 import MoranaService from "./Service";
@@ -7,7 +7,7 @@ import Experience from "./Experience";
 import Image from "next/image";
 
 function DesktopBackgroundOne() {
-    return <Box zIndex={1} position={"absolute"} top={[0,0,0,"inherit"]} left={[0,0,0,"inherit"]} alignSelf={"center"} width={["100%", "100%","100%","100%"]} overflow={"hidden"} lineHeight={0}
+    return <Box zIndex={1} position={"absolute"} top={[0, 0, 0, "inherit"]} left={[0, 0, 0, "inherit"]} alignSelf={"center"} width={["100%", "100%", "100%", "100%"]} overflow={"hidden"} lineHeight={0}
                 height={["600px", "600px", "600px"]} display={["none", "none", "flex"]}>
         <svg width={"100%"} height="100%" preserveAspectRatio="none" viewBox="0 0 1440 754" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M0 754V0H1440C1440 509.115 764.123 734.654 0 754Z" fill="#5F05AB"/>
@@ -49,14 +49,14 @@ function DesktopBackgroudThree() {
 function IntroSection() {
     return (
         <SimpleGrid pt={["4em", "4em", "10em"]}
-             overflowX={"hidden"}
-             width={["95%", "95%", "100%", "100%"]}
-                    maxW={["100%","100%","1024px"]}
-                    columns={[0,0,2,2]}
-             >
-            <Box display={"flex"}
+                    width={["95%", "95%", "85%", "85%"]}
+                    maxW={["100%", "100%", "1024px"]}
+                    columns={[0, 0, 12, 12]}
+        >
+            <GridItem display={"flex"}
                  flexDirection="column"
                  zIndex={2}
+                 colSpan={[1,1,7,7]}
             >
 
                 <Heading variant="header2"
@@ -67,13 +67,13 @@ function IntroSection() {
                 </Heading>
                 <Heading variant="header3"
                          pt={"10px"}
-                         fontSize={["20px", "25px", "25px", "40px"]}
+                         fontSize={["20px", "25px", "25px", "33px"]}
                          textAlign={["center", "center", "start"]}>
                     Agile Consultant • Freelancer
                 </Heading>
 
 
-                <Text w={["310px", "400px", "100%"]}
+                <Text w={["310px", "400px", "85%","480px"]}
                       variant={"primary"}
                       fontSize={["14px", "16px", "14px", "18px"]}
                       lineHeight={["17px", "20px", "20px", "24px"]}
@@ -91,7 +91,7 @@ function IntroSection() {
 
 
                 <Box
-                    display={["flex","flex","none"]}
+                    display={["flex", "flex", "none"]}
                     position={["relative", "relative", "relative", "absolute"]}
                     alignSelf={"center"}
                     boxSizing={"border-box"}
@@ -99,20 +99,23 @@ function IntroSection() {
                 >
                     <MoranaImageContainer imagePath={"/static/images/Oana1.png"}/>
                 </Box>
-            </Box>
-            <Box
-                display={["none","none","flex"]}
+            </GridItem>
+            <GridItem
+                colSpan={[1,1,5,5]}
+                display={["none", "none", "flex"]}
+                flexDirection={"row"}
                 position={["relative", "relative", "relative", "relative"]}
-                alignSelf={"center"}
                 boxSizing={"border-box"}
-                w={["310px", "310px", "310px", "40vw"]}
+                w={["310px", "310px", "40vw", "40vw"]}
                 maxW={"510px"}
+                right={["0em","0em","15%","10%"]}
             >
                 <MoranaImageContainer imagePath={"/static/images/Oana1.png"}/>
-            </Box>
+            </GridItem>
 
         </SimpleGrid>
-    ); }
+    );
+}
 
 function ServicesSection() {
     return <>
@@ -407,40 +410,39 @@ function FooterSection() {
 const DesktopContent = () => {
     return (
         <Box display={"flex"} justifyContent={"center"}>
-        <SimpleGrid display="flex"
-                    flexDirection="column"
-                    w={["100%","100%","100%","100%"]}
-                    alignItems={"center"}
+            <SimpleGrid display="flex"
+                        flexDirection="column"
+                        w={"100vw"}
+                        alignItems={"center"}
+                        overflowX={"hidden"}
+                        h={"8000px"}
+                        bg={"white"}
+            >
+                <HeadyDesktop/>
 
-                    overflowX={"hidden"}
-                  h={"8000px"}
-                    bg={"white"}
-        >
-            <HeadyDesktop/>
+                <DesktopBackgroundOne/>
+                <MobilBackgroundOne/>
 
-            <DesktopBackgroundOne/>
-            <MobilBackgroundOne/>
+                <IntroSection/>
 
-            <IntroSection/>
+                <ServicesSection/>
 
-            <ServicesSection/>
+                {/*<AboutSection/>*/}
 
-            {/*<AboutSection/>*/}
+                {/*<Button variant={"desktop"}>*/}
+                {/*    Download Resume*/}
+                {/*</Button>*/}
 
-            {/*<Button variant={"desktop"}>*/}
-            {/*    Download Resume*/}
-            {/*</Button>*/}
-
-            {/*<ContactSection/>*/}
-
-
-            {/*<FooterSection/>*/}
+                {/*<ContactSection/>*/}
 
 
-            {/*<DesktopBackgroudThree/>*/}
+                {/*<FooterSection/>*/}
 
 
-        </SimpleGrid>
+                {/*<DesktopBackgroudThree/>*/}
+
+
+            </SimpleGrid>
 
         </Box>
     )
