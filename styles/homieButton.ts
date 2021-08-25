@@ -15,17 +15,7 @@ const homieButton = {
 
     // Two variants: outline and solid
     variants: {
-        mobile: {
-            width:"245px",
-            height:"50px",
-            fontSize:"24px"
 
-        },
-        desktop: {
-            width:"339px",
-            height:"67px",
-            fontSize:"30px"
-        },
     },
     // The default size and variant values
     defaultProps: {},
