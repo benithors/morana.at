@@ -7,7 +7,6 @@ const DesktopContent = dynamic(() => import('../components/DesktopContent'))
 class Index extends React.Component<WithUserAgentProps> {
 
 
-
     render() {
         return (
             <DesktopContent/>

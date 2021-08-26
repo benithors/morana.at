@@ -1,7 +1,7 @@
 import {Button} from "@chakra-ui/react";
 import React from "react";
 
-const homieButton = {
+const moranaButton = {
     // The styles all button have in common
     baseStyle: {
         background:"brand.secondary",
@@ -21,4 +21,4 @@ const homieButton = {
     defaultProps: {},
 }
 
-export default homieButton
+export default moranaButton

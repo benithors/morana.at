@@ -2,10 +2,9 @@ import React from 'react'
 import {Box, GridItem, Heading, SimpleGrid, Text} from "@chakra-ui/react";
 import Image from 'next/image'
 import {MenuToggle} from "./icons/AnimatedMoranaBurger";
-import {headerHeightPx} from "./HeadyMobile";
 
-export const headerHeight: number = 54
 
+export const headerHeightPx = ["54px", "80px"];
 
 const HeadyDesktop = () => {
     const height = ["54px", "54px", "80px"];
@@ -44,7 +43,7 @@ const HeadyDesktop = () => {
                     </Box>
 
                     <Heading
-                             variant="header1" fontSize={["20px", "22px"]} height={height} pt={["15px", "15px", "28px"]}>
+                        variant="header1" fontSize={["20px", "22px"]} height={height} pt={["15px", "15px", "28px"]}>
 
                         Morana.at
                     </Heading>
