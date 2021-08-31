@@ -1,25 +1,26 @@
 import Image from 'next/image'
 import {Box} from "@chakra-ui/react";
 
-
 interface IProps {
-    imagePath: string
-
+    width: string;
+    height: string;
+    ml: string;
+    mt:string;
+    oanaPic
 }
 
 
 const MoranaImageContainer = (props: IProps) => {
 
     return (
-        <Box zIndex={5} w={"inherit"} h={"inherit"}>
+        <Box zIndex={5} w={"100%"} h={"100%"}>
 
-            <Box position={"absolute"} width={"95%"} height={"95%"}>
+            <Box position={"absolute"} width={props.width} height={props.height} ml={props.ml} mt={props.mt}>
                 <Image
-                    src={props.imagePath}
-                    width={496}
-                    height={482}
+                    src={props.oanaPic}
                     alt={"Oana Moraru"}
                     layout={"responsive"}
+                    quality={100}
                 />
             </Box>
             <Box>

@@ -1,6 +1,7 @@
 import {Box, Button, GridItem, Heading, SimpleGrid, Text} from "@chakra-ui/react";
 import MoranaImageContainer from "../components/MoranaImageContainer";
 import React from "react";
+import Oana1 from "../../public/static/images/Oana1.png"
 
 export default function IntroSection() {
     return (
@@ -12,7 +13,6 @@ export default function IntroSection() {
             <GridItem display={"flex"}
                       flexDirection="column"
                       zIndex={2}
-
                       colStart={[2, 2, 2, 2, 1]} colEnd={[12, 12, 7, 7, 7]}
             >
 
@@ -23,7 +23,7 @@ export default function IntroSection() {
                     Oana Moraru
                 </Heading>
                 <Heading variant="header3"
-                         pt={"10px"}
+                         pt={"1em"}
                          fontSize={["20px", "25px", "22px", "28px", "33px"]}
                          textAlign={["center", "center", "start"]}>
                     Agile Consultant • Freelancer
@@ -36,7 +36,7 @@ export default function IntroSection() {
                     lineHeight={["17px", "20px", "20px", "24px"]}
                     textAlign={["center", "center", "start"]}
                     order={[1, 1, 0]}
-                    pt={["1em", "1em", "1em", "1em"]}
+                    pt={["2em", "1em", "1em", "1em"]}
                     pb={"35px"}
                     alignSelf={["center", "center", "flex-start"]}>
                     I am an IT Product Owner, Scrum Master, UX-Designer and Team Lead searching for Frontend Software Development Projects with a positive impact on environment or society.
@@ -55,8 +55,9 @@ export default function IntroSection() {
                     position={["relative", "relative", "relative", "absolute"]}
                     alignSelf={"center"}
                     boxSizing={"border-box"}
+                    pt={"1.5em"}
                 >
-                    <MoranaImageContainer imagePath={"/static/images/Oana1.png"}/>
+                    <MoranaImageContainer  height={"94%"} width={"94%"} ml={"9px"} mt={"6px"} oanaPic={Oana1}/>
                 </Box>
             </GridItem>
             <GridItem
@@ -70,7 +71,7 @@ export default function IntroSection() {
                 maxH={"510px"}
 
             >
-                <MoranaImageContainer imagePath={"/static/images/Oana1.png"}/>
+                <MoranaImageContainer  height={"94%"} width={"94%"} ml={"9px"} mt={"6px"} oanaPic={Oana1}/>
             </GridItem>
 
         </SimpleGrid>

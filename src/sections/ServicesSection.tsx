@@ -11,7 +11,7 @@ export default function ServicesSection() {
             width={["80%", "80%", "85%", "85%"]}
             maxW={["100%", "100%", "1024px"]}
         >
-            <Box display={"flex"} flexDirection={"row"} pt={["11em","11em","11em","8em","1em"]} colSpan={[1, 1, 7, 7]}>
+            <Box display={"flex"} flexDirection={"row"} pt={["10em","11em","11em","8em","1em"]} colSpan={[1, 1, 7, 7]}>
                 <Heading fontSize={SectionHeaderSizes}
                         variant="services"
                          textAlign={"center"}
@@ -71,6 +71,17 @@ export default function ServicesSection() {
                     </UnorderedList>
                 </MoranaService>
 
+                <MoranaService imagePath={"/static/images/BA-Icon-Group.png"}
+                               height={102}
+                               width={112}
+                               title={"Business Analysis"}>
+                    <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
+                        <ListItem>Stakeholder management</ListItem>
+                        <ListItem>Requirements analysis</ListItem>
+                        <ListItem>Workshop moderation</ListItem>
+                    </UnorderedList>
+                </MoranaService>
+
                 <MoranaService imagePath={"/static/images/RE-Icon-Group.png"}
                                height={106}
                                width={111}
@@ -83,16 +94,7 @@ export default function ServicesSection() {
                     </UnorderedList>
                 </MoranaService>
 
-                <MoranaService imagePath={"/static/images/BA-Icon-Group.png"}
-                               height={102}
-                               width={112}
-                               title={"Business Analysis"}>
-                    <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
-                        <ListItem>Stakeholder management</ListItem>
-                        <ListItem>Requirements analysis</ListItem>
-                        <ListItem>Workshop moderation</ListItem>
-                    </UnorderedList>
-                </MoranaService>
+
             </SimpleGrid>
         </SimpleGrid>
 

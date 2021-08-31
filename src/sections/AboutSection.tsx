@@ -2,6 +2,7 @@ import {Box, GridItem, Heading, SimpleGrid, Text} from "@chakra-ui/react";
 import MoranaImageContainer from "../components/MoranaImageContainer";
 import React from "react";
 import {SectionHeaderSizes} from "../components/ResponsiveSizes";
+import Oana2 from "../../public/static/images/Oana2.png"
 
 export function AboutSection() {
     return (
@@ -10,7 +11,7 @@ export function AboutSection() {
                 width={"100%"}
                 maxW={["100%", "100%", "1024px"]}
                 zIndex={2}
-                pt={["18em", "15em"]}
+                pt={["18em", "15em","25em"]}
                 columns={[12, 12, 12, 12]}
             >
                 <GridItem
@@ -42,11 +43,11 @@ export function AboutSection() {
                 <GridItem
                     colStart={[1, 1, 2, 2, 1]} colEnd={[12, 12, 7, 7, 7]}
                     display={["none", "none", "flex"]}
-                    flexDirection={"row"}
-                    position={["relative", "relative", "relative", "relative"]}
+                    position={"relative"}
                     boxSizing={"border-box"}
+
                 >
-                    <MoranaImageContainer imagePath={"/static/images/Oana2.png"}/>
+                    <MoranaImageContainer  height={"92%"} width={"92%"} ml={"9px"} mt={"5px"} oanaPic={Oana2}/>
                 </GridItem>
 
                 <GridItem display={"flex"}
@@ -56,7 +57,7 @@ export function AboutSection() {
                 >
                     <Heading variant="header2"
                              pt={["25px", "25px", "0px", "0px"]}
-                             fontSize={["40px", "50px", "50px", "50px", "76px"]}
+                             fontSize={["42px", "50px", "50px", "50px", "76px"]}
                              textAlign={["center", "center", "start"]}
                              alignSelf={["center", "center", "flex-start"]}>
                         My heart beats agile!
@@ -64,11 +65,12 @@ export function AboutSection() {
 
                     <Box
                         display={["flex", "flex", "none"]}
-                        position={["relative", "relative", "relative", "absolute"]}
+                        position={"relative"}
                         alignSelf={"center"}
                         boxSizing={"border-box"}
+                        pt={"1.5em"}
                     >
-                        <MoranaImageContainer imagePath={"/static/images/Oana2.png"}/>
+                        <MoranaImageContainer  height={"92%"} width={"92%"} ml={"9px"} mt={"5px"} oanaPic={Oana2}/>
                     </Box>
 
                     <Text

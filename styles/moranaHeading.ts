@@ -33,6 +33,9 @@ const moranaHeading = {
             size:"26px",
             textAlign:"center",
         }
+        , services:{
+            fontStyle: "normal",
+        }
     },
     // The default size and variant values
     defaultProps: {},

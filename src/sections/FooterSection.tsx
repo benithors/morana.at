@@ -2,6 +2,7 @@ import {Box, GridItem, SimpleGrid, Text} from "@chakra-ui/react";
 import Image from "next/image";
 import React from "react";
 import MoranaImageContainer from "../components/MoranaImageContainer";
+import Oana3 from "../../public/static/images/Oana3.png";
 
 export default function FooterSection() {
     return <SimpleGrid
@@ -22,7 +23,7 @@ export default function FooterSection() {
                   zIndex={2}
                   pb={"1em"}
         >
-            <MoranaImageContainer imagePath={"/static/images/Oana3.png"}/>
+            <MoranaImageContainer  height={"94%"} width={"94%"} ml={"9px"} mt={"6px"} oanaPic={Oana3}/>
         </GridItem>
         <GridItem colSpan={12}
                   justifySelf={["center", "center", "flex-end"]}

@@ -1,4 +1,4 @@
-import {Button, GridItem, ListItem, SimpleGrid, UnorderedList} from "@chakra-ui/react";
+import {Box, Button, GridItem, ListItem, SimpleGrid, UnorderedList} from "@chakra-ui/react";
 import Experience from "../components/Experience";
 import React from "react";
 
@@ -8,12 +8,12 @@ export default function ExpierenceSection() {
         zIndex={2}
         width={"100%"}
         maxW={["100%", "100%", "1024px"]}
-        pt={"5em"}
+        pt={"2em"}
         columns={[12, 12, 12, 12, 12]}
         spacing={10} pb={"35px"}>
 
 
-        <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 5, 5]}>
+        <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 11, 5]}>
 
 
             <Experience
@@ -28,26 +28,37 @@ export default function ExpierenceSection() {
             </Experience>
         </GridItem>
 
-        <GridItem colStart={[2, 2, 2, 5, 5]} colEnd={[11, 11, 6, 8, 9]}>
+        <GridItem colStart={[2, 2, 2, 2, 5]} colEnd={[11, 11, 6, 11, 9]}>
             <Experience
                 title={"Capabilities\n"}>
-                <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} color={"white"} spacing={"20px"} fontSize={servicesFontSize}>
-                    <ListItem>Agile Process Management</ListItem>
-                    <ListItem>Product Ownership</ListItem>
-                    <ListItem>UX-Design & Usability</ListItem>
-                    <ListItem>Requirements Engineering</ListItem>
-                    <ListItem>Leadership skills</ListItem>
-                    <ListItem>Taking responsibility</ListItem>
-                    <ListItem>Continuous improvement</ListItem>
-                    <ListItem>Recruiting</ListItem>
-                </UnorderedList>
+
+                <Box display={["block", "block", "block", "flex", "block"]} flexDirection={"row"}>
+
+
+                    <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} color={"white"} spacing={"20px"} fontSize={servicesFontSize}>
+                        <ListItem>Agile Process Management</ListItem>
+                        <ListItem>Product Ownership</ListItem>
+                        <ListItem>UX-Design & Usability</ListItem>
+                        <ListItem>Requirements Engineering</ListItem>
+
+                    </UnorderedList>
+
+                    <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} color={"white"} spacing={"20px"} pl={["0em", "0em", "0em", "5em", "0em"]} fontSize={servicesFontSize}>
+
+                        <ListItem>Leadership skills</ListItem>
+                        <ListItem>Taking responsibility</ListItem>
+                        <ListItem>Continuous improvement</ListItem>
+                        <ListItem>Recruiting</ListItem>
+                    </UnorderedList>
+
+                </Box>
             </Experience>
             <Button variant={"desktop"}
                     fontSize={["24px", "24px", "30px"]}
                     height={["50px", "50px", "67px", "67px", "67px"]}
                     justifySelf={"center"}
                     display={["flex", "flex", "none"]}
-                    mt={"0.5em"}
+                    mt={"2.5em"}
             >
                 Download Resume
             </Button>
@@ -55,7 +66,7 @@ export default function ExpierenceSection() {
         </GridItem>
 
 
-        <GridItem colStart={[2, 2, 2, 8, 9]} colEnd={[11, 11, 11, 12, 13]}>
+        <GridItem colStart={[2, 2, 2, 2, 9]} colEnd={[11, 11, 11, 11, 13]}>
             <Experience
                 title={"Work & Life"}>
                 <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} color={"white"} spacing={"20px"} fontSize={servicesFontSize}>

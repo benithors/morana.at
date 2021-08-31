@@ -15,7 +15,11 @@ const Experience = (props: IProps) => {
             <Heading textAlign={"start"} variant="heading4" pt={"25px"} color={"white"} fontSize={["18px", "20px", "24px", "26px"]}>
                 {props.title}
             </Heading>
+            <Box ml={"1em"}>
+
+
             {props.children}
+            </Box>
         </Box>
 
 

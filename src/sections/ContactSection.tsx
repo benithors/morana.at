@@ -11,7 +11,7 @@ export default function ContactSection() {
             pt={["6em", "3em", "15em"]}
             columns={[12, 12, 12, 12, 12]}
         >
-            <GridItem colSpan={[12, 12, 12, 12]}
+            <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 12, 12]}
                       display={"flex"} flexDirection={"row"} pt={"9em"}>
                 <Heading fontSize={SectionHeaderSizes}
                          variant="services"

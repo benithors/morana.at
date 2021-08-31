@@ -29,7 +29,7 @@ function MobileBackgroundOne() {
 }
 
 function DesktopBackgroundTwo() {
-    return <Box zIndex={1} position={"absolute"} top={["2287px", "1450px", "1187px", "1187px", "1087px"]} left={0} width={"100%"} overflow={"hidden"} lineHeight={0} height={["4037", "2437", "2537", "2937", "2510px"]}
+    return <Box zIndex={1} position={"absolute"} top={["2287px", "1450px", "1187px", "1187px", "1087px"]} left={0} width={"100%"} overflow={"hidden"} lineHeight={0} height={["4037", "2437", "2537", "3137", "2510px"]}
                 display={["none", "none", "none", "flex"]}>
 
         <svg width={"100%"} height={"100%"} preserveAspectRatio="none" viewBox="0 0 1440 2137" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -54,7 +54,7 @@ function MobileBackgroundTwo() {
 
 
 function DesktopBackgroudThree() {
-    return <Box zIndex={1} position={"absolute"} bottom={0} left={"30%"} width={"70%"} overflow={"hidden"} lineHeight={0} height={["524", "524", "355", "400"]} display={["none", "none", "flex"]}>
+    return <Box zIndex={1} position={"absolute"} bottom={0} left={"30%"} width={"70%"} overflow={"hidden"} lineHeight={0} height={["524", "524", "355", "400"]} display={["none", "none", "none","none","flex"]}>
         <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 1094 524" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1095 524H0C306.336 162.767 751.64 -33.719 1095 4.76702V524Z" fill="#4CE6C4"/>
             <path d="M1095 524H33C270.88 267.145 795.272 61.6621 1095 135.05V524Z" fill="#5F05AB"/>
@@ -64,7 +64,7 @@ function DesktopBackgroudThree() {
 
 function MobileBackgroudThree() {
     return <Box zIndex={1} position={"absolute"} bottom={0} left={0} width={"100%"} overflow={"hidden"} lineHeight={0}
-                height={"622px"} display={["flex", "flex", "none"]}>
+                height={"622px"} display={["flex", "flex", "flex","flex","none"]}>
         <svg width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 375 622" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M-0.000244141 622H375L375.001 0C369.337 1.35608 362.092 2.83529 353.522 4.5849C279.236 19.7511 105.431 55.2347 -0.000244141 206.948V622Z" fill="#4CE6C4"/>
             <path fillRule="evenodd" clipRule="evenodd" d="M0 622L375 622L375 43.9941C254.391 54.5588 89.4512 114.725 0 229.005V622Z" fill="#5F05AB"/>
