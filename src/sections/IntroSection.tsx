@@ -39,8 +39,8 @@ export default function IntroSection() {
                     lineHeight={["17px", "20px", "20px", "24px"]}
                     textAlign={["center", "center", "start"]}
                     order={[1, 1, 0]}
-                    pt={["1.4em", "1.2em", "1.2em", "1.2em"]}
-                    pb={"2em"}
+                    pt={["1.2em", "1.2em", "1.2em", "1.2em"]}
+                    pb={"1.5em"}
                     alignSelf={["center", "center", "flex-start"]}>
                     IT Product Owner, Scrum Master, UX-Designer and Team Lead searching for Frontend Software Development Projects with a positive impact on environment or society.
                 </Text>
