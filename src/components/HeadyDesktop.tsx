@@ -1,5 +1,5 @@
 import React from 'react'
-import {Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, GridItem, Heading, SimpleGrid, Text, useDisclosure} from "@chakra-ui/react";
+import {Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, GridItem, Heading, SimpleGrid, Text, useDisclosure} from "@chakra-ui/react";
 import Image from 'next/image'
 import moranaIcon from '../../public/static/svg/moranaIcon.svg'
 import * as Scroll from 'react-scroll'
