@@ -1,4 +1,4 @@
-import {Box, Button, GridItem, Heading, SimpleGrid, Text} from "@chakra-ui/react";
+import {Box, Button, GridItem, Heading, Link, SimpleGrid, Text} from "@chakra-ui/react";
 import MoranaImageContainer from "../components/MoranaImageContainer";
 import React from "react";
 import Oana1 from "../../public/static/images/Oana1.png"
@@ -9,6 +9,7 @@ export default function IntroSection() {
                     width={"100%"}
                     maxW={["100%", "100%", "1024px"]}
                     columns={[12, 12, 12, 12]}
+
         >
             <GridItem display={"flex"}
                       flexDirection="column"
@@ -23,10 +24,12 @@ export default function IntroSection() {
                     Oana Moraru
                 </Heading>
                 <Heading variant="header3"
-                         pt={"1em"}
+                         pt={"0.8em"}
                          fontSize={["20px", "25px", "22px", "28px", "33px"]}
                          textAlign={["center", "center", "start"]}>
                     Agile Consultant • Freelancer
+
+
                 </Heading>
 
 
@@ -36,18 +39,22 @@ export default function IntroSection() {
                     lineHeight={["17px", "20px", "20px", "24px"]}
                     textAlign={["center", "center", "start"]}
                     order={[1, 1, 0]}
-                    pt={["2em", "1em", "1em", "1em"]}
-                    pb={"35px"}
+                    pt={["1.4em", "1.2em", "1.2em", "1.2em"]}
+                    pb={"2em"}
                     alignSelf={["center", "center", "flex-start"]}>
-                    I am an IT Product Owner, Scrum Master, UX-Designer and Team Lead searching for Frontend Software Development Projects with a positive impact on environment or society.
+                    IT Product Owner, Scrum Master, UX-Designer and Team Lead searching for Frontend Software Development Projects with a positive impact on environment or society.
                 </Text>
 
-                <Button variant={"desktop"}
-                        fontSize={["24px", "24px", "30px"]}
-                        width={["245px", "245px", "339px", "339px", "339px"]}
-                        height={["50px", "50px", "67px", "67px", "67px"]} order={[2, 2, 0, 0]} alignSelf={["center", "center", "flex-start"]}>
+
+                <Link
+                    fontSize={["24px", "24px", "30px"]}
+                    width={["245px", "245px", "339px", "339px", "339px"]}
+                    height={["50px", "50px", "67px", "67px", "67px"]}
+                    order={[2, 2, 0, 0]}
+                    alignSelf={["center", "center", "flex-start"]}
+                    href="mailto:moraru.oana.au@gmail.com" isExternal>
                     Get in touch!
-                </Button>
+                </Link>
 
 
                 <Box
@@ -55,9 +62,9 @@ export default function IntroSection() {
                     position={["relative", "relative", "relative", "absolute"]}
                     alignSelf={"center"}
                     boxSizing={"border-box"}
-                    pt={"1.5em"}
+                    pt={"1em"}
                 >
-                    <MoranaImageContainer  height={"94%"} width={"94%"} ml={"9px"} mt={"6px"} oanaPic={Oana1}/>
+                    <MoranaImageContainer  height={"94%"} width={"94%"} ml={"7px"} mt={"4px"} oanaPic={Oana1}/>
                 </Box>
             </GridItem>
             <GridItem

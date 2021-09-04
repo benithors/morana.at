@@ -13,6 +13,7 @@ export function AboutSection() {
                 zIndex={2}
                 pt={["18em", "15em","25em"]}
                 columns={[12, 12, 12, 12]}
+                id={"aboutSection"}
             >
                 <GridItem
                     display={"flex"} flexDirection={"row"}
@@ -27,6 +28,7 @@ export function AboutSection() {
                     <Heading fontSize={SectionHeaderSizes}
                              lineHeight={"23px"}
                              color={"white"}
+
                              variant="services" textAlign={"center"} whiteSpace={"break-spaces"}>
                         {" "} About
                     </Heading>
@@ -38,6 +40,7 @@ export function AboutSection() {
                         maxW={["100%", "100%", "1024px"]}
                         columns={[12, 12, 12, 12]}
                         zIndex={2}
+
             >
 
                 <GridItem
@@ -59,7 +62,7 @@ export function AboutSection() {
                              pt={["25px", "25px", "0px", "0px"]}
                              fontSize={["42px", "50px", "50px", "50px", "76px"]}
                              textAlign={["center", "center", "start"]}
-                             alignSelf={["center", "center", "flex-start"]}>
+                             alignSelf={["center", "center", "flex-start"]}   >
                         My heart beats agile!
                     </Heading>
 

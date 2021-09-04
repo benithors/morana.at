@@ -3,6 +3,7 @@ import { createBreakpoints } from '@chakra-ui/theme-tools'
 import moranaHeading from "./moranaHeading";
 import moranaText from "./moranaText";
 import moranaButton from "./moranaButton";
+import moranaLink from "./moranaLink";
 
 
 const breakpoints = createBreakpoints({
@@ -32,6 +33,7 @@ const moranaTheme = extendTheme({
     Heading: moranaHeading,
     Text: moranaText,
     Button: moranaButton,
+    Link: moranaLink
   },
   breakpoints,
 })

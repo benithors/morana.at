@@ -1,15 +1,23 @@
 import React from 'react'
-import {Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, GridItem, Heading, SimpleGrid, Text, useDisclosure} from "@chakra-ui/react";
+import {Box, Button, Center, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, GridItem, Heading, SimpleGrid, Text, useDisclosure} from "@chakra-ui/react";
 import Image from 'next/image'
 import moranaIcon from '../../public/static/svg/moranaIcon.svg'
-
+import {Link as ScrollLink} from 'react-scroll'
+import * as Scroll from 'react-scroll';
 export const headerHeightPx = ["54px", "80px"];
+import Link from "next/link";
+
 
 const HeadyDesktop = () => {
     const height = ["54px", "54px", "80px"];
+    var scroll    = Scroll.animateScroll;
+    const {isOpen, onOpen, onClose} = useDisclosure();
+    const btnRef = React.useRef();
 
-    const {isOpen, onOpen, onClose} = useDisclosure()
-    const btnRef = React.useRef()
+    function scrollHome(){
+        scroll.scrollToTop();
+        onClose();
+    }
     return (
         <Box
             display={"flex"}
@@ -25,21 +33,22 @@ const HeadyDesktop = () => {
         >
             <SimpleGrid
                 width={"100%"}
-                columns={12}
+                columns={24}
                 maxW={["100%", "100%", "1024px"]}
             >
 
 
                 <GridItem
-                    colStart={[2, 2, 2, 2, 1]} colEnd={[10, 10, 6, 6, 6]}
+                    colStart={[2, 2, 2, 2, 1]} colEnd={[20, 20, 12, 12 ,12]}
                     display={"flex"}
                     flexDirection={"row"}
+
                 >
                     <Box
                         minH={height}
                         minW={"41px"}
                         pt={"15px"}
-                        mr={"12px"}
+                        mr={"8px"}
                         height={["41", "53px", "87px"]}
                         w={["51px", "61px", "101px"]}
                     >
@@ -58,7 +67,7 @@ const HeadyDesktop = () => {
                     </Heading>
                 </GridItem>
 
-                <GridItem colSpan={[1, 1, 6, 6]}
+                <GridItem colSpan={[2, 2, 12, 12]}
                           display={["none", "none", "flex"]}
                           flexDirection="row"
                           justifySelf={"end"}
@@ -82,7 +91,8 @@ const HeadyDesktop = () => {
                     </Box>
                 </GridItem>
                 <GridItem
-                    colStart={[12, 12, 12, 12, 12]} colEnd={[12, 12, 12, 12, 12]}
+                    pt={"8px"}
+                    colStart={[24, 24, 24, 24, 24]} colEnd={[24, 24, 24, 24, 24]}
                     height={headerHeightPx} pr={"0.5em"} justifySelf={"end"} display={["flex", "flex", "none"]}>
 
 
@@ -104,8 +114,47 @@ const HeadyDesktop = () => {
                         <DrawerContent>
                             <DrawerCloseButton/>
 
-                            <DrawerBody>
-                                blub
+                            <DrawerBody background={"brand.main"} display={"flex"} flexDirection={"column"} justifyContent={"center"} color={"white"} fontFamily={"ABeeZee"}>
+                                <Box onClick={scrollHome} >
+                                        Home
+                                </Box>
+                                <Box pt={"1em"}>
+
+
+                                    <ScrollLink onClick={onClose} activeClass="active" to="servicesSection" spy={true} smooth={true} offset={50} duration={500}>
+                                        Services
+                                    </ScrollLink>
+                                </Box>
+
+                                <Box pt={"1em"}>
+                                    <ScrollLink onClick={onClose} activeClass="active" to="aboutSection" spy={true} smooth={true} offset={50} duration={500}>
+                                        About
+                                    </ScrollLink>
+                                </Box>
+
+                                <Box pt={"1em"}>
+                                    <ScrollLink onClick={onClose} activeClass="active" to="contactSection" spy={true} smooth={true} offset={50} duration={500}>
+                                        Contact
+                                    </ScrollLink>
+                                </Box>
+
+                                <Box pt={"1em"}>
+
+                                    <Link href="/terms-and-conditions">
+                                        <Text variant="footerTextImprint">
+                                            Terms & Conditions
+                                        </Text>
+                                    </Link>
+                                </Box>
+                                <Box pt={"1em"}>
+
+                                    <Link href="/privacy">
+                                        <Text variant="footerTextImprint">
+                                          Privacy
+                                        </Text>
+                                    </Link>
+                                </Box>
+
                             </DrawerBody>
 
 

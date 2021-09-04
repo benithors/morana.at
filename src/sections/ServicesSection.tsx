@@ -10,6 +10,7 @@ export default function ServicesSection() {
         <SimpleGrid
             width={["80%", "80%", "85%", "85%"]}
             maxW={["100%", "100%", "1024px"]}
+            id={"servicesSection"}
         >
             <Box display={"flex"} flexDirection={"row"} pt={["10em","11em","11em","8em","1em"]} colSpan={[1, 1, 7, 7]}>
                 <Heading fontSize={SectionHeaderSizes}

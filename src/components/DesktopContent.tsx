@@ -74,13 +74,14 @@ function MobileBackgroudThree() {
 
 const DesktopContent = () => {
     return (
-        <Box display={"flex"} justifyContent={"center"} w={"100vw"}>
+        <Box display={"flex"} justifyContent={"center"} w={"100vw"}   id={"home"}>
             <SimpleGrid display="flex"
                         flexDirection="column"
                         w={"100%"}
                         alignItems={"center"}
                         overflowX={"hidden"}
                         bg={"white"}
+
             >
                 <HeadyDesktop/>
 

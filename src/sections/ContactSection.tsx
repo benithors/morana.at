@@ -1,4 +1,4 @@
-import {Button, GridItem, Heading, SimpleGrid, Text} from "@chakra-ui/react";
+import {Button, GridItem, Heading, Link, SimpleGrid, Text} from "@chakra-ui/react";
 import React from "react";
 import {SectionHeaderSizes} from "../components/ResponsiveSizes";
 
@@ -10,6 +10,7 @@ export default function ContactSection() {
             zIndex={2}
             pt={["6em", "3em", "15em"]}
             columns={[12, 12, 12, 12, 12]}
+            id={"contactSection"}
         >
             <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 12, 12]}
                       display={"flex"} flexDirection={"row"} pt={"9em"}>
@@ -63,16 +64,17 @@ export default function ContactSection() {
 
 
             <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 11, 11]}>
-                <Button
-                    variant={"desktop"}
+                <Link
                     fontSize={["24px", "24px", "30px"]}
                     height={["50px", "50px", "67px", "67px", "67px"]}
-                    display={"flex"}
                     justifySelf={["center", "center", "start"]}
                     mt={["1em", "2em"]}
+                    href="mailto:test@email.com" isExternal
                 >
                     Get in touch!
-                </Button>
+                </Link>
+
+
 
             </GridItem>
 
