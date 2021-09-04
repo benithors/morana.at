@@ -20,7 +20,7 @@ function DesktopBackgroundOne() {
 
 function MobileBackgroundOne() {
     return <Box zIndex={1} position={"absolute"} top={0} left={0} width={["100%", "100%"]} overflow={"hidden"} lineHeight={0}
-                height={["725px", "810px"]} display={["flex", "flex", "none"]}>
+                height={["690px", "810px"]} display={["flex", "flex", "none"]}>
         <svg width={"100%"} height="100%" preserveAspectRatio="none" viewBox="0 0 375 729" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fillRule="evenodd" clipRule="evenodd" d="M0 0V723.677C0 723.677 244.452 767.203 375 605.324V0H0Z" fill="#5F05AB"/>
         </svg>

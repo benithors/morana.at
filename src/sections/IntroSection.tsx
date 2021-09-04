@@ -18,7 +18,7 @@ export default function IntroSection() {
             >
 
                 <Heading variant="header2"
-                         pt={["0.5em", "0.5em", "0px", "0px"]}
+                         pt={["0.8em", "0.5em", "0px", "0px"]}
                          fontSize={["40px", "50px", "50px", "50px", "76px"]}
                          textAlign={["center", "center", "start"]}>
                     Oana Moraru
@@ -28,19 +28,33 @@ export default function IntroSection() {
                          fontSize={["20px", "25px", "22px", "28px", "33px"]}
                          textAlign={["center", "center", "start"]}>
                     Agile Consultant • Freelancer
-
-
                 </Heading>
 
+            </GridItem>
 
+            <GridItem
+                colStart={[3, 2, 2, 2, 1]} colEnd={[11, 12, 7, 7, 7]}
+                display={["flex", "flex", "none"]}
+                position={["relative", "relative", "relative", "absolute"]}
+                alignSelf={"center"}
+                boxSizing={"border-box"}
+                pt={"1em"}
+            >
+                <MoranaImageContainer  height={"94%"} width={"94%"} ml={"4px"} mt={"4px"} oanaPic={Oana1}/>
+            </GridItem>
+            <GridItem display={"flex"}
+                      flexDirection="column"
+                      zIndex={2}
+                      colStart={[2, 2, 2, 2, 1]} colEnd={[12, 12, 7, 7, 7]}
+            >
                 <Text
                     variant={"primary"}
                     fontSize={["14px", "16px", "14px", "18px"]}
                     lineHeight={["17px", "20px", "20px", "24px"]}
                     textAlign={["center", "center", "start"]}
                     order={[1, 1, 0]}
-                    pt={["1.2em", "1.2em", "1.2em", "1.2em"]}
-                    pb={"1.5em"}
+                    pt={["1.4em", "1.2em", "1.2em", "1.2em"]}
+                    pb={"1.7em"}
                     alignSelf={["center", "center", "flex-start"]}>
                     IT Product Owner, Scrum Master, UX-Designer and Team Lead searching for Frontend Software Development Projects with a positive impact on environment or society.
                 </Text>
@@ -56,17 +70,10 @@ export default function IntroSection() {
                     Get in touch!
                 </Link>
 
-
-                <Box
-                    display={["flex", "flex", "none"]}
-                    position={["relative", "relative", "relative", "absolute"]}
-                    alignSelf={"center"}
-                    boxSizing={"border-box"}
-                    pt={"1em"}
-                >
-                    <MoranaImageContainer  height={"94%"} width={"94%"} ml={"7px"} mt={"4px"} oanaPic={Oana1}/>
-                </Box>
             </GridItem>
+
+
+
             <GridItem
                 colStart={[1, 1, 8, 8, 8]} colEnd={[1, 1, 12, 12, 13]}
                 display={["none", "none", "flex"]}

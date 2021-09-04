@@ -63,7 +63,7 @@ const HeadyDesktop = () => {
                     </Box>
 
                     <Heading
-                        variant="header1" fontSize={["22px", "22px"]} height={height} pt={["15px", "15px", "28px"]}>
+                        variant="header1" fontSize={["20px", "20px"]} height={height} pt={["15px", "15px", "28px"]}>
 
                         Morana.at
                     </Heading>
