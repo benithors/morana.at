@@ -5,7 +5,7 @@ import {SectionHeaderSizes} from "../components/ResponsiveSizes";
 
 export default function ServicesSection() {
     const servicesFontSize = ["14px","15px","16px","20px"];
-    const servicesListHeadingPadding = "17px";
+    const servicesListHeadingPadding = "0.7em";
     return (
         <SimpleGrid
             width={["80%", "80%", "85%", "85%"]}
@@ -27,15 +27,16 @@ export default function ServicesSection() {
                 </Heading>
             </Box>
 
-            <SimpleGrid pt={"5em"} columns={[1, 2, 2,2,3]} spacing={10}>
+            <SimpleGrid pt={"3em"} columns={[1, 2, 2,2,3]} spacing={10}>
                 <MoranaService imagePath={"/static/images/PO-Icon-Group.png"}
                                height={102}
                                width={112}
                                title={"Product Ownership"}>
                     <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
-                        <ListItem>Backlog management & refinement</ListItem>
-                        <ListItem>Prioritization of requirements User</ListItem>
-                        <ListItem>User stories & acceptance criteria</ListItem>
+                        <ListItem>Backlog setup, management & refinement </ListItem>
+                        <ListItem>Prioritization of requirements</ListItem>
+                        <ListItem>User stories & acceptance criteria acquisition</ListItem>
+                        <ListItem>Value maximization of the product</ListItem>
                     </UnorderedList>
                 </MoranaService>
 
@@ -45,8 +46,9 @@ export default function ServicesSection() {
                                title={"Scrum Master"}>
                     <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
                         <ListItem>SCRUM process setup & initiation</ListItem>
-                        <ListItem>ceremony moderation</ListItem>
-                        <ListItem>conflict resolution</ListItem>
+                        <ListItem>Ceremonies preparation & moderation</ListItem>
+                        <ListItem>Conflict identification, analysis & resolution</ListItem>
+                        <ListItem>Process illustration & optimization</ListItem>
                     </UnorderedList>
                 </MoranaService>
 
@@ -55,9 +57,10 @@ export default function ServicesSection() {
                                width={108}
                                title={"UX/UI Design"}>
                     <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
-                        <ListItem>Low & High fidelity Prototypes</ListItem>
-                        <ListItem>Mockups, Click Dummies</ListItem>
-                        <ListItem>Usability Analysis</ListItem>
+                        <ListItem>Low & high fidelity prototypes</ListItem>
+                        <ListItem>Mockups, click dummies</ListItem>
+                        <ListItem>Usability analysis & improvement suggestions</ListItem>
+                        <ListItem>UX/UI design from scratch</ListItem>
                     </UnorderedList>
                 </MoranaService>
 
@@ -66,9 +69,11 @@ export default function ServicesSection() {
                                width={111}
                                title={"Team Leadership"}>
                     <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
-                        <ListItem>Recruiting team members</ListItem>
+                        <ListItem>Establish team goals, structure & values</ListItem>
+                        <ListItem>Recruiting of team members</ListItem>
                         <ListItem>Leadership skills</ListItem>
-                        <ListItem>Teambuilding</ListItem>
+                        <ListItem>Assuming responsibility</ListItem>
+                        <ListItem>Teambuilding activities</ListItem>
                     </UnorderedList>
                 </MoranaService>
 
@@ -78,8 +83,9 @@ export default function ServicesSection() {
                                title={"Business Analysis"}>
                     <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
                         <ListItem>Stakeholder management</ListItem>
-                        <ListItem>Requirements analysis</ListItem>
-                        <ListItem>Workshop moderation</ListItem>
+                        <ListItem>IS-state analysis</ListItem>
+                        <ListItem>SHOULD BE-state analysis</ListItem>
+                        <ListItem>Workshop organization, preparation & moderation</ListItem>
                     </UnorderedList>
                 </MoranaService>
 
