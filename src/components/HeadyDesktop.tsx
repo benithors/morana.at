@@ -98,13 +98,13 @@ const HeadyDesktop = () => {
                     height={headerHeightPx} pr={"0.5em"} justifySelf={"end"} display={["flex", "flex", "none"]}>
 
 
-                    <Button variant={"unstyled"} ref={btnRef} colorScheme="teal" onClick={onOpen}>
+                    <Box ref={btnRef} onClick={onOpen}>
                         <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="30" height="3" rx="1.5" fill="white"/>
                             <rect y="11.25" width="30" height="3" rx="1.5" fill="white"/>
                             <rect y="22.5" width="30" height="3" rx="1.5" fill="white"/>
                         </svg>
-                    </Button>
+                    </Box>
                     <Drawer
                         isOpen={isOpen}
                         placement="right"

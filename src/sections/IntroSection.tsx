@@ -24,7 +24,7 @@ export default function IntroSection() {
                     Oana Moraru
                 </Heading>
                 <Heading variant="header3"
-                         pt={"0.8em"}
+                         pt={"0.4em"}
                          fontSize={["20px", "25px", "22px", "28px", "33px"]}
                          textAlign={["center", "center", "start"]}>
                     Agile Consultant • Freelancer
