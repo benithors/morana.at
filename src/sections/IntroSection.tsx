@@ -18,7 +18,7 @@ export default function IntroSection() {
             >
 
                 <Heading variant="header2"
-                         pt={["25px", "25px", "0px", "0px"]}
+                         pt={["0.5em", "0.5em", "0px", "0px"]}
                          fontSize={["40px", "50px", "50px", "50px", "76px"]}
                          textAlign={["center", "center", "start"]}>
                     Oana Moraru

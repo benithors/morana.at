@@ -93,12 +93,12 @@ const HeadyDesktop = () => {
                     </Box>
                 </GridItem>
                 <GridItem
-                    pt={"8px"}
-                    colStart={[24, 24, 24, 24, 24]} colEnd={[24, 24, 24, 24, 24]}
-                    height={headerHeightPx} pr={"0.5em"} justifySelf={"end"} display={["flex", "flex", "none"]}>
+
+                    colStart={23} colEnd={23}
+                    height={headerHeightPx}  justifySelf={"end"} display={["flex", "flex", "none"]}>
 
 
-                    <Box ref={btnRef} onClick={onOpen}>
+                    <Box ref={btnRef} onClick={onOpen}  pt={"15px"}>
                         <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="30" height="3" rx="1.5" fill="white"/>
                             <rect y="11.25" width="30" height="3" rx="1.5" fill="white"/>
