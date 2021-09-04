@@ -53,7 +53,7 @@ export default function FooterSection() {
         </GridItem>
 
         <GridItem   colStart={[2, 2, 2, 2, 1]} colEnd={[11, 12, 7, 7, 7]}
-                  mb={"3.5em"}
+                  mb={"3em"}
                   display={"flex"} flexDirection={"row"} justifyContent={"space-between"} pt={"3em"}>
             <Box>
 

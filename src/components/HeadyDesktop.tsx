@@ -20,6 +20,7 @@ const HeadyDesktop = () => {
         onClose();
     }
 
+    const menuSpacing = "2em";
     return (
         <Box
             display={"flex"}
@@ -95,10 +96,10 @@ const HeadyDesktop = () => {
                 <GridItem
 
                     colStart={23} colEnd={23}
-                    height={headerHeightPx}  justifySelf={"end"} display={["flex", "flex", "none"]}>
+                    height={headerHeightPx} justifySelf={"end"} display={["flex", "flex", "none"]}>
 
 
-                    <Box ref={btnRef} onClick={onOpen}  pt={"15px"}>
+                    <Box ref={btnRef} onClick={onOpen} pt={"15px"}>
                         <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect width="30" height="3" rx="1.5" fill="white"/>
                             <rect y="11.25" width="30" height="3" rx="1.5" fill="white"/>
@@ -113,14 +114,14 @@ const HeadyDesktop = () => {
 
                     >
                         <DrawerOverlay/>
-                        <DrawerContent>
+                        <DrawerContent >
                             <DrawerCloseButton/>
 
-                            <DrawerBody background={"brand.main"} display={"flex"} flexDirection={"column"} justifyContent={"center"} color={"white"} fontFamily={"ABeeZee"}>
+                            <DrawerBody pl={"3em"} background={"brand.main"} display={"flex"} flexDirection={"column"} justifyContent={"center"} color={"white"} fontFamily={"Fugaz One"}>
                                 <Box onClick={scrollHome}>
                                     Home
                                 </Box>
-                                <Box pt={"1em"}>
+                                <Box pt={menuSpacing}>
 
 
                                     <ScrollLink onClick={onClose} activeClass="active" to="servicesSection" spy={true} smooth={true} offset={50} duration={500}>
@@ -128,27 +129,20 @@ const HeadyDesktop = () => {
                                     </ScrollLink>
                                 </Box>
 
-                                <Box pt={"1em"}>
+                                <Box pt={menuSpacing}>
                                     <ScrollLink onClick={onClose} activeClass="active" to="aboutSection" spy={true} smooth={true} offset={50} duration={500}>
                                         About
                                     </ScrollLink>
                                 </Box>
 
-                                <Box pt={"1em"}>
+                                <Box pt={menuSpacing}>
                                     <ScrollLink onClick={onClose} activeClass="active" to="contactSection" spy={true} smooth={true} offset={50} duration={500}>
                                         Contact
                                     </ScrollLink>
                                 </Box>
 
-                                <Box pt={"1em"}>
 
-                                    <Link href="/terms-and-conditions">
-                                        <Text variant="footerTextImprint">
-                                            Terms & Conditions
-                                        </Text>
-                                    </Link>
-                                </Box>
-                                <Box pt={"1em"}>
+                                <Box pt={menuSpacing}>
 
                                     <Link href="/privacy">
                                         <Text variant="footerTextImprint">
