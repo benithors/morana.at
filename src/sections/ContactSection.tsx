@@ -1,4 +1,4 @@
-import {Button, GridItem, Heading, Link, SimpleGrid, Text} from "@chakra-ui/react";
+import {Box, Button, GridItem, Heading, Link, SimpleGrid, Text} from "@chakra-ui/react";
 import React from "react";
 import {SectionHeaderSizes} from "../components/ResponsiveSizes";
 
@@ -29,10 +29,10 @@ export default function ContactSection() {
             </GridItem>
 
 
-            <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 12, 12]}
+            <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[12, 11, 11, 12, 12]}
                       display={"flex"}
                       flexDirection="row"
-                      pt={["3em", "4em"]}
+                      pt={["5em", "4em"]}
                       justifySelf={"start"}
             >
                 <Heading variant="header2"
@@ -63,21 +63,23 @@ export default function ContactSection() {
             </GridItem>
 
 
-            <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 11, 11]}>
-                <Link
-                    fontSize={["24px", "24px", "30px"]}
-                    height={["50px", "50px", "67px", "67px", "67px"]}
-                    justifySelf={["center", "center", "start"]}
-                    mt={["1em", "2em"]}
-                    href="mailto:test@email.com" isExternal
-                >
-                    Get in touch!
-                </Link>
 
 
-
+            <GridItem  pt={"0.5em"}
+                       colStart={[1, 1, 2, 2, 5]} colEnd={[13, 13, 6, 11, 9]}>
+                <Box display={"flex"} justifyContent={"center"}>
+                    <Link
+                        w={"245px"}
+                        fontSize={["24px", "24px", "30px"]}
+                        height={["50px", "50px", "67px", "67px", "67px"]}
+                        justifySelf={["center", "center", "start"]}
+                        mt={["1em", "2em"]}
+                        href="mailto:test@email.com" isExternal
+                    >
+                        Get in touch!
+                    </Link>
+                </Box>
             </GridItem>
-
 
         </SimpleGrid>
     </>;

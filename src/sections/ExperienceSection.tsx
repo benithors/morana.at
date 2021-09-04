@@ -11,12 +11,10 @@ export default function ExpierenceSection() {
         maxW={["100%", "100%", "1024px"]}
         pt={"2.5em"}
         columns={[12, 12, 12, 12, 12]}
-        spacing={10} pb={"35px"}>
+         pb={"35px"}>
 
 
         <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 11, 5]}>
-
-
             <Experience
                 title={"Experience"}>
                 <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} color={"white"} spacing={spacing} fontSize={servicesFontSize}>
@@ -29,7 +27,7 @@ export default function ExpierenceSection() {
             </Experience>
         </GridItem>
 
-        <GridItem colStart={[2, 2, 2, 2, 5]} colEnd={[11, 11, 6, 11, 9]} display={"flex"} flexDirection={"column"}>
+        <GridItem colStart={[2, 2, 2, 2, 5]} colEnd={[12, 12, 6, 11, 9]} pt={"2em"}>
             <Experience
                 title={"Capabilities\n"}>
 
@@ -54,20 +52,23 @@ export default function ExpierenceSection() {
 
                 </Box>
             </Experience>
+        </GridItem>
+
+        <GridItem  pt={"4em"}
+            colStart={[1, 1, 2, 2, 5]} colEnd={[13, 13, 6, 11, 9]}>
+            <Box display={"flex"} justifyContent={"center"}>
                 <Button variant={"desktop"}
                         fontSize={["24px", "24px", "30px"]}
                         height={["50px", "50px", "67px", "67px", "67px"]}
                         display={["flex", "flex", "none"]}
-                        mt={"2.5em"}
                         w={"245px"}
                 >
                     Download Resume
                 </Button>
-
+            </Box>
         </GridItem>
 
-
-        <GridItem colStart={[2, 2, 2, 2, 9]} colEnd={[11, 11, 11, 11, 13]}>
+        <GridItem colStart={[2, 2, 2, 2, 9]} colEnd={[11, 11, 11, 11, 13]}  pt={"4em"}>
             <Experience
                 title={"Work & Life"}>
                 <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} color={"white"} spacing={spacing} fontSize={servicesFontSize}>

@@ -41,7 +41,7 @@ function DesktopBackgroundTwo() {
 }
 
 function MobileBackgroundTwo() {
-    return <Box zIndex={1} position={"absolute"} top={["2587px", "1950px", "1650px"]} left={0} width={"100%"} overflow={"hidden"} lineHeight={0} height={["2500", "2550", "2337"]} display={["flex", "flex", "flex", "none"]}>
+    return <Box zIndex={1} position={"absolute"} top={["2587px", "1950px", "1650px"]} left={0} width={"100%"} overflow={"hidden"} lineHeight={0} height={["2400", "2550", "2337"]} display={["flex", "flex", "flex", "none"]}>
 
 
         <svg width={"100%"} height={"100%"} preserveAspectRatio="none" viewBox="0 0 375 2433" fill="none" xmlns="http://www.w3.org/2000/svg">
