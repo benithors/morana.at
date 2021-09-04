@@ -1,23 +1,25 @@
 import React from 'react'
-import {Box, Button, Center, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, GridItem, Heading, SimpleGrid, Text, useDisclosure} from "@chakra-ui/react";
+import {Box, Button, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, GridItem, Heading, SimpleGrid, Text, useDisclosure} from "@chakra-ui/react";
 import Image from 'next/image'
 import moranaIcon from '../../public/static/svg/moranaIcon.svg'
+import * as Scroll from 'react-scroll'
 import {Link as ScrollLink} from 'react-scroll'
-import * as Scroll from 'react-scroll';
-export const headerHeightPx = ["54px", "80px"];
 import Link from "next/link";
+
+export const headerHeightPx = ["54px", "80px"];
 
 
 const HeadyDesktop = () => {
     const height = ["54px", "54px", "80px"];
-    var scroll    = Scroll.animateScroll;
+    var scroll = Scroll.animateScroll;
     const {isOpen, onOpen, onClose} = useDisclosure();
     const btnRef = React.useRef();
 
-    function scrollHome(){
+    function scrollHome() {
         scroll.scrollToTop();
         onClose();
     }
+
     return (
         <Box
             display={"flex"}
@@ -39,7 +41,7 @@ const HeadyDesktop = () => {
 
 
                 <GridItem
-                    colStart={[2, 2, 2, 2, 1]} colEnd={[20, 20, 12, 12 ,12]}
+                    colStart={[2, 2, 2, 2, 1]} colEnd={[20, 20, 12, 12, 12]}
                     display={"flex"}
                     flexDirection={"row"}
 
@@ -115,8 +117,8 @@ const HeadyDesktop = () => {
                             <DrawerCloseButton/>
 
                             <DrawerBody background={"brand.main"} display={"flex"} flexDirection={"column"} justifyContent={"center"} color={"white"} fontFamily={"ABeeZee"}>
-                                <Box onClick={scrollHome} >
-                                        Home
+                                <Box onClick={scrollHome}>
+                                    Home
                                 </Box>
                                 <Box pt={"1em"}>
 
@@ -150,7 +152,7 @@ const HeadyDesktop = () => {
 
                                     <Link href="/privacy">
                                         <Text variant="footerTextImprint">
-                                          Privacy
+                                            Privacy
                                         </Text>
                                     </Link>
                                 </Box>
