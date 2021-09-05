@@ -3,16 +3,26 @@ import MoranaImageContainer from "../components/MoranaImageContainer";
 import React from "react";
 import {SectionHeaderSizes} from "../components/ResponsiveSizes";
 import Oana2 from "../../public/static/images/Oana2.png"
+import ExpierenceSection from "./ExperienceSection";
 
 export function AboutSection() {
     return (
         <>
+            <Box w={"100%"}
+                 display="flex"
+                 flexDirection="column"
+                 alignItems={"center"}
+                 overflowX={"hidden"}
+                 backgroundSize={"100% 100%"}
+                 backgroundRepeat={"no-repeat"}
+                 bgImage={["url('/static/svg/bg2Mobile.svg')","url('/static/svg/bg2Mobile.svg')","url('/static/svg/bg2Desktop.svg')","url('/static/svg/bg2Desktop.svg')"]}
+            pb={"5em"}>
             <SimpleGrid
                 width={"100%"}
                 maxW={["100%", "100%", "1024px"]}
                 zIndex={2}
-                pt={["14em", "14em","25em"]}
-                columns={[12, 12, 12, 12]}
+                pt={["14em", "14em","14em","35em"]}
+                columns={12}
                 id={"aboutSection"}
             >
                 <GridItem
@@ -59,7 +69,7 @@ export function AboutSection() {
                           colStart={[2, 2, 8, 8, 8]} colEnd={[12, 12, 12, 12, 13]}
                 >
                     <Heading variant="header2"
-                             lineHeight={"40px"}
+                             lineHeight={["40px","60px","80px"]}
                              pt={["25px", "25px", "0px", "0px"]}
                              fontSize={["42px", "50px", "50px", "50px", "76px"]}
                              textAlign={["center", "center", "start"]}
@@ -111,7 +121,8 @@ export function AboutSection() {
 
 
             </SimpleGrid>
-
+                <ExpierenceSection/>
+            </Box>
         </>
     )
 };

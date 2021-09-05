@@ -1,20 +1,22 @@
-import {Box, Heading, ListItem, SimpleGrid, UnorderedList} from "@chakra-ui/react";
+import {GridItem, Heading, ListItem, SimpleGrid, UnorderedList} from "@chakra-ui/react";
 import MoranaService from "../components/Service";
 import React from "react";
 import {SectionHeaderSizes} from "../components/ResponsiveSizes";
 
 export default function ServicesSection() {
-    const servicesFontSize = ["14px","15px","16px","20px"];
+    const servicesFontSize = ["14px", "15px", "16px", "20px"];
     const servicesListHeadingPadding = "0.7em";
     return (
         <SimpleGrid
-            width={["80%", "80%", "85%", "85%"]}
             maxW={["100%", "100%", "1024px"]}
+            columns={12}
             id={"servicesSection"}
         >
-            <Box display={"flex"} flexDirection={"row"} pt={["10em","11em","11em","8em","1em"]} colSpan={[1, 1, 7, 7]}>
+            <GridItem
+                colStart={[2, 2, 2, 2, 1]} colEnd={13}
+                display={"flex"} flexDirection={"row"} pt={["5em", "5em", "5em", "8em", "1em"]}>
                 <Heading fontSize={SectionHeaderSizes}
-                        variant="services"
+                         variant="services"
                          textAlign={"center"}
                          color={"brand.secondary"}>
                     /
@@ -22,87 +24,92 @@ export default function ServicesSection() {
 
                 <Heading fontSize={SectionHeaderSizes}
                          lineHeight={"23px"}
-                    variant="services" textAlign={"center"} whiteSpace={"break-spaces"}>
+                         variant="services" textAlign={"center"} whiteSpace={"break-spaces"}>
                     {" "} Services
                 </Heading>
-            </Box>
-
-            <SimpleGrid pt={"3em"} columns={[1, 2, 2,2,3]} spacing={10}>
-                <MoranaService imagePath={"/static/images/PO-Icon-Group.png"}
-                               height={102}
-                               width={112}
-                               title={"Product Ownership"}>
-                    <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
-                        <ListItem>Backlog setup, management & refinement </ListItem>
-                        <ListItem>Prioritization of requirements</ListItem>
-                        <ListItem>User stories & acceptance criteria acquisition</ListItem>
-                        <ListItem>Value maximization of the product</ListItem>
-                    </UnorderedList>
-                </MoranaService>
-
-                <MoranaService imagePath={"/static/images/SM-Icon-Group.png"}
-                               height={104}
-                               width={110}
-                               title={"Scrum Master"}>
-                    <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
-                        <ListItem>SCRUM process setup & initiation</ListItem>
-                        <ListItem>Ceremonies preparation & moderation</ListItem>
-                        <ListItem>Conflict identification, analysis & resolution</ListItem>
-                        <ListItem>Process illustration & optimization</ListItem>
-                    </UnorderedList>
-                </MoranaService>
-
-                <MoranaService imagePath={"/static/images/UX-Icon-Group.png"}
-                               height={100}
-                               width={108}
-                               title={"UX/UI Design"}>
-                    <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
-                        <ListItem>Low & high fidelity prototypes</ListItem>
-                        <ListItem>Mockups, click dummies</ListItem>
-                        <ListItem>Usability analysis & improvement suggestions</ListItem>
-                        <ListItem>UX/UI design from scratch</ListItem>
-                    </UnorderedList>
-                </MoranaService>
-
-                <MoranaService imagePath={"/static/images/TL-Icon-Group.png"}
-                               height={106}
-                               width={111}
-                               title={"Team Leadership"}>
-                    <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
-                        <ListItem>Establish team goals, structure & values</ListItem>
-                        <ListItem>Recruiting of team members</ListItem>
-                        <ListItem>Leadership skills</ListItem>
-                        <ListItem>Assuming responsibility</ListItem>
-                        <ListItem>Teambuilding activities</ListItem>
-                    </UnorderedList>
-                </MoranaService>
-
-                <MoranaService imagePath={"/static/images/BA-Icon-Group.png"}
-                               height={102}
-                               width={112}
-                               title={"Business Analysis"}>
-                    <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
-                        <ListItem>Stakeholder management</ListItem>
-                        <ListItem>IS-state analysis</ListItem>
-                        <ListItem>SHOULD BE-state analysis</ListItem>
-                        <ListItem>Workshop organization, preparation & moderation</ListItem>
-                    </UnorderedList>
-                </MoranaService>
-
-                <MoranaService imagePath={"/static/images/RE-Icon-Group.png"}
-                               height={106}
-                               width={111}
-                               title={"Requirements Engineering"}>
-                    <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
-                        <ListItem>Requirements elicitation</ListItem>
-                        <ListItem>Requirements analysis</ListItem>
-                        <ListItem>Requirements documentation</ListItem>
-                        <ListItem>Requirements alignment</ListItem>
-                    </UnorderedList>
-                </MoranaService>
+            </GridItem>
+            <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={12}>
 
 
-            </SimpleGrid>
+                <SimpleGrid
+
+                    pt={"3em"} columns={[1, 1, 2, 2, 3]} spacing={10}>
+                    <MoranaService imagePath={"/static/images/PO-Icon-Group.png"}
+                                   height={102}
+                                   width={112}
+                                   title={"Product Ownership"}>
+                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
+                            <ListItem>Backlog setup, management & refinement </ListItem>
+                            <ListItem>Prioritization of requirements</ListItem>
+                            <ListItem>User stories & acceptance criteria acquisition</ListItem>
+                            <ListItem>Value maximization of the product</ListItem>
+                        </UnorderedList>
+                    </MoranaService>
+
+                    <MoranaService imagePath={"/static/images/SM-Icon-Group.png"}
+                                   height={104}
+                                   width={110}
+                                   title={"Scrum Master"}>
+                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
+                            <ListItem>SCRUM process setup & initiation</ListItem>
+                            <ListItem>Ceremonies preparation & moderation</ListItem>
+                            <ListItem>Conflict identification, analysis & resolution</ListItem>
+                            <ListItem>Process illustration & optimization</ListItem>
+                        </UnorderedList>
+                    </MoranaService>
+
+                    <MoranaService imagePath={"/static/images/UX-Icon-Group.png"}
+                                   height={100}
+                                   width={108}
+                                   title={"UX/UI Design"}>
+                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
+                            <ListItem>Low & high fidelity prototypes</ListItem>
+                            <ListItem>Mockups, click dummies</ListItem>
+                            <ListItem>Usability analysis & improvement suggestions</ListItem>
+                            <ListItem>UX/UI design from scratch</ListItem>
+                        </UnorderedList>
+                    </MoranaService>
+
+                    <MoranaService imagePath={"/static/images/TL-Icon-Group.png"}
+                                   height={106}
+                                   width={111}
+                                   title={"Team Leadership"}>
+                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
+                            <ListItem>Establish team goals, structure & values</ListItem>
+                            <ListItem>Recruiting of team members</ListItem>
+                            <ListItem>Leadership skills</ListItem>
+                            <ListItem>Assuming responsibility</ListItem>
+                            <ListItem>Teambuilding activities</ListItem>
+                        </UnorderedList>
+                    </MoranaService>
+
+                    <MoranaService imagePath={"/static/images/BA-Icon-Group.png"}
+                                   height={102}
+                                   width={112}
+                                   title={"Business Analysis"}>
+                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
+                            <ListItem>Stakeholder management</ListItem>
+                            <ListItem>IS-state analysis</ListItem>
+                            <ListItem>SHOULD BE-state analysis</ListItem>
+                            <ListItem>Workshop organization, preparation & moderation</ListItem>
+                        </UnorderedList>
+                    </MoranaService>
+
+                    <MoranaService imagePath={"/static/images/RE-Icon-Group.png"}
+                                   height={106}
+                                   width={111}
+                                   title={"Requirements Engineering"}>
+                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
+                            <ListItem>Requirements elicitation</ListItem>
+                            <ListItem>Requirements analysis</ListItem>
+                            <ListItem>Requirements documentation</ListItem>
+                            <ListItem>Requirements alignment</ListItem>
+                        </UnorderedList>
+                    </MoranaService>
+
+
+                </SimpleGrid>
+            </GridItem>
         </SimpleGrid>
 
     )

@@ -85,19 +85,16 @@ const DesktopContent = () => {
             >
                 <HeadyDesktop/>
 
-                <DesktopBackgroundOne/>
-                <MobileBackgroundOne/>
 
                 <IntroSection/>
 
                 <ServicesSection/>
 
-                <DesktopBackgroundTwo/>
-                <MobileBackgroundTwo/>
+
 
                 <AboutSection/>
 
-                <ExpierenceSection/>
+
 
                 <Box zIndex={2}>
                     <Button variant={"desktop"}
@@ -117,8 +114,6 @@ const DesktopContent = () => {
                 <FooterSection/>
 
 
-                <DesktopBackgroudThree/>
-                <MobileBackgroudThree/>
 
 
             </SimpleGrid>

@@ -8,7 +8,8 @@ export default function ContactSection() {
             width={"100%"}
             maxW={["100%", "100%", "1024px"]}
             zIndex={2}
-            pt={["6em", "3em", "15em"]}
+            pt={["1em", "3em", "15em"]}
+            mb={"5em"}
             columns={[12, 12, 12, 12, 12]}
             id={"contactSection"}
         >
