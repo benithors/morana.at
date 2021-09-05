@@ -114,7 +114,7 @@ const HeadyDesktop = () => {
 
                     >
                         <DrawerOverlay/>
-                        <DrawerContent >
+                        <DrawerContent>
                             <DrawerCloseButton/>
 
                             <DrawerBody pl={"3em"} background={"brand.main"} display={"flex"} flexDirection={"column"} justifyContent={"center"} color={"white"} fontFamily={"Fugaz One"}>
