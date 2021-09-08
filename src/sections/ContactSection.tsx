@@ -67,15 +67,16 @@ export default function ContactSection() {
 
 
             <GridItem  pt={"0.5em"}
-                       colStart={[1, 1, 2, 2, 5]} colEnd={[13, 13, 6, 11, 9]}>
+                       colStart={[1, 1, 2, 1, 1]} colEnd={[13, 13, 6, 13, 13]}>
                 <Box display={"flex"} justifyContent={"center"}>
                     <Link
                         w={"245px"}
                         fontSize={["24px", "24px", "30px"]}
+                        width={["245px", "245px", "339px", "339px", "339px"]}
                         height={["50px", "50px", "67px", "67px", "67px"]}
                         justifySelf={["center", "center", "start"]}
                         mt={["1em", "2em"]}
-                        href="mailto:test@email.com" isExternal
+                        href="mailto:oana.moraru@morana.at" isExternal
                     >
                         Get in touch!
                     </Link>

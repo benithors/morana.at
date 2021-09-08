@@ -1,7 +1,7 @@
 import {Box, Button, GridItem, ListItem, SimpleGrid, UnorderedList} from "@chakra-ui/react";
 import Experience from "../components/Experience";
 import React from "react";
-
+import Link from 'next/link'
 export default function ExpierenceSection() {
     const spacing = "15px";
     const servicesFontSize = ["14px", "15px", "16px", spacing];
@@ -9,9 +9,9 @@ export default function ExpierenceSection() {
         zIndex={2}
         width={"100%"}
         maxW={["100%", "100%", "1024px"]}
-        pt={"2.5em"}
+        pt={["2.5em","2.5em","0em"]}
         columns={[12, 12, 12, 12, 12]}
-         pb={"35px"}>
+         pb={"4em"}>
 
 
         <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 11, 5]}>
@@ -27,7 +27,7 @@ export default function ExpierenceSection() {
             </Experience>
         </GridItem>
 
-        <GridItem colStart={[2, 2, 2, 2, 5]} colEnd={[12, 12, 6, 11, 9]} pt={"2em"}>
+        <GridItem colStart={[2, 2, 2, 2, 5]} colEnd={[12, 12, 6, 11, 8]} pt={["2em","2em","0em"]}>
             <Experience
                 title={"Capabilities\n"}>
 
@@ -54,21 +54,23 @@ export default function ExpierenceSection() {
             </Experience>
         </GridItem>
 
-        <GridItem  pt={"4em"}
-            colStart={[1, 1, 2, 2, 5]} colEnd={[13, 13, 6, 11, 9]}>
+        <GridItem  pt={["4em","4em","0em"]}
+            colStart={[2, 2, 2, 2, 0]} colEnd={[13, 13, 6, 11, 0]} display={["flex", "flex", "none"]}>
             <Box display={"flex"} justifyContent={"center"}>
+                <Link href="CV_Moraru.pdf">
                 <Button variant={"desktop"}
                         fontSize={["24px", "24px", "30px"]}
                         height={["50px", "50px", "67px", "67px", "67px"]}
-                        display={["flex", "flex", "none"]}
+
                         w={"245px"}
                 >
                     Download Resume
                 </Button>
+                </Link>
             </Box>
         </GridItem>
 
-        <GridItem colStart={[2, 2, 2, 2, 9]} colEnd={[11, 11, 11, 11, 13]}  pt={"4em"}>
+        <GridItem colStart={[2, 2, 2, 2, 8]} colEnd={[11, 11, 11, 11, 12]}  pt={["4em","4em","0em"]}>
             <Experience
                 title={"Work & Life"}>
                 <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} color={"white"} spacing={spacing} fontSize={servicesFontSize}>

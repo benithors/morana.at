@@ -45,7 +45,7 @@ const HeadyDesktop = () => {
                     colStart={[2, 2, 2, 2, 1]} colEnd={[20, 20, 12, 12, 12]}
                     display={"flex"}
                     flexDirection={"row"}
-
+                    onClick={scrollHome}
                 >
                     <Box
                         minH={height}
@@ -54,6 +54,7 @@ const HeadyDesktop = () => {
                         mr={"8px"}
                         height={["41", "53px", "87px"]}
                         w={["51px", "61px", "101px"]}
+
                     >
                         <Image
                             src={moranaIcon}

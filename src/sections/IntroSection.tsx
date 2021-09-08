@@ -94,7 +94,7 @@ export default function IntroSection() {
                     height={["50px", "50px", "67px", "67px", "67px"]}
                     order={[2, 2, 0, 0]}
                     alignSelf={["center", "center", "flex-start"]}
-                    href="mailto:moraru.oana.au@gmail.com" isExternal>
+                    href="mailto:oana.moraru@morana.at" isExternal>
                     Get in touch!
                 </Link>
 

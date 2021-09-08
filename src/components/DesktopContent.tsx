@@ -6,7 +6,7 @@ import IntroSection from "../sections/IntroSection";
 import {AboutSection} from "../sections/AboutSection";
 import ContactSection from "../sections/ContactSection";
 import FooterSection from "../sections/FooterSection";
-
+import Link from 'next/link'
 
 const DesktopContent = () => {
     return (
@@ -31,7 +31,8 @@ const DesktopContent = () => {
 
 
 
-                <Box zIndex={2}>
+                <Box zIndex={2} justifyContent={"center"}  alignItems={"center"}>
+                    <Link href="CV_Moraru.pdf">
                     <Button variant={"desktop"}
                             fontSize={["24px", "24px", "30px"]}
                             width={["245px", "245px", "339px", "339px", "339px"]}
@@ -40,6 +41,7 @@ const DesktopContent = () => {
                     >
                         Download Resume
                     </Button>
+                    </Link>
 
                 </Box>
 

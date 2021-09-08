@@ -21,7 +21,7 @@ export function AboutSection() {
                 width={"100%"}
                 maxW={["100%", "100%", "1024px"]}
                 zIndex={2}
-                pt={["14em", "14em","14em","35em"]}
+                pt={["14em", "14em","14em","14em"]}
                 columns={12}
                 id={"aboutSection"}
             >
@@ -54,7 +54,7 @@ export function AboutSection() {
             >
 
                 <GridItem
-                    colStart={[1, 1, 2, 2, 1]} colEnd={[12, 12, 7, 7, 7]}
+                    colStart={[1, 1, 2, 2, 1]} colEnd={[12, 12, 6, 6, 7]}
                     display={["none", "none", "flex"]}
                     position={"relative"}
                     boxSizing={"border-box"}
