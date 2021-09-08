@@ -2,7 +2,7 @@ import {Box, GridItem, SimpleGrid, Text} from "@chakra-ui/react";
 import React from "react";
 import MoranaImageContainer from "../components/MoranaImageContainer";
 import Oana3 from "../../public/static/images/Oana3.png";
-1
+import Link from 'next/link'
 
 export default function FooterSection() {
     return (
