@@ -34,7 +34,7 @@ export default function ServicesSection() {
                 <SimpleGrid
 
                     pt={"3em"} columns={[1, 1, 2, 2, 3]} spacing={10}>
-                    <MoranaService imagePath={"/static/images/PO-Icon-Group.png"}
+                    <MoranaService imagePath={"/static/svg/PO-Icon-Group.svg"}
                                    height={102}
                                    width={112}
                                    title={"Product Ownership"}>
@@ -46,7 +46,7 @@ export default function ServicesSection() {
                         </UnorderedList>
                     </MoranaService>
 
-                    <MoranaService imagePath={"/static/images/SM-Icon-Group.png"}
+                    <MoranaService imagePath={"/static/svg/SM-Icon-Group.svg"}
                                    height={104}
                                    width={110}
                                    title={"Scrum Master"}>
@@ -58,7 +58,7 @@ export default function ServicesSection() {
                         </UnorderedList>
                     </MoranaService>
 
-                    <MoranaService imagePath={"/static/images/UX-Icon-Group.png"}
+                    <MoranaService imagePath={"/static/svg/UX-Icon-Group.svg"}
                                    height={100}
                                    width={108}
                                    title={"UX/UI Design"}>
@@ -70,7 +70,7 @@ export default function ServicesSection() {
                         </UnorderedList>
                     </MoranaService>
 
-                    <MoranaService imagePath={"/static/images/TL-Icon-Group.png"}
+                    <MoranaService imagePath={"/static/svg/TL-Icon-Group.svg"}
                                    height={106}
                                    width={111}
                                    title={"Team Leadership"}>
@@ -83,7 +83,7 @@ export default function ServicesSection() {
                         </UnorderedList>
                     </MoranaService>
 
-                    <MoranaService imagePath={"/static/images/BA-Icon-Group.png"}
+                    <MoranaService imagePath={"/static/svg/BA-Icon-Group.svg"}
                                    height={102}
                                    width={112}
                                    title={"Business Analysis"}>
@@ -95,7 +95,7 @@ export default function ServicesSection() {
                         </UnorderedList>
                     </MoranaService>
 
-                    <MoranaService imagePath={"/static/images/RE-Icon-Group.png"}
+                    <MoranaService imagePath={"/static/svg/RE-Icon-Group.svg"}
                                    height={106}
                                    width={111}
                                    title={"Requirements Engineering"}>

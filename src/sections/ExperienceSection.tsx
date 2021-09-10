@@ -55,17 +55,16 @@ export default function ExpierenceSection() {
         </GridItem>
 
         <GridItem  pt={["4em","4em","0em"]}
-            colStart={[2, 2, 2, 2, 0]} colEnd={[13, 13, 6, 11, 0]} display={["flex", "flex", "none"]}>
+            colStart={[1, 1, 1, 1, 0]} colEnd={[13, 13, 6, 11, 0]} display={["auto", "auto", "none"]}>
             <Box display={"flex"} justifyContent={"center"}>
                 <Link href="CV_Moraru.pdf">
-                <Button variant={"desktop"}
-                        fontSize={["24px", "24px", "30px"]}
-                        height={["50px", "50px", "67px", "67px", "67px"]}
-
-                        w={"245px"}
-                >
-                    Download Resume
-                </Button>
+                    <Button variant={"desktop"}
+                            fontSize={["24px", "24px", "30px"]}
+                            height={["50px", "50px", "67px", "67px", "67px"]}
+                            w={"245px"}
+                    >
+                        Download Resume
+                    </Button>
                 </Link>
             </Box>
         </GridItem>
