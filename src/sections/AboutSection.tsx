@@ -60,7 +60,7 @@ export function AboutSection() {
                     boxSizing={"border-box"}
 
                 >
-                    <MoranaImageContainer  height={"92%"} width={"92%"} ml={"9px"} mt={"5px"} oanaPic={Oana2}/>
+                    <MoranaImageContainer  height={"92%"} width={"92%"} ml={"9px"} mt={"5px"} oanaPic={Oana2}  priority={false}/>
                 </GridItem>
 
                 <GridItem display={"flex"}
@@ -89,7 +89,7 @@ export function AboutSection() {
                         boxSizing={"border-box"}
                         pt={"1.5em"}
                     >
-                        <MoranaImageContainer  height={"92%"} width={"92%"} ml={"7px"} mt={"5px"} oanaPic={Oana2}/>
+                        <MoranaImageContainer  height={"92%"} width={"92%"} ml={"7px"} mt={"5px"} oanaPic={Oana2}  priority={false}/>
                     </Box>
                 </GridItem>
                 <GridItem display={"flex"}

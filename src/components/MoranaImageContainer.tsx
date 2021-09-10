@@ -6,7 +6,8 @@ interface IProps {
     height: string;
     ml: string;
     mt:string;
-    oanaPic
+    oanaPic;
+    priority:boolean;
 }
 
 
@@ -20,7 +21,10 @@ const MoranaImageContainer = (props: IProps) => {
                     src={props.oanaPic}
                     alt={"Oana Moraru"}
                     layout={"responsive"}
-                    quality={100}
+                    quality={75}
+                    placeholder={"blur"}
+                    priority={props.priority}
+
                 />
             </Box>
             <Box>

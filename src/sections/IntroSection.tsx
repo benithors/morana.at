@@ -54,7 +54,7 @@ export default function IntroSection() {
                 boxSizing={"border-box"}
                 pt={"1em"}
             >
-                <MoranaImageContainer  height={"94%"} width={"94%"} ml={"4px"} mt={"4px"} oanaPic={Oana1}/>
+                <MoranaImageContainer  height={"94%"} width={"94%"} ml={"4px"} mt={"4px"} oanaPic={Oana1} priority={true}/>
             </GridItem>
             <GridItem
                 colStart={[1, 1, 8, 8, 8]} colEnd={[1, 1, 12, 12, 13]}
@@ -68,7 +68,7 @@ export default function IntroSection() {
                 maxH={"510px"}
 
             >
-                <MoranaImageContainer  height={"94%"} width={"94%"} ml={"9px"} mt={"6px"} oanaPic={Oana1}/>
+                <MoranaImageContainer  height={"94%"} width={"94%"} ml={"9px"} mt={"6px"} oanaPic={Oana1} priority={true}/>
             </GridItem>
             <GridItem display={"flex"}
                       flexDirection="column"

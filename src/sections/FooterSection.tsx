@@ -31,7 +31,7 @@ export default function FooterSection() {
                     boxSizing={"border-box"}
                     pt={"1em"}
                 >
-                    <MoranaImageContainer height={"94%"} width={"94%"} ml={"4px"} mt={"4px"} oanaPic={Oana3}/>
+                    <MoranaImageContainer height={"94%"} width={"94%"} ml={"4px"} mt={"4px"} oanaPic={Oana3}  priority={false}/>
                 </GridItem>
 
 
