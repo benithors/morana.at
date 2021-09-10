@@ -78,20 +78,27 @@ const HeadyDesktop = () => {
                           pl={"5em"}
                 >
 
+
                     <Box height={height} pt={"27px"} width={"100px"}>
+                        <ScrollLink onClick={onClose} activeClass="active" to="servicesSection" spy={true} smooth={true} offset={50} duration={500}>
                         <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
                             Services
                         </Text>
+                        </ScrollLink>
                     </Box>
                     <Box height={height} pt={"27px"} width={"100px"}>
+                        <ScrollLink onClick={onClose} activeClass="active" to="aboutSection" spy={true} smooth={true} offset={50} duration={500}>
                         <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"}>
                             About
                         </Text>
+                        </ScrollLink>
                     </Box>
                     <Box height={height} pt={"27px"} width={"100px"}>
+                        <ScrollLink onClick={onClose} activeClass="active" to="contactSection" spy={true} smooth={true} offset={50} duration={500}>
                         <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
                             Contact
                         </Text>
+                        </ScrollLink>
                     </Box>
                 </GridItem>
                 <GridItem
