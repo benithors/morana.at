@@ -5,7 +5,7 @@ import {SectionHeaderSizes} from "../components/ResponsiveSizes";
 import Oana2 from "../../public/static/images/Oana2.png"
 import ExpierenceSection from "./ExperienceSection";
 
-export function AboutSection() {
+export default function AboutSection() {
     return (
         <>
             <Box w={"100%"}
