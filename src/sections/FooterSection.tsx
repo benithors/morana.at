@@ -24,27 +24,29 @@ export default function FooterSection() {
             >
 
                 <GridItem
-                    colStart={[5,5,9]} colEnd={[21,21,17]}
+                    colStart={[5, 5, 9, 9, 8]} colEnd={[21, 21, 17, 17, 18]}
                     display={"block"}
                     position={"relative"}
                     alignSelf={"center"}
                     boxSizing={"border-box"}
                     pt={"1em"}
                 >
-                    <MoranaImageContainer height={"94%"} width={"94%"} ml={"4px"} mt={"4px"} oanaPic={Oana3}  priority={false}/>
+                    <MoranaImageContainer height={"94%"} width={"94%"} ml={"4px"} mt={"4px"} oanaPic={Oana3} priority={false}/>
                 </GridItem>
 
 
-                <GridItem colStart={1} colEnd={[23, 23, 23]}
+                <GridItem colStart={1} colEnd={[24, 24, 23]}
                           justifySelf={["center", "center", "flex-end"]}
                           justifyContent={"space-between"}
-                          display={"flex"} flexDirection={"row"}
+                          display={"flex"}
+                          flexDirection={"row"}
                           w={"100px"}
                           mb={"2em"}
+                          pt={"1.5em"}
 
                 >
 
-                    <Link  href="mailto:oana.moraru@morana.at"  passHref={true}
+                    <Link href="mailto:oana.moraru@morana.at" passHref={true}
                     >
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -55,7 +57,7 @@ export default function FooterSection() {
 
 
                     </Link>
-                    <Link  href="https://at.linkedin.com/in/oana-moraru"  passHref={true}
+                    <Link href="https://at.linkedin.com/in/oana-moraru" passHref={true}
                     >
                         <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -69,7 +71,7 @@ export default function FooterSection() {
                     </Link>
                 </GridItem>
 
-                <GridItem colStart={[2, 2, 5, 4, 1]} colEnd={[11, 12, 12, 12, 12]}
+                <GridItem colStart={[2, 2, 5, 4, 1]} colEnd={[11, 12, 23, 23, 23]}
                           mb={"3em"}
                           display={"flex"} flexDirection={"row"} justifyContent={"space-between"} pt={"3em"}>
                     <Box>
@@ -78,10 +80,12 @@ export default function FooterSection() {
                             Copyright @Morana.at
                         </Text>
                     </Box>
-                    <Box display={["none", "none", "auto"]}>
-                        <Text color={"brand.secondary"} fontSize={["10px", "20px"]} fontFamily={"AbeeZee"}>
-                            Privacy
-                        </Text>
+                    <Box display={["none", "none", "block"]}>
+                        <Link href="/privacy">
+                            <Text color={"brand.secondary"} fontSize={["10px", "20px"]} fontFamily={"AbeeZee"}>
+                                Privacy
+                            </Text>
+                        </Link>
 
                     </Box>
 

@@ -119,25 +119,25 @@ const HeadyDesktop = () => {
                         placement="right"
                         onClose={onClose}
                         finalFocusRef={btnRef}
-
+                        trapFocus={false}
                     >
                         <DrawerOverlay/>
                         <DrawerContent>
-                            <DrawerCloseButton/>
 
-                            <DrawerBody pl={"3em"} background={"brand.main"} display={"flex"} flexDirection={"column"} justifyContent={"center"} color={"white"} fontFamily={"Fugaz One"}>
-                                <Box onClick={scrollHome}>
+
+                            <DrawerBody pl={"3em"} background={"brand.main"} display={"flex"} flexDirection={"column"} justifyContent={"center"} color={"white"} fontFamily={"Fugaz One"} >
+                                <Box onClick={scrollHome} >
                                     Home
                                 </Box>
                                 <Box pt={menuSpacing}>
 
 
-                                    <ScrollLink onClick={onClose} activeClass="active" to="servicesSection" spy={true} smooth={true} offset={50} duration={500}>
+                                    <ScrollLink  onClick={onClose} activeClass="active" to="servicesSection" spy={true} smooth={true} offset={50} duration={500}>
                                         Services
                                     </ScrollLink>
                                 </Box>
 
-                                <Box pt={menuSpacing}>
+                                <Box pt={menuSpacing} >
                                     <ScrollLink onClick={onClose} activeClass="active" to="aboutSection" spy={true} smooth={true} offset={50} duration={500}>
                                         About
                                     </ScrollLink>
@@ -161,7 +161,7 @@ const HeadyDesktop = () => {
 
                             </DrawerBody>
 
-
+                            <DrawerCloseButton color={"white"}/>
                         </DrawerContent>
                     </Drawer>
                 </GridItem>

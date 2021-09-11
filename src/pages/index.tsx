@@ -1,17 +1,11 @@
 import React from 'react'
-import dynamic from 'next/dynamic'
-import {withUserAgent, WithUserAgentProps} from 'next-useragent'
-
-const DesktopContent = dynamic(() => import('../components/DesktopContent'))
-
-class Index extends React.Component<WithUserAgentProps> {
+import DesktopContent from "../components/DesktopContent";
 
 
-    render() {
-        return (
-            <DesktopContent/>
-        )
-    }
+export default function Home() {
+
+
+    return (
+        <DesktopContent></DesktopContent>
+    );
 }
-
-export default withUserAgent(Index)

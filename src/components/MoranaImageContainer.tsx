@@ -22,7 +22,6 @@ const MoranaImageContainer = (props: IProps) => {
                     alt={"Oana Moraru"}
                     layout={"responsive"}
                     quality={75}
-                    placeholder={"blur"}
                     priority={props.priority}
 
                 />

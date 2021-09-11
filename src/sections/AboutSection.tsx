@@ -54,7 +54,7 @@ export function AboutSection() {
             >
 
                 <GridItem
-                    colStart={[1, 1, 2, 2, 1]} colEnd={[12, 12, 6, 6, 7]}
+                    colStart={[1, 1, 2, 2, 1]} colEnd={[12, 12, 6, 6, 6]}
                     display={["none", "none", "flex"]}
                     position={"relative"}
                     boxSizing={"border-box"}

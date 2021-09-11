@@ -8,13 +8,13 @@ export default function ContactSection() {
             width={"100%"}
             maxW={["100%", "100%", "1024px"]}
             zIndex={2}
-            pt={["1em", "3em", "15em"]}
+            pt={["0em", "2em","3em", "3em"]}
             mb={"5em"}
             columns={[12, 12, 12, 12, 12]}
             id={"contactSection"}
         >
             <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 12, 12]}
-                      display={"flex"} flexDirection={"row"} pt={"9em"}>
+                      display={"flex"} flexDirection={"row"} pt={"5em"}>
                 <Heading fontSize={SectionHeaderSizes}
                          variant="services"
                          textAlign={"center"}

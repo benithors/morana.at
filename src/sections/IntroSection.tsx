@@ -1,7 +1,7 @@
 import {Box, Button, GridItem, Heading, Link, SimpleGrid, Text} from "@chakra-ui/react";
 import MoranaImageContainer from "../components/MoranaImageContainer";
 import React from "react";
-import Oana1 from "../../public/static/images/Oana1.png"
+import Oana1 from "../../public/static/images/OanaMain.png"
 
 
 export default function IntroSection() {
