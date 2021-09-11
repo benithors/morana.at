@@ -24,7 +24,7 @@ const MoranaService = (props: IProps) => {
                     src={props.imagePath}
                     width={props.width}
                     height={props.height}
-                    alt={"Oana Moraru"}
+                    alt={props.title}
                 />
             </Center>
 

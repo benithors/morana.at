@@ -58,7 +58,7 @@ const HeadyDesktop = () => {
                     >
                         <Image
                             src={moranaIcon}
-                            alt={"Morana"}
+                            alt={"Morana Icon"}
                             quality={100}
                             layout={"responsive"}
                         />

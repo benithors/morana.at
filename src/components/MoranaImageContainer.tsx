@@ -21,9 +21,8 @@ const MoranaImageContainer = (props: IProps) => {
                     src={props.oanaPic}
                     alt={"Oana Moraru"}
                     layout={"responsive"}
-                    quality={75}
                     priority={props.priority}
-
+                    loading={"lazy"}
                 />
             </Box>
             <Box>
