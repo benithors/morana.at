@@ -16,8 +16,9 @@ export default function AboutSection() {
                  backgroundSize={"100% 100%"}
                  backgroundRepeat={"no-repeat"}
                  bgImage={["url('/static/svg/bg2Mobile.svg')","url('/static/svg/bg2Mobile.svg')","url('/static/svg/bg2Desktop.svg')","url('/static/svg/bg2Desktop.svg')"]}
-            pb={"5em"}>
+            pb={"8em"}>
             <SimpleGrid
+
                 width={"100%"}
                 maxW={["100%", "100%", "1024px"]}
                 zIndex={2}
@@ -98,6 +99,7 @@ export default function AboutSection() {
                           colStart={[2, 2, 8, 8, 8]} colEnd={[12, 12, 12, 12, 13]}
                 >
                     <Text
+
                         variant={"primary"}
                         fontSize={["14px", "16px", "14px", "18px"]}
                         lineHeight={["17px", "20px", "20px", "24px"]}

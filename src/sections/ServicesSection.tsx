@@ -14,7 +14,7 @@ export default function ServicesSection() {
         >
             <GridItem
                 colStart={[2, 2, 2, 2, 1]} colEnd={13}
-                display={"flex"} flexDirection={"row"} pt={["5em", "5em", "5em", "8em", "1em"]}>
+                display={"flex"} flexDirection={"row"} pt={["4em", "5em", "5em", "8em", "1em"]}>
                 <Heading fontSize={SectionHeaderSizes}
                          variant="services"
                          textAlign={"center"}
@@ -33,7 +33,7 @@ export default function ServicesSection() {
 
                 <SimpleGrid
 
-                    pt={"3em"} columns={[1, 1, 2, 2, 3]} spacing={10}>
+                    pt={"2em"} columns={[1, 1, 2, 2, 3]} spacing={10}>
                     <MoranaService imagePath={"/static/svg/PO-Icon-Group.svg"}
                                    height={102}
                                    width={112}

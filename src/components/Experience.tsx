@@ -11,11 +11,11 @@ const Experience = (props: IProps) => {
 
     return (
         <Box display={"flex"}
-             flexDirection="column">
+             flexDirection="column" >
             <Heading textAlign={"start"} variant="heading4" pt={"25px"} color={"white"} fontSize={["18px", "20px", "24px", "26px"]}>
                 {props.title}
             </Heading>
-            <Box ml={"1em"}>
+            <Box ml={"1em"} >
 
 
             {props.children}

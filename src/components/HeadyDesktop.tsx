@@ -125,7 +125,7 @@ const HeadyDesktop = () => {
                         <DrawerContent>
 
 
-                            <DrawerBody pl={"3em"} background={"brand.main"} display={"flex"} flexDirection={"column"} justifyContent={"center"} color={"white"} fontFamily={"Fugaz One"} >
+                            <DrawerBody pl={"3em"} pb={"7em"} background={"brand.main"} display={"flex"} flexDirection={"column"} justifyContent={"center"} color={"white"} fontFamily={"Fugaz One"} >
                                 <Box onClick={scrollHome} >
                                     Home
                                 </Box>
