@@ -2,9 +2,11 @@ import {Box, Button, GridItem, ListItem, SimpleGrid, UnorderedList} from "@chakr
 import Experience from "../components/Experience";
 import React from "react";
 import Link from 'next/link'
+
+
+export const servicesFontSize = ["14px", "15px", "16px", "16px"];
 export default function ExpierenceSection() {
     const spacing = "15px";
-    const servicesFontSize = ["14px", "15px", "16px", spacing];
     return <SimpleGrid
         zIndex={2}
         width={"100%"}

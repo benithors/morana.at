@@ -3,6 +3,7 @@ import React from "react";
 import MoranaImageContainer from "../components/MoranaImageContainer";
 import Oana3 from "../../public/static/images/Oana3.png";
 import Link from 'next/link'
+import {servicesFontSize} from "./ExperienceSection";
 
 export default function FooterSection() {
     return (
@@ -79,13 +80,13 @@ export default function FooterSection() {
                           display={"flex"} flexDirection={"row"} justifyContent={"space-between"} pt={"3em"}>
                     <Box>
 
-                        <Text fontSize={["10px", "20px"]} fontFamily={"AbeeZee"} color={["white", "white", "white"]}>
+                        <Text  fontSize={servicesFontSize} fontFamily={"AbeeZee"} color={["white", "white", "white"]}>
                             Copyright @Morana.at
                         </Text>
                     </Box>
                     <Box display={["none", "none", "block"]}>
                         <Link href="/privacy">
-                            <Text color={"brand.secondary"} fontSize={["10px", "20px"]} fontFamily={"AbeeZee"}>
+                            <Text color={"brand.secondary"}  fontSize={servicesFontSize} fontFamily={"AbeeZee"}>
                                 Privacy
                             </Text>
                         </Link>
