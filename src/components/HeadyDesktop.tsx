@@ -4,7 +4,7 @@ import Image from 'next/image'
 import moranaIcon from '../../public/static/svg/moranaIcon.svg'
 import * as Scroll from 'react-scroll'
 import {Link as ScrollLink} from 'react-scroll'
-import Link from "next/link";
+import {useRouter} from "next/router";
 
 export const headerHeightPx = ["54px", "80px"];
 
@@ -14,10 +14,20 @@ const HeadyDesktop = () => {
     var scroll = Scroll.animateScroll;
     const {isOpen, onOpen, onClose} = useDisclosure();
     const btnRef = React.useRef();
+    const router = useRouter()
 
     function scrollHome() {
         scroll.scrollToTop();
         onClose();
+    }
+
+    function goToPrivacy() {
+        if (router.pathname == '/') {
+            router.push('/privacy')
+        } else {
+         scroll.scrollTo('privacy')
+            onClose();
+        }
     }
 
     const menuSpacing = "2em";
@@ -38,6 +48,7 @@ const HeadyDesktop = () => {
                 width={"100%"}
                 columns={24}
                 maxW={["100%", "100%", "1024px"]}
+                id={"privacy"}
             >
 
 
@@ -54,7 +65,6 @@ const HeadyDesktop = () => {
                         mr={"8px"}
                         height={["41", "53px", "87px"]}
                         w={["51px", "61px", "101px"]}
-
                     >
                         <Image
                             src={moranaIcon}
@@ -65,7 +75,7 @@ const HeadyDesktop = () => {
                     </Box>
 
                     <Heading
-                        variant="header1" fontSize={["20px", "20px"]} height={height} pt={["15px", "20px", "28px"]}>
+                        variant="header1" fontSize={["20px", "20px"]} height={height} pt={["16px", "20px", "28px"]}>
 
                         Morana.at
                     </Heading>
@@ -81,23 +91,23 @@ const HeadyDesktop = () => {
 
                     <Box height={height} pt={"27px"} width={"100px"}>
                         <ScrollLink onClick={onClose} activeClass="active" to="servicesSection" spy={true} smooth={true} offset={50} duration={500}>
-                        <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
-                            Services
-                        </Text>
+                            <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
+                                Services
+                            </Text>
                         </ScrollLink>
                     </Box>
                     <Box height={height} pt={"27px"} width={"100px"}>
                         <ScrollLink onClick={onClose} activeClass="active" to="aboutSection" spy={true} smooth={true} offset={50} duration={500}>
-                        <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"}>
-                            About
-                        </Text>
+                            <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"}>
+                                About
+                            </Text>
                         </ScrollLink>
                     </Box>
                     <Box height={height} pt={"27px"} width={"100px"}>
                         <ScrollLink onClick={onClose} activeClass="active" to="contactSection" spy={true} smooth={true} offset={50} duration={500}>
-                        <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
-                            Contact
-                        </Text>
+                            <Text variant={"primary"} fontSize={"20px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
+                                Contact
+                            </Text>
                         </ScrollLink>
                     </Box>
                 </GridItem>
@@ -121,23 +131,24 @@ const HeadyDesktop = () => {
                         finalFocusRef={btnRef}
                         trapFocus={false}
                     >
+
                         <DrawerOverlay/>
                         <DrawerContent>
+                            <DrawerCloseButton size={"lg"} color={"white"}/>
 
-
-                            <DrawerBody pl={"3em"} pb={"7em"} background={"brand.main"} display={"flex"} flexDirection={"column"} justifyContent={"center"} color={"white"} fontFamily={"Fugaz One"} >
-                                <Box onClick={scrollHome} >
+                            <DrawerBody pl={"3em"} pb={"7em"} background={"brand.main"} display={"flex"} flexDirection={"column"} justifyContent={"center"} color={"white"} fontFamily={"Fugaz One"}>
+                                <Box onClick={scrollHome}>
                                     Home
                                 </Box>
                                 <Box pt={menuSpacing}>
 
 
-                                    <ScrollLink  onClick={onClose} activeClass="active" to="servicesSection" spy={true} smooth={true} offset={50} duration={500}>
+                                    <ScrollLink onClick={onClose} activeClass="active" to="servicesSection" spy={true} smooth={true} offset={50} duration={500}>
                                         Services
                                     </ScrollLink>
                                 </Box>
 
-                                <Box pt={menuSpacing} >
+                                <Box pt={menuSpacing}>
                                     <ScrollLink onClick={onClose} activeClass="active" to="aboutSection" spy={true} smooth={true} offset={50} duration={500}>
                                         About
                                     </ScrollLink>
@@ -150,18 +161,16 @@ const HeadyDesktop = () => {
                                 </Box>
 
 
-                                <Box pt={menuSpacing}>
+                                <Box pt={menuSpacing} onClick={goToPrivacy}>
 
-                                    <Link href="/privacy">
-                                        <Text variant="footerTextImprint">
-                                            Privacy
-                                        </Text>
-                                    </Link>
+
+                                    <Text variant="footerTextImprint">
+                                        Privacy
+                                    </Text>
                                 </Box>
 
                             </DrawerBody>
 
-                            <DrawerCloseButton color={"white"}/>
                         </DrawerContent>
                     </Drawer>
                 </GridItem>

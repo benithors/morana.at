@@ -22,7 +22,7 @@ export default function AboutSection() {
                 width={"100%"}
                 maxW={["100%", "100%", "1024px"]}
                 zIndex={2}
-                pt={["14em", "14em","14em","14em"]}
+                pt={["18em", "14em","14em","14em"]}
                 columns={12}
                 id={"aboutSection"}
             >

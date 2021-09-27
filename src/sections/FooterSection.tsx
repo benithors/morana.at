@@ -46,7 +46,7 @@ export default function FooterSection() {
                           pt={"1.5em"}
 
                 >
-                    <Box mt={"2px"}>
+                    <Box mt={"3px"}>
                         <Link href="mailto:oana.moraru@morana.at" passHref={true}
                         >
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -59,7 +59,7 @@ export default function FooterSection() {
 
                         </Link>
                     </Box>
-                    <Box>
+                    <Box >
                         <Link href="https://at.linkedin.com/in/oana-moraru" passHref={true}
                         >
                             <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -75,12 +75,14 @@ export default function FooterSection() {
                     </Box>
                 </GridItem>
 
-                <GridItem colStart={[3, 3, 5, 4, 1]} colEnd={[11, 12, 23, 23, 23]}
+                <GridItem colStart={[3, 3, 5, 4, 1]} colEnd={[12, 12, 23, 23, 23]}
                           mb={"2em"}
-                          display={"flex"} flexDirection={"row"} justifyContent={"space-between"} pt={"3em"}>
+                          display={"flex"}
+                          flexDirection={"row"}
+                          justifyContent={"space-between"}
+                          pt={"3em"}>
                     <Box>
-
-                        <Text  fontSize={servicesFontSize} fontFamily={"AbeeZee"} color={["white", "white", "white"]}>
+                        <Text  fontSize={"10px"} fontFamily={"AbeeZee"} color={["white", "white", "white"]}>
                             Copyright @Morana.at
                         </Text>
                     </Box>
@@ -90,7 +92,6 @@ export default function FooterSection() {
                                 Privacy
                             </Text>
                         </Link>
-
                     </Box>
 
                 </GridItem>

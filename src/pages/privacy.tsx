@@ -1,33 +1,259 @@
-import {Box, Heading} from "@chakra-ui/react";
+import {Box, GridItem, Heading, SimpleGrid, Text} from "@chakra-ui/react";
 import React from "react";
-import bg1 from "../../public/static/svg/bg1Mobile.svg"
+import HeadyDesktop from "../components/HeadyDesktop";
+import FooterSection from "../sections/FooterSection";
+import ContactSection from "../sections/ContactSection";
 
 
 const privacy = () => {
+    const HeadingPaddingTop1 = "2em";
     return (
-        <Box>
-            <Box bg={"blue"} style={{
-                backgroundImage: `url("data:image/svg+xml,${bg1}")`
-            }}>
-                <Heading variant="header2" h={["500px", "800px"]}>
-                    ONE
-                </Heading>
-                <svg style={{position: "absolute", backgroundColor: "yellow", top: 0, left: 0, width: "100%", height: "100%"}} preserveAspectRatio={"none"} viewBox="0 0 375 729" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M0 0V723.677C0 723.677 244.452 767.203 375 605.324V0H0Z" fill="#5F05AB"/>
-                </svg>
+        <Box display={"flex"} justifyContent={"center"} w={"100vw"} id={"home"}>
+            <SimpleGrid display="flex"
+                        flexDirection="column"
+                        w={"100%"}
+                        alignItems={"center"}
+                        overflowX={"hidden"}
+                        bg={"white"}
+            >
+                <HeadyDesktop/>
 
-            </Box>
-            <Box bg={"green"} h={"500px"}>
-                <Box pt={"3.9vh"} pb="3.9vh" zIndex={2}>
-                    <Heading variant="header2" color={"red"}>
-                        TWO
-                    </Heading>
+                <Box w={"100%"}
+                     display="flex"
+                     flexDirection="column"
+                     alignItems={"center"}
+                     overflowX={"hidden"}
+                     backgroundImage={["url('/static/svg/bgImprintMobile.svg')", "url('/static/svg/bgImprintMobile.svg')", "url('/static/svg/bgImprintDesktop.svg')"]}
+                     backgroundSize={"100% 100%"}
+                     backgroundRepeat={"no-repeat"}
+                     pb={["10em","10em","15em"]}>
+
+
+                    <SimpleGrid pt={["4em", "4em", "10em"]}
+                                maxW={["100%", "100%", "1024px"]}
+                                columns={[12, 12, 12, 12]}
+                                width={"100%"}
+                    >
+                        <GridItem display={"flex"}
+                                  flexDirection="column"
+                                  zIndex={2}
+                                  colStart={[2, 2, 2, 2, 2]} colEnd={[12, 12, 12, 12, 13]}
+                        >
+                            <Heading variant="header2"
+                                     lineHeight={["40px", "60px", "80px"]}
+                                     pt={"1em"}
+                                     fontSize={["42px", "50px", "50px", "50px", "76px"]}
+                                     textAlign={["center", "center", "start"]}
+                                     alignSelf={"center"}>
+                                Imprint
+                            </Heading>
+                        </GridItem>
+
+                        <GridItem colStart={2} colEnd={[12, 12, 12, 12, 13]}>
+                            <Heading textAlign={"start"}
+                                     variant={"heading4"}
+                                     pt={HeadingPaddingTop1}
+                                     color={"white"}
+                                     fontSize={["24px", "24px", "26px", "40px"]}>
+                                Company
+                            </Heading>
+
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "14px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+                                Dipl.-Ing. Oana-Aurora
+                            </Text>
+
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "16px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+                                Laaer-Berg-Straße 47/259 1100 Vienna, Austria
+                            </Text>
+
+
+                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"} fontSize={["22px", "22px", "24px", "26px"]}>
+                                Business purpose
+                            </Heading>
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "16px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+                                IT Services
+                            </Text>
+
+                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"} fontSize={["24px", "24px", "26px", "40px"]}>
+                                Contact
+                            </Heading>
+
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "16px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+                                +43 699 150 28996
+                            </Text>
+
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "16px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+                                oana.moraru@morana.at
+                            </Text>
+
+                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"} fontSize={["22px", "22px", "24px", "26px"]}>
+                                UID-Number
+                            </Heading>
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "16px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+                                ATU76949812
+                            </Text>
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "16px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+                                Member of the Vienna Chamber of Commerce (Wirtschaftskammer Wien)
+                            </Text>
+
+
+                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"} fontSize={["24px", "24px", "26px", "40px"]}>
+                                Professional Law
+                            </Heading>
+                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"} fontSize={["22px", "22px", "24px", "26px"]}>
+                                Commerce Order (Gewerbeordnung)
+                            </Heading>
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "16px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+                                www.ris.bka.gv.at
+                            </Text>
+
+                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"} fontSize={["22px", "22px", "24px", "26px"]}>
+                                Supervisory authority/commercial authority
+                            </Heading>
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "16px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+                                Authority according to ECG (E-Commerce Act) Municipal District Office of the 10th District, MBA 10
+                            </Text> <Text
+                            variant={"primary"}
+                            fontSize={["14px", "16px", "14px", "18px"]}
+                            lineHeight={["17px", "20px", "20px", "24px"]}
+                            textAlign={"start"}
+                            pt={"1.5em"}
+                            alignSelf={["center", "center", "flex-start"]}>
+                            Consumers have the possibility to submit complaints to the EU online dispute resolution platform: https://ec.europa.eu/odr
+                        </Text>
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "16px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+                                You can also send any complaints to the above e-mail address.
+                            </Text>
+                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"} fontSize={["24px", "24px", "26px", "40px"]}>
+                                Liability for the content of this website
+                            </Heading>
+
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "16px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+
+                                I am constantly developing the content of this website and strive to provide correct and up-to-date information. Unfortunately, I cannot assume any liability for the correctness of all contents on this website, especially
+                                for those provided by third parties.
+                            </Text>
+
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "16px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+                                If you notice any problematic or illegal content, please contact me immediately at the email mentioned above!
+                            </Text>
+
+                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"} fontSize={["24px", "24px", "26px", "40px"]}>
+                                Copyright notice
+                            </Heading>
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "16px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+                                All contents of this website (pictures, photos, texts, videos) are subject to copyright. If necessary, I will legally pursue the unauthorized use of parts of the content of my site.
+                            </Text>
+
+                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"} fontSize={["24px", "24px", "26px", "40px"]}>
+                                Recording of data on this website
+                            </Heading>
+
+
+                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"} fontSize={["22px", "22px", "24px", "26px"]}>
+                                Cookies
+                            </Heading>
+
+                            <Text
+                                variant={"primary"}
+                                fontSize={["14px", "16px", "14px", "18px"]}
+                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                textAlign={"start"}
+                                pt={"1.5em"}
+                                alignSelf={["center", "center", "flex-start"]}>
+                                My websites does not use any cookies.
+                            </Text>
+                        </GridItem>
+
+
+                    </SimpleGrid>
 
                 </Box>
 
-            </Box>
-        </Box>
+                <ContactSection/>
 
+                <FooterSection/>
+
+            </SimpleGrid>
+        </Box>
     )
 
 }

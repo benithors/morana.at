@@ -39,6 +39,7 @@ export default function ContactSection() {
                 <Heading variant="header2"
                          lineHeight={["40px", "40px", "40px", "50px", "90px"]}
                          fontSize={["28px", "35px", "40px", "50px", "70px"]}
+                         fontFamily={"Fugaz One"}
                          color={"black"}
                          display={"inline"}
                          whiteSpace={"break-spaces"}
@@ -51,7 +52,7 @@ export default function ContactSection() {
                         sound good{" "}
                     </Text>
                     <Text as={"span"}>
-                        to you? Lets make things{" "}
+                        to you? Let’s make things{" "}
                     </Text>
                     <Text as={"span"} color={"brand.secondary"}>
                         happen

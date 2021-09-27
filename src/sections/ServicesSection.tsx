@@ -32,7 +32,6 @@ export default function ServicesSection() {
 
 
                 <SimpleGrid
-
                     pt={"2em"} columns={[1, 1, 2, 2, 3]} spacing={10}>
                     <MoranaService imagePath={"/static/svg/PO-Icon-Group.svg"}
                                    height={102}
