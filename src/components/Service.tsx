@@ -1,6 +1,7 @@
 import React from 'react'
 import {Box, Center, Heading} from "@chakra-ui/react";
 import Image from "next/image";
+import {Header2FontSizes} from "./ResponsiveSizes";
 
 
 interface IProps {
@@ -28,7 +29,7 @@ const MoranaService = (props: IProps) => {
             </Center>
 
             <Box>
-                <Heading variant="heading4" pt={"0.7em"} color={"black"} fontSize={["24px", "24px", "24px", "26px"]}>
+                <Heading variant="heading4" pt={"0.7em"} color={"black"} fontSize={Header2FontSizes}>
                     {props.title}
                 </Heading>
             </Box>

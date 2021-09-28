@@ -2,6 +2,7 @@ import {Box, GridItem, Heading, Link, SimpleGrid, Text} from "@chakra-ui/react";
 import MoranaImageContainer from "../components/MoranaImageContainer";
 import React from "react";
 import Oana1 from "../../public/static/images/OanaMain.png"
+import {BasicTextLineHeight, BasicTextSizes, ButtonFontSizes, Header1FontSizes, Header2FontSizes} from "../components/ResponsiveSizes";
 
 
 export default function IntroSection() {
@@ -17,29 +18,29 @@ export default function IntroSection() {
              pb={"5em"}>
 
 
-            <SimpleGrid pt={["4em", "4em", "10em"]}
+            <SimpleGrid pt={["4em", "4em", "6em"]}
                         maxW={["100%", "100%", "1024px"]}
-                        columns={[12, 12, 12, 12]}
+                        columns={24}
             >
 
 
                 <GridItem display={"flex"}
                           flexDirection="column"
                           zIndex={2}
-                          colStart={[2, 2, 2, 2, 1]} colEnd={[12, 12, 7, 7, 7]}
+                          colStart={[2, 2, 3, 3, 2]} colEnd={[24, 24, 14, 14, 14]}
 
                 >
 
 
                     <Heading variant="header2"
                              pt={["0.8em", "0.5em", "0px", "0px"]}
-                             fontSize={["40px", "50px", "50px", "50px", "76px"]}
+                             fontSize={Header1FontSizes}
                              textAlign={["center", "center", "start"]}>
                         Oana Moraru
                     </Heading>
                     <Heading variant="header3"
                              pt={"0.3em"}
-                             fontSize={["20px", "25px", "22px", "28px", "33px"]}
+                             fontSize={Header2FontSizes}
                              textAlign={["center", "center", "start"]}>
                         Agile Consultant • Freelancer
                     </Heading>
@@ -47,17 +48,27 @@ export default function IntroSection() {
                 </GridItem>
 
                 <GridItem
-                    colStart={[3, 3, 2, 2, 1]} colEnd={[11, 11, 7, 7, 7]}
+                    colStart={[4, 4, 4, 4, 2]} colEnd={[22, 22, 14, 14, 14]}
                     display={["flex", "flex", "none"]}
                     position={"relative"}
                     alignSelf={"center"}
                     boxSizing={"border-box"}
                     pt={"1em"}
+                    flexDirection="column"
+
                 >
-                    <MoranaImageContainer height={"94%"} width={"94%"} ml={"4px"} mt={"4px"} oanaPic={Oana1} priority={false}/>
+                    <Box
+                        display={["flex", "flex", "none"]}
+                        position={"relative"}
+                        alignSelf={"center"}
+                        boxSizing={"border-box"}
+                    >
+                        <MoranaImageContainer height={"92%"} width={"94%"} ml={"4px"} mt={"4px"} oanaPic={Oana1} priority={false}/>
+                    </Box>
                 </GridItem>
                 <GridItem
-                    colStart={[1, 1, 8, 8, 8]} colEnd={[1, 1, 12, 12, 13]}
+                    pt={"2.5em"}
+                    colStart={[2, 2, 14, 14, 14]} colEnd={[2, 2, 23, 23, 23]}
                     rowSpan={2}
                     display={["none", "none", "flex"]}
                     flexDirection={"row"}
@@ -67,18 +78,19 @@ export default function IntroSection() {
                     maxW={"510px"}
                     maxH={"510px"}
 
+
                 >
                     <MoranaImageContainer height={"94%"} width={"94%"} ml={"9px"} mt={"6px"} oanaPic={Oana1} priority={false}/>
                 </GridItem>
                 <GridItem display={"flex"}
                           flexDirection="column"
                           zIndex={2}
-                          colStart={[2, 2, 2, 2, 1]} colEnd={[12, 12, 7, 7, 7]}
+                          colStart={[3, 3, 3, 3, 2]} colEnd={[23, 23, 13, 13, 13]}
                 >
                     <Text
                         variant={"primary"}
-                        fontSize={["14px", "16px", "14px", "18px"]}
-                        lineHeight={["17px", "20px", "20px", "24px"]}
+                        fontSize={BasicTextSizes}
+                        lineHeight={BasicTextLineHeight}
                         textAlign={["center", "center", "start"]}
                         order={[1, 1, 0]}
                         pt={["1.4em", "1.2em", "1.2em", "1.2em"]}
@@ -89,9 +101,9 @@ export default function IntroSection() {
 
 
                     <Link
-                        fontSize={["24px", "24px", "30px"]}
-                        width={["245px", "245px", "339px", "339px", "339px"]}
-                        height={["50px", "50px", "67px", "67px", "67px"]}
+                        fontSize={ButtonFontSizes}
+                        width={["245px", "245px", "245px", "339px", "339px"]}
+                        height={["50px", "50px", "50px", "67px", "67px"]}
                         order={[2, 2, 0, 0]}
                         alignSelf={["center", "center", "flex-start"]}
                         href="mailto:oana.moraru@morana.at" isExternal>

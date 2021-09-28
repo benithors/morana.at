@@ -1,7 +1,7 @@
 import {GridItem, Heading, ListItem, SimpleGrid, UnorderedList} from "@chakra-ui/react";
 import MoranaService from "../components/Service";
 import React from "react";
-import {SectionHeaderSizes} from "../components/ResponsiveSizes";
+import {BasicTextSizes, SectionFontSizes} from "../components/ResponsiveSizes";
 
 export default function ServicesSection() {
     const servicesFontSize = ["14px", "15px", "16px", "20px"];
@@ -15,14 +15,14 @@ export default function ServicesSection() {
             <GridItem
                 colStart={[2, 2, 2, 2, 1]} colEnd={13}
                 display={"flex"} flexDirection={"row"} pt={["4em", "5em", "5em", "8em", "1em"]}>
-                <Heading fontSize={SectionHeaderSizes}
+                <Heading fontSize={SectionFontSizes}
                          variant="services"
                          textAlign={"center"}
                          color={"brand.secondary"}>
                     /
                 </Heading>
 
-                <Heading fontSize={SectionHeaderSizes}
+                <Heading fontSize={SectionFontSizes}
                          lineHeight={"23px"}
                          variant="services" textAlign={"center"} whiteSpace={"break-spaces"}>
                     {" "} Services
@@ -32,12 +32,12 @@ export default function ServicesSection() {
 
 
                 <SimpleGrid
-                    pt={"2em"} columns={[1, 1, 2, 2, 3]} spacing={10}>
+                    pt={["2em","2em","4em"]} columns={[1, 1, 2, 2, 3]} spacing={10}>
                     <MoranaService imagePath={"/static/svg/PO-Icon-Group.svg"}
                                    height={102}
                                    width={112}
                                    title={"Product Ownership"}>
-                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
+                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={BasicTextSizes}>
                             <ListItem>Backlog setup, management & refinement </ListItem>
                             <ListItem>Prioritization of requirements</ListItem>
                             <ListItem>User stories & acceptance criteria acquisition</ListItem>
@@ -49,7 +49,7 @@ export default function ServicesSection() {
                                    height={104}
                                    width={110}
                                    title={"Scrum Master"}>
-                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
+                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={BasicTextSizes}>
                             <ListItem>SCRUM process setup & initiation</ListItem>
                             <ListItem>Ceremonies preparation & moderation</ListItem>
                             <ListItem>Conflict identification, analysis & resolution</ListItem>
@@ -61,7 +61,7 @@ export default function ServicesSection() {
                                    height={100}
                                    width={108}
                                    title={"UX/UI Design"}>
-                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
+                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={BasicTextSizes}>
                             <ListItem>Low & high fidelity prototypes</ListItem>
                             <ListItem>Mockups, click dummies</ListItem>
                             <ListItem>Usability analysis & improvement suggestions</ListItem>
@@ -73,7 +73,7 @@ export default function ServicesSection() {
                                    height={106}
                                    width={111}
                                    title={"Team Leadership"}>
-                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
+                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={BasicTextSizes}>
                             <ListItem>Establish team goals, structure & values</ListItem>
                             <ListItem>Recruiting of team members</ListItem>
                             <ListItem>Leadership skills</ListItem>
@@ -86,7 +86,7 @@ export default function ServicesSection() {
                                    height={102}
                                    width={112}
                                    title={"Business Analysis"}>
-                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
+                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={BasicTextSizes}>
                             <ListItem>Stakeholder management</ListItem>
                             <ListItem>IS-state analysis</ListItem>
                             <ListItem>SHOULD BE-state analysis</ListItem>
@@ -98,7 +98,7 @@ export default function ServicesSection() {
                                    height={106}
                                    width={111}
                                    title={"Requirements Engineering"}>
-                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding} fontSize={servicesFontSize}>
+                        <UnorderedList fontFamily={"ABeeZee"} pt={servicesListHeadingPadding}  fontSize={BasicTextSizes}>
                             <ListItem>Requirements elicitation</ListItem>
                             <ListItem>Requirements analysis</ListItem>
                             <ListItem>Requirements documentation</ListItem>

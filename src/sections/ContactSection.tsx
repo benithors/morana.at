@@ -1,6 +1,6 @@
 import {Box, Button, GridItem, Heading, Link, SimpleGrid, Text} from "@chakra-ui/react";
 import React from "react";
-import {SectionHeaderSizes} from "../components/ResponsiveSizes";
+import {Button2FontSizes, ButtonFontSizes, Header1FontSizes, Header2LineHeight, SectionFontSizes} from "../components/ResponsiveSizes";
 
 export default function ContactSection() {
     return <>
@@ -8,21 +8,21 @@ export default function ContactSection() {
             width={"100%"}
             maxW={["100%", "100%", "1024px"]}
             zIndex={2}
-            pt={["0em", "2em","3em", "3em"]}
+            pt={["0em", "2em","2em", "3em"]}
             mb={"5em"}
             columns={[12, 12, 12, 12, 12]}
             id={"contactSection"}
         >
             <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 12, 12]}
                       display={"flex"} flexDirection={"row"} pt={"5em"}>
-                <Heading fontSize={SectionHeaderSizes}
+                <Heading fontSize={SectionFontSizes}
                          variant="services"
                          textAlign={"center"}
                          color={"brand.secondary"}>
                     /
                 </Heading>
 
-                <Heading fontSize={SectionHeaderSizes}
+                <Heading fontSize={SectionFontSizes}
                          lineHeight={"23px"}
                          variant="services" textAlign={"center"} whiteSpace={"break-spaces"}>
                     {" "} Contact
@@ -37,8 +37,8 @@ export default function ContactSection() {
                       justifySelf={"start"}
             >
                 <Heading variant="header2"
-                         lineHeight={["40px", "40px", "40px", "50px", "90px"]}
-                         fontSize={["28px", "35px", "40px", "50px", "70px"]}
+                         lineHeight={Header2LineHeight}
+                         fontSize={["28px","50px","50px","50px","76px"]}
                          fontFamily={"Fugaz One"}
                          color={"black"}
                          display={"inline"}
@@ -68,14 +68,13 @@ export default function ContactSection() {
 
 
             <GridItem  pt={"0.5em"}
-                       colStart={[1, 1, 2, 1, 1]} colEnd={[13, 13, 6, 13, 13]}>
-                <Box display={"flex"} justifyContent={"center"}>
+                       colStart={[1, 1, 2, 2, 1]} colEnd={[13, 13, 13, 13, 13]}>
+                <Box display={"flex"} justifyContent={["center", "center","start", "start"]}>
                     <Link
-                        w={"245px"}
-                        fontSize={["24px", "24px", "30px"]}
-                        width={["245px", "245px", "339px", "339px", "339px"]}
-                        height={["50px", "50px", "67px", "67px", "67px"]}
-                        justifySelf={["center", "center", "start"]}
+                        fontSize={Button2FontSizes}
+                        width={["245px", "339px", "339px", "339px", "339px"]}
+                        height={["50px", "67px", "67px", "67px", "67px"]}
+                        justifySelf={["center", "center","start", "start"]}
                         mt={["1em", "2em"]}
                         href="mailto:oana.moraru@morana.at" isExternal
                     >

@@ -13,14 +13,14 @@ const moranaHeading = {
     // Two variants: outline and solid
     variants: {
         header1: {
-            color: "brand.white",
-            fontSize: "20px",
+            fontWeight: "400",
+            fontStyle: "normal",
+            color: "brand.secondary",
         },
         header2: {
             fontWeight: "400",
             fontStyle: "normal",
             color: "brand.secondary",
-            fontSize: "40px",
         },
         header3: {
             fontStyle: "normal",

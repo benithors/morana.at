@@ -15,29 +15,29 @@ export default function FooterSection() {
              overflowX={"hidden"}
              backgroundSize={"100% 100%"}
              backgroundRepeat={"no-repeat"}
-             bgImage={["url('/static/svg/bg3Mobile.svg')", "url('/static/svg/bg3Mobile.svg')", "url('/static/svg/bg3Desktop.svg')"]}>
+             bgImage={["url('/static/svg/bg3Mobile.svg')", "url('/static/svg/bg3Mobile.svg')", "url('/static/svg/bg3Ipad.svg')", "url('/static/svg/bg3Ipad.svg')", "url('/static/svg/bg3Desktop.svg')"]}>
             <SimpleGrid
                 columns={24}
                 maxW={["100%", "100%", "1055px"]}
-                pt={["10em", "16em", "2em"]}
+                pt={["10em", "16em", "20em"]}
                 zIndex={2}
                 w={"100%"}
             >
 
                 <GridItem
-                    colStart={[5, 5, 9, 9, 8]} colEnd={[21, 21, 17, 17, 18]}
+                    colStart={[5, 7, 8, 8, 8]} colEnd={[21, 19, 18, 18, 18]}
                     display={"block"}
                     position={"relative"}
                     alignSelf={"center"}
                     boxSizing={"border-box"}
-                    pt={"1em"}
+
                 >
-                    <MoranaImageContainer height={"94%"} width={"94%"} ml={"4px"} mt={"4px"} oanaPic={Oana3} priority={false}/>
+                    <MoranaImageContainer height={"99%"} width={"99%"} ml={"3px"} mt={"1px"} oanaPic={Oana3} priority={false}/>
                 </GridItem>
 
 
-                <GridItem colStart={1} colEnd={[24, 24, 23]}
-                          justifySelf={["center", "center", "flex-end"]}
+                <GridItem colStart={2} colEnd={[24, 24, 24]}
+                          justifySelf={["center", "center","center","center", "flex-end"]}
                           justifyContent={"space-between"}
                           display={"flex"}
                           flexDirection={"row"}
@@ -75,20 +75,20 @@ export default function FooterSection() {
                     </Box>
                 </GridItem>
 
-                <GridItem colStart={[3, 3, 5, 4, 1]} colEnd={[12, 12, 23, 23, 23]}
+                <GridItem colStart={[3, 3, 3, 3, 1]} colEnd={[12, 12, 23, 23, 23]}
                           mb={"2em"}
                           display={"flex"}
                           flexDirection={"row"}
                           justifyContent={"space-between"}
                           pt={"3em"}>
                     <Box>
-                        <Text  fontSize={"10px"} fontFamily={"AbeeZee"} color={["white", "white", "white"]}>
+                        <Text  fontSize={["10px", "12px", "12px", "14px"]} fontFamily={"AbeeZee"} color={["white", "white", "white"]}>
                             Copyright @Morana.at
                         </Text>
                     </Box>
                     <Box display={["none", "none", "block"]}>
                         <Link href="/privacy">
-                            <Text color={"brand.secondary"}  fontSize={servicesFontSize} fontFamily={"AbeeZee"}>
+                            <Text color={"brand.secondary"}  fontSize={["10px", "12px", "12px", "14px"]} fontFamily={"AbeeZee"}>
                                 Privacy
                             </Text>
                         </Link>

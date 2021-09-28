@@ -1,9 +1,10 @@
-import {Box, GridItem, Heading, SimpleGrid, Text} from "@chakra-ui/react";
+import {Box, Button, GridItem, Heading, SimpleGrid, Text} from "@chakra-ui/react";
 import MoranaImageContainer from "../components/MoranaImageContainer";
 import React from "react";
-import {SectionHeaderSizes} from "../components/ResponsiveSizes";
+import {BasicTextLineHeight, BasicTextSizes, Button2FontSizes, Header1FontSizes, Header2LineHeight, SectionFontSizes} from "../components/ResponsiveSizes";
 import Oana2 from "../../public/static/images/Oana2.png"
 import ExpierenceSection from "./ExperienceSection";
+import Link from "next/link";
 
 export default function AboutSection() {
     return (
@@ -22,21 +23,21 @@ export default function AboutSection() {
                 width={"100%"}
                 maxW={["100%", "100%", "1024px"]}
                 zIndex={2}
-                pt={["18em", "14em","14em","14em"]}
-                columns={12}
+                pt={["18em", "14em","18em","18em"]}
+                columns={24}
                 id={"aboutSection"}
             >
                 <GridItem
                     display={"flex"} flexDirection={"row"}
-                    colStart={[2, 2, 2, 2, 1]} colEnd={[12, 11, 7, 7, 7]}>
-                    <Heading fontSize={SectionHeaderSizes}
+                    colStart={[3, 3, 3, 3, 2]} colEnd={[23, 22, 14,14, 14]}>
+                    <Heading fontSize={SectionFontSizes}
                              variant="services"
                              textAlign={"center"}
                              color={"brand.secondary"}>
                         /
                     </Heading>
 
-                    <Heading fontSize={SectionHeaderSizes}
+                    <Heading fontSize={SectionFontSizes}
                              lineHeight={"23px"}
                              color={"white"}
 
@@ -46,20 +47,18 @@ export default function AboutSection() {
                 </GridItem>
             </SimpleGrid>
 
-            <SimpleGrid pt={["1em", "2em", "10em"]}
+            <SimpleGrid pt={["1em", "2em", "3.5em"]}
                         width={"100%"}
                         maxW={["100%", "100%", "1024px"]}
-                        columns={[12, 12, 12, 12]}
+                        columns={24}
                         zIndex={2}
-
             >
 
                 <GridItem
-                    colStart={[1, 1, 2, 2, 1]} colEnd={[12, 12, 6, 6, 6]}
+                    colStart={[2, 2, 5, 5, 2]} colEnd={[23, 23, 14, 14, 14]}
                     display={["none", "none", "flex"]}
                     position={"relative"}
                     boxSizing={"border-box"}
-
                 >
                     <MoranaImageContainer  height={"92%"} width={"92%"} ml={"9px"} mt={"5px"} oanaPic={Oana2}  priority={false}/>
                 </GridItem>
@@ -67,12 +66,13 @@ export default function AboutSection() {
                 <GridItem display={"flex"}
                           flexDirection="column"
                           zIndex={2}
-                          colStart={[2, 2, 8, 8, 8]} colEnd={[12, 12, 12, 12, 13]}
+                          colStart={[5, 4, 16, 16, 16]} colEnd={21}
+                          pt={["0px","0px","25px","0px"]}
                 >
                     <Heading variant="header2"
-                             lineHeight={["40px","60px","80px"]}
-                             pt={["25px", "25px", "0px", "0px"]}
-                             fontSize={["42px", "50px", "50px", "50px", "76px"]}
+                             lineHeight={["40px","60px","60px","80px"]}
+                             pt={["25px", "25px", "0px", "30px"]}
+                             fontSize={["40px", "50px", "50px", "76px", "76px"]}
                              textAlign={["center", "center", "start"]}
                              alignSelf={["center", "center", "flex-start"]}   >
                         My heart beats agile!
@@ -81,7 +81,7 @@ export default function AboutSection() {
                 <GridItem display={"flex"}
                           flexDirection="column"
                           zIndex={2}
-                          colStart={[3, 2, 8, 8, 8]} colEnd={[11, 12, 12, 12, 13]}
+                          colStart={[5, 4, 16, 16, 16]} colEnd={[21, 23, 23, 23, 23]}
                 >
                     <Box
                         display={["flex", "flex", "none"]}
@@ -96,13 +96,12 @@ export default function AboutSection() {
                 <GridItem display={"flex"}
                           flexDirection="column"
                           zIndex={2}
-                          colStart={[2, 2, 8, 8, 8]} colEnd={[12, 12, 12, 12, 13]}
+                          colStart={[3, 3, 3, 3, 16]} colEnd={23}
                 >
                     <Text
-
                         variant={"primary"}
-                        fontSize={["14px", "16px", "14px", "18px"]}
-                        lineHeight={["17px", "20px", "20px", "24px"]}
+                        fontSize={BasicTextSizes}
+                        lineHeight={BasicTextLineHeight}
                         textAlign={["start", "start", "start"]}
                         pt={"1.5em"}
                         alignSelf={["center", "center", "flex-start"]}>
@@ -110,8 +109,8 @@ export default function AboutSection() {
                     </Text>
                     <Text variant={"primary"}
 
-                          fontSize={["14px", "16px", "14px", "18px"]}
-                          lineHeight={["17px", "20px", "20px", "24px"]}
+                          fontSize={BasicTextSizes}
+                          lineHeight={BasicTextLineHeight}
                           textAlign={["start", "start", "start"]}
                           pt={"1.5em"}
                           alignSelf={["center", "center", "flex-start"]}>
@@ -124,6 +123,20 @@ export default function AboutSection() {
 
             </SimpleGrid>
                 <ExpierenceSection/>
+
+                <Box zIndex={2} justifyContent={"center"} alignItems={"center"} pt={["0em","0em","2em"]} pb={["0em","0em","6em"]}>
+                    <Link href="CV_Moraru.pdf">
+                        <Button variant={"desktop"}
+                                fontSize={Button2FontSizes}
+                                width={["245px", "339px", "339px", "339px", "339px"]}
+                                height={["50px", "67px", "67px", "67px", "67px"]}
+                                display={["none", "none", "flex"]}
+                        >
+                            Download Resume
+                        </Button>
+                    </Link>
+
+                </Box>
             </Box>
         </>
     )
