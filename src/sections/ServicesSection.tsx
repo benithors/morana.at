@@ -2,6 +2,7 @@ import {GridItem, Heading, ListItem, SimpleGrid, UnorderedList} from "@chakra-ui
 import MoranaService from "../components/Service";
 import React from "react";
 import {BasicTextSizes, SectionFontSizes} from "../components/ResponsiveSizes";
+import {headerHeightPx} from "../components/HeadyDesktop";
 
 export default function ServicesSection() {
     const servicesFontSize = ["14px", "15px", "16px", "20px"];
@@ -10,11 +11,14 @@ export default function ServicesSection() {
         <SimpleGrid
             maxW={["100%", "100%", "1024px"]}
             columns={12}
-            id={"servicesSection"}
+
+            pb={["4em", "5em", "5em", "8em", "1em"]}
         >
             <GridItem
+                id={"servicesSection"}
+                pt={["70px", "70px", "100px","100px","100px"]}
                 colStart={[2, 2, 2, 2, 1]} colEnd={13}
-                display={"flex"} flexDirection={"row"} pt={["4em", "5em", "5em", "8em", "1em"]}>
+                display={"flex"} flexDirection={"row"} >
                 <Heading fontSize={SectionFontSizes}
                          variant="services"
                          textAlign={"center"}

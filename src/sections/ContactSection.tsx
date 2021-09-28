@@ -12,9 +12,11 @@ export default function ContactSection() {
             mb={"5em"}
             columns={[12, 12, 12, 12, 12]}
             id={"contactSection"}
+            pb={"5em"}
         >
             <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 12, 12]}
-                      display={"flex"} flexDirection={"row"} pt={"5em"}>
+                      display={"flex"} flexDirection={"row"}
+                      pt={["70px", "70px", "100px","100px","100px"]}>
                 <Heading fontSize={SectionFontSizes}
                          variant="services"
                          textAlign={"center"}
@@ -37,7 +39,7 @@ export default function ContactSection() {
                       justifySelf={"start"}
             >
                 <Heading variant="header2"
-                         lineHeight={Header2LineHeight}
+                         lineHeight={["40px","60px","60px","60px","90px"]}
                          fontSize={["28px","50px","50px","50px","76px"]}
                          fontFamily={"Fugaz One"}
                          color={"black"}

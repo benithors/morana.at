@@ -2,7 +2,6 @@ import React from 'react'
 import {Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay, GridItem, Heading, SimpleGrid, Text, useDisclosure} from "@chakra-ui/react";
 import Image from 'next/image'
 import moranaIcon from '../../public/static/svg/moranaIcon.svg'
-import * as Scroll from 'react-scroll'
 import {useRouter} from "next/router";
 
 export const headerHeightPx = ["54px", "80px"];
@@ -10,13 +9,12 @@ export const headerHeightPx = ["54px", "80px"];
 
 const HeadyDesktop = () => {
     const height = ["54px", "54px", "54px","54px","80px"];
-    var scroll = Scroll.animateScroll;
     const {isOpen, onOpen, onClose} = useDisclosure();
     const btnRef = React.useRef();
     const router = useRouter()
 
     function scrollHome() {
-        scroll.scrollToTop();
+        router.push('/#');
         onClose();
     }
 

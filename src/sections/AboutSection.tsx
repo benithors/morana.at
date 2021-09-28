@@ -1,10 +1,11 @@
 import {Box, Button, GridItem, Heading, SimpleGrid, Text} from "@chakra-ui/react";
 import MoranaImageContainer from "../components/MoranaImageContainer";
 import React from "react";
-import {BasicTextLineHeight, BasicTextSizes, Button2FontSizes, Header1FontSizes, Header2LineHeight, SectionFontSizes} from "../components/ResponsiveSizes";
+import {BasicTextLineHeight, BasicTextSizes, Button2FontSizes, SectionFontSizes} from "../components/ResponsiveSizes";
 import Oana2 from "../../public/static/images/Oana2.png"
 import ExpierenceSection from "./ExperienceSection";
 import Link from "next/link";
+import {headerHeightPx} from "../components/HeadyDesktop";
 
 export default function AboutSection() {
     return (
@@ -16,115 +17,120 @@ export default function AboutSection() {
                  overflowX={"hidden"}
                  backgroundSize={"100% 100%"}
                  backgroundRepeat={"no-repeat"}
-                 bgImage={["url('/static/svg/bg2Mobile.svg')","url('/static/svg/bg2Mobile.svg')","url('/static/svg/bg2Desktop.svg')","url('/static/svg/bg2Desktop.svg')"]}
-            pb={"8em"}>
-            <SimpleGrid
+                 bgImage={["url('/static/svg/bg2Mobile.svg')", "url('/static/svg/bg2Mobile.svg')", "url('/static/svg/bg2Desktop.svg')", "url('/static/svg/bg2Desktop.svg')"]}
 
-                width={"100%"}
-                maxW={["100%", "100%", "1024px"]}
-                zIndex={2}
-                pt={["18em", "14em","18em","18em"]}
-                columns={24}
-                id={"aboutSection"}
-            >
-                <GridItem
-                    display={"flex"} flexDirection={"row"}
-                    colStart={[3, 3, 3, 3, 2]} colEnd={[23, 22, 14,14, 14]}>
-                    <Heading fontSize={SectionFontSizes}
-                             variant="services"
-                             textAlign={"center"}
-                             color={"brand.secondary"}>
-                        /
-                    </Heading>
-
-                    <Heading fontSize={SectionFontSizes}
-                             lineHeight={"23px"}
-                             color={"white"}
-
-                             variant="services" textAlign={"center"} whiteSpace={"break-spaces"}>
-                        {" "} About
-                    </Heading>
-                </GridItem>
-            </SimpleGrid>
-
-            <SimpleGrid pt={["1em", "2em", "3.5em"]}
-                        width={"100%"}
-                        maxW={["100%", "100%", "1024px"]}
-                        columns={24}
-                        zIndex={2}
-            >
-
-                <GridItem
-                    colStart={[2, 2, 5, 5, 2]} colEnd={[23, 23, 14, 14, 14]}
-                    display={["none", "none", "flex"]}
-                    position={"relative"}
-                    boxSizing={"border-box"}
+               >
+                <SimpleGrid
+                    width={"100%"}
+                    maxW={["100%", "100%", "1024px"]}
+                    zIndex={2}
+                    pt={["18em", "14em", "18em", "18em"]}
+                    columns={24}
                 >
-                    <MoranaImageContainer  height={"92%"} width={"92%"} ml={"9px"} mt={"5px"} oanaPic={Oana2}  priority={false}/>
-                </GridItem>
+                    <GridItem
+                        pt={headerHeightPx}
+                        id={"aboutSection"}
+                        pb={"8em"}
+                        display={"flex"} flexDirection={"row"}
+                        colStart={[3, 3, 3, 3, 2]} colEnd={[23, 22, 14, 14, 14]}>
+                        <Heading fontSize={SectionFontSizes}
+                                 variant="services"
+                                 textAlign={"center"}
+                                 color={"brand.secondary"}
+                               >
+                            /
+                        </Heading>
 
-                <GridItem display={"flex"}
-                          flexDirection="column"
-                          zIndex={2}
-                          colStart={[5, 4, 16, 16, 16]} colEnd={21}
-                          pt={["0px","0px","25px","0px"]}
+                        <Heading fontSize={SectionFontSizes}
+                                 lineHeight={"23px"}
+                                 color={"white"}
+
+                                 variant="services" textAlign={"center"} whiteSpace={"break-spaces"}>
+                            {" "} About
+                        </Heading>
+                    </GridItem>
+                </SimpleGrid>
+
+                <SimpleGrid pt={["1em", "2em", "3.5em"]}
+                            width={"100%"}
+                            maxW={["100%", "100%", "1024px"]}
+                            columns={24}
+                            zIndex={2}
                 >
-                    <Heading variant="header2"
-                             lineHeight={["40px","60px","60px","80px"]}
-                             pt={["25px", "25px", "0px", "30px"]}
-                             fontSize={["40px", "50px", "50px", "76px", "76px"]}
-                             textAlign={["center", "center", "start"]}
-                             alignSelf={["center", "center", "flex-start"]}   >
-                        My heart beats agile!
-                    </Heading>
-                </GridItem>
-                <GridItem display={"flex"}
-                          flexDirection="column"
-                          zIndex={2}
-                          colStart={[5, 4, 16, 16, 16]} colEnd={[21, 23, 23, 23, 23]}
-                >
-                    <Box
-                        display={["flex", "flex", "none"]}
+
+                    <GridItem
+                        pt={["0em", "0em", "0em", "0em", "2em",]}
+                        colStart={[2, 2, 5, 5, 2]} colEnd={[23, 23, 14, 14, 10]}
+                        display={["none", "none", "flex"]}
                         position={"relative"}
-                        alignSelf={"center"}
                         boxSizing={"border-box"}
-                        pt={"1.5em"}
+                        rowSpan={[1, 1, 1, 1, 2]}
                     >
-                        <MoranaImageContainer  height={"92%"} width={"92%"} ml={"7px"} mt={"5px"} oanaPic={Oana2}  priority={false}/>
-                    </Box>
-                </GridItem>
-                <GridItem display={"flex"}
-                          flexDirection="column"
-                          zIndex={2}
-                          colStart={[3, 3, 3, 3, 16]} colEnd={23}
-                >
-                    <Text
-                        variant={"primary"}
-                        fontSize={BasicTextSizes}
-                        lineHeight={BasicTextLineHeight}
-                        textAlign={["start", "start", "start"]}
-                        pt={"1.5em"}
-                        alignSelf={["center", "center", "flex-start"]}>
-                        Hi, I am Oana! - very open and determined, a go-getter, who achieves the goals she sets her mind to. Always giving 110%, I am reliable and autonomous, more than happy to take on the responsibility of my team and/or product.
-                    </Text>
-                    <Text variant={"primary"}
+                        <MoranaImageContainer height={"92%"} width={"92%"} ml={"9px"} mt={"5px"} oanaPic={Oana2} priority={false}/>
+                    </GridItem>
 
-                          fontSize={BasicTextSizes}
-                          lineHeight={BasicTextLineHeight}
-                          textAlign={["start", "start", "start"]}
-                          pt={"1.5em"}
-                          alignSelf={["center", "center", "flex-start"]}>
-                        I bring structure, transparence and drive into your projects & teams, helping you reach your business goals in a timely and highly qualitative manner.
-                    </Text>
+                    <GridItem display={"flex"}
+                              flexDirection="column"
+                              zIndex={2}
+                              colStart={[5, 4, 16, 16, 11]} colEnd={[21, 21, 21, 21, 23]}
+                              pt={["0px", "0px", "25px", "0px"]}
+
+                    >
+                        <Heading variant="header2"
+                                 lineHeight={["40px", "60px", "60px", "80px"]}
+                                 pt={["25px", "25px", "0px", "30px"]}
+                                 fontSize={["40px", "50px", "50px", "76px", "65px"]}
+                                 textAlign={["center", "center", "start"]}
+                                 alignSelf={["center", "center", "flex-start"]}>
+                            My heart beats agile!
+                        </Heading>
+                    </GridItem>
+                    <GridItem display={["flex", "flex", "none"]}
+                              flexDirection="column"
+                              zIndex={2}
+                              colStart={[5, 4, 0, 0, 0]} colEnd={[21, 23, 0, 0, 0]}
+
+                    >
+                        <Box
+                            display={["flex", "flex", "none"]}
+                            position={"relative"}
+                            alignSelf={"center"}
+                            boxSizing={"border-box"}
+                            pt={"1.5em"}>
+                            <MoranaImageContainer height={"92%"} width={"92%"} ml={"7px"} mt={"5px"} oanaPic={Oana2} priority={false}/>
+                        </Box>
+                    </GridItem>
+                    <GridItem display={"flex"}
+                              flexDirection="column"
+                              zIndex={2}
+                              colStart={[3, 3, 3, 3, 11]} colEnd={23}
+                    >
+                        <Text
+                            variant={"primary"}
+                            fontSize={BasicTextSizes}
+                            lineHeight={BasicTextLineHeight}
+                            textAlign={["start", "start", "start"]}
+                            pt={"1.5em"}
+                            alignSelf={["center", "center", "flex-start"]}>
+                            Hi, I am Oana! - very open and determined, a go-getter, who achieves the goals she sets her mind to. Always giving 110%, I am reliable and autonomous, more than happy to take on the responsibility of my team and/or product.
+                        </Text>
+                        <Text variant={"primary"}
+                              fontSize={BasicTextSizes}
+                              lineHeight={BasicTextLineHeight}
+                              textAlign={["start", "start", "start"]}
+                              pt={"1.5em"}
+                              alignSelf={["center", "center", "flex-start"]}>
+                            I bring structure, transparence and drive into your projects & teams, helping you reach your business goals in a timely and highly qualitative manner.
+                        </Text>
 
 
-                </GridItem>
+                    </GridItem>
 
 
-            </SimpleGrid>
+                </SimpleGrid>
                 <ExpierenceSection/>
 
-                <Box zIndex={2} justifyContent={"center"} alignItems={"center"} pt={["0em","0em","2em"]} pb={["0em","0em","6em"]}>
+                <Box zIndex={2} justifyContent={"center"} alignItems={"center"} pt={["0em", "0em", "2em"]} pb={["0em", "0em", "6em"]}>
                     <Link href="CV_Moraru.pdf">
                         <Button variant={"desktop"}
                                 fontSize={Button2FontSizes}

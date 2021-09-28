@@ -19,7 +19,7 @@ export default function FooterSection() {
             <SimpleGrid
                 columns={24}
                 maxW={["100%", "100%", "1055px"]}
-                pt={["10em", "16em", "20em"]}
+                pt={["10em", "16em", "20em", "20em", "0em"]}
                 zIndex={2}
                 w={"100%"}
             >
