@@ -3,6 +3,7 @@ import React from "react";
 import HeadyDesktop from "../components/HeadyDesktop";
 import FooterSection from "../sections/FooterSection";
 import ContactSection from "../sections/ContactSection";
+import {BasicTextLineHeight, BasicTextSizes, Header1FontSizes, Header2FontSizes} from "../components/ResponsiveSizes";
 
 
 const privacy = () => {
@@ -42,7 +43,7 @@ const privacy = () => {
                             <Heading variant="header2"
                                      lineHeight={["40px", "60px", "80px"]}
                                      pt={"1em"}
-                                     fontSize={["42px", "50px", "50px", "50px", "76px"]}
+                                     fontSize={Header1FontSizes}
                                      textAlign={["center", "center", "start"]}
                                      alignSelf={"center"}>
                                 Imprint
@@ -54,14 +55,14 @@ const privacy = () => {
                                      variant={"heading4"}
                                      pt={HeadingPaddingTop1}
                                      color={"white"}
-                                     fontSize={["24px", "24px", "26px", "40px"]}>
+                                     fontSize={Header1FontSizes}>
                                 Company
                             </Heading>
 
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "14px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
@@ -70,8 +71,8 @@ const privacy = () => {
 
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "16px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
@@ -79,27 +80,29 @@ const privacy = () => {
                             </Text>
 
 
-                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"} fontSize={["22px", "22px", "24px", "26px"]}>
+                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"}
+                                     fontSize={Header2FontSizes}>
                                 Business purpose
                             </Heading>
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "16px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
                                 IT Services
                             </Text>
 
-                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"} fontSize={["24px", "24px", "26px", "40px"]}>
+                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"}
+                                     fontSize={Header1FontSizes}>
                                 Contact
                             </Heading>
 
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "16px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
@@ -108,21 +111,22 @@ const privacy = () => {
 
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "16px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
                                 oana.moraru@morana.at
                             </Text>
 
-                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"} fontSize={["22px", "22px", "24px", "26px"]}>
+                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"}
+                                     fontSize={Header2FontSizes}>
                                 UID-Number
                             </Heading>
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "16px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
@@ -130,8 +134,8 @@ const privacy = () => {
                             </Text>
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "16px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
@@ -139,7 +143,8 @@ const privacy = () => {
                             </Text>
 
 
-                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"} fontSize={["24px", "24px", "26px", "40px"]}>
+                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"}
+                                     fontSize={Header1FontSizes}>
                                 Professional Law
                             </Heading>
                             <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"} fontSize={["22px", "22px", "24px", "26px"]}>
@@ -147,29 +152,30 @@ const privacy = () => {
                             </Heading>
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "16px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
                                 www.ris.bka.gv.at
                             </Text>
 
-                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"} fontSize={["22px", "22px", "24px", "26px"]}>
+                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"}
+                                     fontSize={Header2FontSizes}>
                                 Supervisory authority/commercial authority
                             </Heading>
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "16px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
                                 Authority according to ECG (E-Commerce Act) Municipal District Office of the 10th District, MBA 10
                             </Text> <Text
                             variant={"primary"}
-                            fontSize={["14px", "16px", "14px", "18px"]}
-                            lineHeight={["17px", "20px", "20px", "24px"]}
+                            fontSize={BasicTextSizes}
+                            lineHeight={BasicTextLineHeight}
                             textAlign={"start"}
                             pt={"1.5em"}
                             alignSelf={["center", "center", "flex-start"]}>
@@ -177,21 +183,22 @@ const privacy = () => {
                         </Text>
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "16px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
                                 You can also send any complaints to the above e-mail address.
                             </Text>
-                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"} fontSize={["24px", "24px", "26px", "40px"]}>
+                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"}
+                                     fontSize={Header1FontSizes}>
                                 Liability for the content of this website
                             </Heading>
 
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "16px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
@@ -202,40 +209,43 @@ const privacy = () => {
 
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "16px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
                                 If you notice any problematic or illegal content, please contact me immediately at the email mentioned above!
                             </Text>
 
-                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"} fontSize={["24px", "24px", "26px", "40px"]}>
+                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"}
+                                     fontSize={Header1FontSizes}>
                                 Copyright notice
                             </Heading>
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "16px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
                                 All contents of this website (pictures, photos, texts, videos) are subject to copyright. If necessary, I will legally pursue the unauthorized use of parts of the content of my site.
                             </Text>
 
-                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"} fontSize={["24px", "24px", "26px", "40px"]}>
+                            <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"}
+                                     fontSize={Header1FontSizes}>
                                 Recording of data on this website
                             </Heading>
 
 
-                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"} fontSize={["22px", "22px", "24px", "26px"]}>
+                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"}
+                                     fontSize={Header2FontSizes}>
                                 Cookies
                             </Heading>
 
                             <Text
                                 variant={"primary"}
-                                fontSize={["14px", "16px", "14px", "18px"]}
-                                lineHeight={["17px", "20px", "20px", "24px"]}
+                                fontSize={BasicTextSizes}
+                                lineHeight={BasicTextLineHeight}
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>

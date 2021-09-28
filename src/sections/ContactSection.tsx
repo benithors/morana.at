@@ -11,12 +11,12 @@ export default function ContactSection() {
             pt={["0em", "2em","2em", "3em"]}
             mb={"5em"}
             columns={[12, 12, 12, 12, 12]}
-            id={"contactSection"}
+            id={"contact"}
             pb={"5em"}
         >
             <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 12, 12]}
                       display={"flex"} flexDirection={"row"}
-                      pt={["70px", "70px", "100px","100px","100px"]}>
+                      pt={["50px", "50px", "80px","80px","80px"]}>
                 <Heading fontSize={SectionFontSizes}
                          variant="services"
                          textAlign={"center"}

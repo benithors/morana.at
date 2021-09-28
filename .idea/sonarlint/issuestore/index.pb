@@ -13,8 +13,6 @@ E
 styles/moranaText.tsx,8\c\8c010d8c7f67b376853bfcffb905908ee6238df4
 M
 src/components/Experience.tsx,6\1\615a074b274a011157a872e37af2e4e9fb8df01f
-E
-src/pages/privacy.tsx,f\3\f339e6795d36f438d8504f28284cca89e1e8cd66
 G
 styles/moranaHeading.ts,c\5\c540dfbdd74959ffd77a00e931e4428153ccd2a8
 M

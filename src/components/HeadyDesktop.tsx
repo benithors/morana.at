@@ -3,6 +3,7 @@ import {Box, Drawer, DrawerBody, DrawerCloseButton, DrawerContent, DrawerOverlay
 import Image from 'next/image'
 import moranaIcon from '../../public/static/svg/moranaIcon.svg'
 import {useRouter} from "next/router";
+import {BasicTextSizes} from "./ResponsiveSizes";
 
 export const headerHeightPx = ["54px", "80px"];
 
@@ -20,27 +21,26 @@ const HeadyDesktop = () => {
 
 
     function jumpToAbout(){
-        router.push('/#aboutSection');
+        router.push('/#about');
         onClose();
     }
 
     function jumpToServices(){
-        router.push('/#servicesSection');
+        router.push('/#services');
         onClose();
     }
 
     function jumpToContact(){
         if (router.pathname == '/') {
-            router.push('/#contactSection');
+            router.push('/#contact');
         } else {
-            router.push('/privacy#contactSection');
+            router.push('/privacy#contact');
             onClose();
         }
         onClose();
     }
 
     function jumpToPrivacy(){
-
         router.push('/privacy');
         onClose();
     }
@@ -104,21 +104,21 @@ const HeadyDesktop = () => {
                 >
 
 
-                    <Box height={height} pt={ptServices} width={"70px"}       onClick={jumpToServices} >
+                    <Box height={height} pt={ptServices} width={["70px","80px"]}       onClick={jumpToServices} >
 
-                            <Text variant={"primary"} fontSize={"14px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
+                            <Text variant={"primary"} fontSize={BasicTextSizes} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
                                 Services
                             </Text>
                     </Box>
-                    <Box height={height} pt={ptServices} width={"70px"} onClick={jumpToAbout}>
+                    <Box height={height} pt={ptServices} width={["70px","80px"]} onClick={jumpToAbout}>
 
-                            <Text variant={"primary"} fontSize={"14px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"}>
+                            <Text variant={"primary"} fontSize={BasicTextSizes} lineHeight={"25px"} align={"center"} verticalAlign={"center"}>
                                 About
                             </Text>
                     </Box>
-                    <Box height={height} pt={ptServices} width={"70px"} mr={"30px"}  onClick={jumpToContact}>
+                    <Box height={height} pt={ptServices} width={["70px","80px"]} mr={"30px"}  onClick={jumpToContact}>
 
-                            <Text variant={"primary"} fontSize={"14px"} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
+                            <Text variant={"primary"} fontSize={BasicTextSizes} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
                                 Contact
                             </Text>
                     </Box>

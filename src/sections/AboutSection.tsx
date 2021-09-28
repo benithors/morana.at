@@ -28,8 +28,8 @@ export default function AboutSection() {
                     columns={24}
                 >
                     <GridItem
-                        pt={headerHeightPx}
-                        id={"aboutSection"}
+                        pt={["70px", "70px", "100px","100px","100px"]}
+                        id={"about"}
                         pb={"8em"}
                         display={"flex"} flexDirection={"row"}
                         colStart={[3, 3, 3, 3, 2]} colEnd={[23, 22, 14, 14, 14]}>
