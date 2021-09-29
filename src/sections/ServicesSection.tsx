@@ -10,7 +10,7 @@ export default function ServicesSection() {
         <SimpleGrid
             maxW={["100%", "100%", "1440px"]}
             columns={12}
-            pb={["0em", "0em", "0em", "0em", "0emem"]}
+            pb={["0em", "0em", "0em", "0em", "3em"]}
             w={"100%"}
         >
             <GridItem

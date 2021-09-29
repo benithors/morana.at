@@ -9,7 +9,5 @@ E
 styles/moranaTheme.ts,4\c\4cca9997b33370a35ebd91991cd4a994ca46355a
 E
 styles/moranaText.tsx,8\c\8c010d8c7f67b376853bfcffb905908ee6238df4
-M
-src/components/Experience.tsx,6\1\615a074b274a011157a872e37af2e4e9fb8df01f
 G
 styles/moranaHeading.ts,c\5\c540dfbdd74959ffd77a00e931e4428153ccd2a8

@@ -28,10 +28,10 @@ export default function AboutSection() {
                     columns={24}
                 >
                     <GridItem
-                        pt={["70px", "70px", "0","50px","100px"]}
+                        pt={["70px", "70px", "0","50px","0px"]}
                         id={"about"}
                         display={"flex"} flexDirection={"row"}
-                        colStart={[3, 3, 3, 3, 1]} colEnd={[23, 22, 14, 14, 14]}>
+                        colStart={[3, 3, 3, 3, 3]} colEnd={[23, 22, 14, 14, 14]}>
                         <Heading fontSize={SectionFontSizes}
                                  variant="services"
                                  textAlign={"center"}
@@ -57,7 +57,7 @@ export default function AboutSection() {
 
                     <GridItem
                         pt={["0em", "0em", "0em", "0em", "2em",]}
-                        colStart={[2, 2, 5, 5, 2]} colEnd={[23, 23, 14, 14, 10]}
+                        colStart={[2, 2, 5, 5, 3]} colEnd={[23, 23, 14, 14, 10]}
                         display={["none", "none", "flex"]}
                         position={"relative"}
                         boxSizing={"border-box"}
@@ -76,10 +76,10 @@ export default function AboutSection() {
                         <Heading variant="header2"
                                  lineHeight={["40px", "60px", "60px", "80px"]}
                                  pt={["25px", "25px", "0px", "30px"]}
-                                 fontSize={["40px", "50px", "50px", "76px", "65px"]}
+                                 fontSize={["40px", "50px", "50px", "76px", "76px"]}
                                  textAlign={["center", "center", "start"]}
                                  alignSelf={["center", "center", "flex-start"]}>
-                            My heart beats agile!
+                            My heart beats Agile!
                         </Heading>
                     </GridItem>
                     <GridItem display={["flex", "flex", "none"]}

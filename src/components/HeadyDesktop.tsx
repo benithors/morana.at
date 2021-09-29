@@ -46,7 +46,7 @@ const HeadyDesktop = () => {
     }
 
     const menuSpacing = "2em";
-    const ptServices = "17px";
+    const ptServices = ["17px", "17px", "17px", "17px", "30px"];
     const desktopHeaderSectionWidth = ["70px","80px","80px","100px","100px"];
     return (
         <Box
@@ -78,10 +78,10 @@ const HeadyDesktop = () => {
                     <Box
                         minH={height}
                         minW={"41px"}
-                        pt={"15px"}
-                        mr={"8px"}
-                        height={["41px", "41px", "41px"]}
-                        w={["51px", "51px", "51px"]}
+                        pt={["15px","15px","15px","15px","20px"]}
+                        mr={["8px","8px","8px","8px","15px"]}
+                        height={["41px", "41px", "41px", "41px", "100px"]}
+                        w={["51px", "51px", "51px", "51px", "87px"]}
                     >
                         <Image
                             src={moranaIcon}
@@ -92,7 +92,7 @@ const HeadyDesktop = () => {
                     </Box>
 
                     <Heading
-                         color={"white"} fontSize={["20px", "20px","20px","20px","22px"]} height={height} pt={["17px", "17px", "17px"]}>
+                         color={"white"} fontSize={["20px", "20px","20px","20px","22px"]} height={height} pt={ptServices}>
                         Morana.at
                     </Heading>
                 </GridItem>
@@ -101,20 +101,19 @@ const HeadyDesktop = () => {
                           display={["none", "none","flex", "flex"]}
                           flexDirection="row"
                           justifySelf={"end"}
-
                           pl={"5em"}
                 >
 
 
                     <Box height={height} pt={ptServices} width={desktopHeaderSectionWidth}       onClick={jumpToServices} >
 
-                            <Text variant={"primary"} fontSize={BasicTextSizes} lineHeight={"25px"} align={"right"} verticalAlign={"center"} color={"white"}>
+                            <Text variant={"primary"} fontSize={BasicTextSizes} lineHeight={"25px"} align={"left"} verticalAlign={"center"} color={"white"}>
                                 Services
                             </Text>
                     </Box>
                     <Box height={height} pt={ptServices} width={desktopHeaderSectionWidth} onClick={jumpToAbout}>
 
-                            <Text variant={"primary"} fontSize={BasicTextSizes} lineHeight={"25px"} align={"right"} verticalAlign={"center"}>
+                            <Text variant={"primary"} fontSize={BasicTextSizes} lineHeight={"25px"} align={"center"} verticalAlign={"center"}>
                                 About
                             </Text>
                     </Box>
