@@ -10,7 +10,7 @@ export default function ServicesSection() {
         <SimpleGrid
             maxW={["100%", "100%", "1024px"]}
             columns={12}
-            pb={["4em", "5em", "5em", "8em", "1em"]}
+            pb={["0em", "5em", "5em", "8em", "1em"]}
             w={"100%"}
         >
             <GridItem
@@ -36,7 +36,6 @@ export default function ServicesSection() {
                     </Heading>
 
                     <Heading fontSize={SectionFontSizes}
-                             lineHeight={"23px"}
                              variant="services" textAlign={"center"} whiteSpace={"break-spaces"}>
                         {" "} Services
                     </Heading>

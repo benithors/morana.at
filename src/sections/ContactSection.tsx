@@ -25,7 +25,6 @@ export default function ContactSection() {
                 </Heading>
 
                 <Heading fontSize={SectionFontSizes}
-                         lineHeight={"23px"}
                          variant="services" textAlign={"center"} whiteSpace={"break-spaces"}>
                     {" "} Contact
                 </Heading>
@@ -35,7 +34,7 @@ export default function ContactSection() {
             <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[12, 11, 11, 12, 12]}
                       display={"flex"}
                       flexDirection="row"
-                      pt={["5em", "4em"]}
+                      pt={["12em", "4em"]}
                       justifySelf={"start"}
             >
                 <Heading variant="header2"
