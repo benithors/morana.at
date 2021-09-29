@@ -6,7 +6,7 @@ export default function ContactSection() {
     return <>
         <SimpleGrid
             width={"100%"}
-            maxW={["100%", "100%", "1024px"]}
+            maxW={["100%", "100%", "1440px"]}
             zIndex={2}
             pt={["0em", "2em","2em", "3em"]}
             mb={"5em"}
@@ -16,7 +16,7 @@ export default function ContactSection() {
         >
             <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 12, 12]}
                       display={"flex"} flexDirection={"row"}
-                      pt={["65px", "65px", "80px","80px","80px"]}>
+                      pt={["65px", "65px", "80px","0px","80px"]}>
                 <Heading fontSize={SectionFontSizes}
                          variant="services"
                          textAlign={"center"}
@@ -34,7 +34,7 @@ export default function ContactSection() {
             <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[12, 11, 11, 12, 12]}
                       display={"flex"}
                       flexDirection="row"
-                      pt={["12em", "4em"]}
+                      pt={["12em", "12em" ,"15em"]}
                       justifySelf={"start"}
             >
                 <Heading variant="header2"

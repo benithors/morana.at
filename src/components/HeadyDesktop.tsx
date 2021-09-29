@@ -47,6 +47,7 @@ const HeadyDesktop = () => {
 
     const menuSpacing = "2em";
     const ptServices = "17px";
+    const desktopHeaderSectionWidth = ["70px","80px","80px","100px","100px"];
     return (
         <Box
             display={"flex"}
@@ -63,13 +64,13 @@ const HeadyDesktop = () => {
             <SimpleGrid
                 width={"100%"}
                 columns={24}
-                maxW={["100%", "100%", "1024px"]}
+                maxW={["100%", "100%", "1440px"]}
                 id={"privacy"}
             >
 
 
                 <GridItem
-                    colStart={[2, 2,3, 2, 1]} colEnd={[20, 20, 12, 12, 12]}
+                    colStart={[2, 2,3, 3, 3]} colEnd={[20, 20, 12, 12, 12]}
                     display={"flex"}
                     flexDirection={"row"}
                     onClick={scrollHome}
@@ -96,29 +97,30 @@ const HeadyDesktop = () => {
                     </Heading>
                 </GridItem>
 
-                <GridItem colSpan={[2, 2, 12, 12]}
+                <GridItem colSpan={[2, 2, 11, 11]}
                           display={["none", "none","flex", "flex"]}
                           flexDirection="row"
                           justifySelf={"end"}
+
                           pl={"5em"}
                 >
 
 
-                    <Box height={height} pt={ptServices} width={["70px","80px"]}       onClick={jumpToServices} >
+                    <Box height={height} pt={ptServices} width={desktopHeaderSectionWidth}       onClick={jumpToServices} >
 
-                            <Text variant={"primary"} fontSize={BasicTextSizes} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
+                            <Text variant={"primary"} fontSize={BasicTextSizes} lineHeight={"25px"} align={"right"} verticalAlign={"center"} color={"white"}>
                                 Services
                             </Text>
                     </Box>
-                    <Box height={height} pt={ptServices} width={["70px","80px"]} onClick={jumpToAbout}>
+                    <Box height={height} pt={ptServices} width={desktopHeaderSectionWidth} onClick={jumpToAbout}>
 
-                            <Text variant={"primary"} fontSize={BasicTextSizes} lineHeight={"25px"} align={"center"} verticalAlign={"center"}>
+                            <Text variant={"primary"} fontSize={BasicTextSizes} lineHeight={"25px"} align={"right"} verticalAlign={"center"}>
                                 About
                             </Text>
                     </Box>
-                    <Box height={height} pt={ptServices} width={["70px","80px"]} mr={"30px"}  onClick={jumpToContact}>
+                    <Box height={height} pt={ptServices} width={desktopHeaderSectionWidth}  onClick={jumpToContact}>
 
-                            <Text variant={"primary"} fontSize={BasicTextSizes} lineHeight={"25px"} align={"center"} verticalAlign={"center"} color={"white"}>
+                            <Text variant={"primary"} fontSize={BasicTextSizes} lineHeight={"25px"} align={"right"} verticalAlign={"center"} color={"white"}>
                                 Contact
                             </Text>
                     </Box>

@@ -11,7 +11,7 @@ export default function ExpierenceSection() {
     return <SimpleGrid
         zIndex={2}
         width={"100%"}
-        maxW={["100%", "100%", "1024px"]}
+        maxW={["100%", "100%", "1440px"]}
         pt={["2.5em","2.5em","5em"]}
         columns={[12, 12, 12, 12, 12]}
          pb={"4em"}>
@@ -30,7 +30,7 @@ export default function ExpierenceSection() {
             </Experience>
         </GridItem>
 
-        <GridItem colStart={[2, 2, 2, 2, 5]} colEnd={[12, 12, 11, 11, 8]} pt={["2em","2em","4em","0em"]}>
+        <GridItem colStart={[2, 2, 2, 2, 5]} colEnd={[12, 12, 11, 11, 8]} pt={["2em","2em","4em","4em"]}>
             <Experience
                 title={"Capabilities\n"}>
 
@@ -73,7 +73,7 @@ export default function ExpierenceSection() {
             </Box>
         </GridItem>
 
-        <GridItem colStart={[2, 2, 2, 2, 8]} colEnd={[11, 11, 11, 11, 12]}  pt={["4em","4em","4em","0em"]}>
+        <GridItem colStart={[2, 2, 2, 2, 8]} colEnd={[11, 11, 11, 11, 12]}  pt={["4em","4em","4em","4em"]}>
             <Experience
                 title={"Work & Life"}>
                 <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} color={"white"} spacing={spacing} fontSize={BasicTextSizes}>

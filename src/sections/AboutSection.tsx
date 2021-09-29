@@ -18,17 +18,17 @@ export default function AboutSection() {
                  backgroundSize={"100% 100%"}
                  backgroundRepeat={"no-repeat"}
                  bgImage={["url('/static/svg/bg2Mobile.svg')", "url('/static/svg/bg2Mobile.svg')", "url('/static/svg/bg2Desktop.svg')", "url('/static/svg/bg2Desktop.svg')"]}
-                 pb={"7em"}
+                 pb={["7em","7em","7em","7em","7em",]}
                >
                 <SimpleGrid
                     width={"100%"}
-                    maxW={["100%", "100%", "1024px"]}
+                    maxW={["100%", "100%", "1440px"]}
                     zIndex={2}
                     pt={["15em", "14em", "18em", "18em"]}
                     columns={24}
                 >
                     <GridItem
-                        pt={["70px", "70px", "100px","100px","100px"]}
+                        pt={["70px", "70px", "0","50px","100px"]}
                         id={"about"}
                         display={"flex"} flexDirection={"row"}
                         colStart={[3, 3, 3, 3, 1]} colEnd={[23, 22, 14, 14, 14]}>
@@ -50,7 +50,7 @@ export default function AboutSection() {
 
                 <SimpleGrid pt={["1em", "2em", "3.5em"]}
                             width={"100%"}
-                            maxW={["100%", "100%", "1024px"]}
+                            maxW={["100%", "100%", "1440px"]}
                             columns={24}
                             zIndex={2}
                 >

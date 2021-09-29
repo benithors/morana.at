@@ -31,7 +31,7 @@ const privacy = () => {
 
 
                     <SimpleGrid pt={["4em", "4em", "10em"]}
-                                maxW={["100%", "100%", "1024px"]}
+                                maxW={["100%", "100%", "1440px"]}
                                 columns={[12, 12, 12, 12]}
                                 width={"100%"}
                     >

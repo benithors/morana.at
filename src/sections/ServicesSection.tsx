@@ -8,16 +8,15 @@ export default function ServicesSection() {
     const servicesListHeadingPadding = "0.7em";
     return (
         <SimpleGrid
-            maxW={["100%", "100%", "1024px"]}
+            maxW={["100%", "100%", "1440px"]}
             columns={12}
-            pb={["0em", "5em", "5em", "8em", "1em"]}
+            pb={["0em", "0em", "0em", "0em", "0emem"]}
             w={"100%"}
         >
             <GridItem
-                colStart={[2, 2, 2, 2, 1]} colEnd={13}
-
+                colStart={[2, 2, 2, 2, 2]} colEnd={13}
                 width={"100%"}
-                maxW={["100%", "100%", "1024px"]}
+                maxW={["100%", "100%", "1440px"]}
                 zIndex={2}
                 columns={12}
 
@@ -25,8 +24,8 @@ export default function ServicesSection() {
                 <GridItem
 
                     id={"services"}
-                    pt={["70px", "70px", "100px", "100px", "100px"]}
-                    colStart={[2, 2, 2, 2, 1]} colEnd={13}
+                    pt={["70px", "70px", "100px", "100px", "70px"]}
+                    colStart={[2, 2, 2, 2, 2]} colEnd={13}
                     display={"flex"} flexDirection={"row"}>
                     <Heading fontSize={SectionFontSizes}
                              variant="services"
@@ -42,13 +41,13 @@ export default function ServicesSection() {
                 </GridItem>
             </GridItem>
 
-<GridItem   colStart={[2, 2, 2, 2, 1]} colEnd={12}>
+<GridItem   colStart={[2, 2, 2, 2, 2]} colEnd={12}>
 
 
             <SimpleGrid
 
 
-                pt={["2em", "2em", "4em"]} columns={[1, 1, 2, 2, 3]} spacing={10}>
+                pt={["2em", "2em", "3em"]} columns={[1, 1, 2, 2, 3]} spacing={10}>
                 <MoranaService imagePath={"/static/svg/PO-Icon-Group.svg"}
                                height={102}
                                width={112}

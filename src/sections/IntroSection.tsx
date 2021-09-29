@@ -19,7 +19,7 @@ export default function IntroSection() {
 
 
             <SimpleGrid pt={["4em", "4em", "6em"]}
-                        maxW={["100%", "100%", "1024px"]}
+                        maxW={["100%", "100%", "1440px"]}
                         columns={24}
             >
 
@@ -27,13 +27,13 @@ export default function IntroSection() {
                 <GridItem display={"flex"}
                           flexDirection="column"
                           zIndex={2}
-                          colStart={[2, 2, 3, 3, 2]} colEnd={[24, 24, 14, 14, 14]}
+                          colStart={[2, 2, 3, 3, 3]} colEnd={[24, 24, 14, 14, 14]}
 
                 >
 
 
                     <Heading variant="header2"
-                             pt={["0.6em", "0.5em", "0px", "0px"]}
+                             pt={["0.6em", "0.5em", "0px", "0.8em"]}
                              fontSize={Header1FontSizes}
                              textAlign={["center", "center", "start"]}>
                         Oana Moraru
@@ -68,8 +68,8 @@ export default function IntroSection() {
                 </GridItem>
                 <GridItem
                     pt={"2.5em"}
-                    colStart={[2, 2, 14, 14, 14]} colEnd={[2, 2, 23, 23, 23]}
-                    rowSpan={2}
+                    colStart={[2, 2, 14, 14, 15]} colEnd={[2, 2, 23, 23, 23]}
+                    rowSpan={3}
                     display={["none", "none", "flex"]}
                     flexDirection={"row"}
                     position={["relative", "relative", "relative", "relative"]}
@@ -85,7 +85,7 @@ export default function IntroSection() {
                 <GridItem display={"flex"}
                           flexDirection="column"
                           zIndex={2}
-                          colStart={[3, 3, 3, 3, 2]} colEnd={[23, 23, 13, 13, 13]}
+                          colStart={[3, 3, 3, 3, 3]} colEnd={[23, 23, 13, 13, 13]}
                 >
                     <Text
                         variant={"primary"}
@@ -93,8 +93,8 @@ export default function IntroSection() {
                         lineHeight={BasicTextLineHeight}
                         textAlign={["center", "center", "start"]}
                         order={[1, 1, 0]}
-                        pt={["1.4em", "1.2em", "1.2em", "1.2em"]}
-                        pb={"1.7em"}
+                        pt={["1.4em", "1.2em", "1.2em", "1.2em", "2.0em"]}
+                        pb={["1.7em","1.7em","1.7em","1.7em","2.5em"]}
                         alignSelf={["center", "center", "flex-start"]}>
                         IT Product Owner, Scrum Master, UX-Designer and Team Lead searching for Frontend Software Development Projects with a positive impact on environment or society.
                     </Text>
