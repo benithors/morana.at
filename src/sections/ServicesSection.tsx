@@ -24,7 +24,7 @@ export default function ServicesSection() {
                 <GridItem
 
                     id={"services"}
-                    pt={["70px", "70px", "100px", "100px", "70px"]}
+                    pt={["70px", "70px", "70px","70px","90px"]}
                     colStart={[2, 2, 2, 2, 2]} colEnd={13}
                     display={"flex"} flexDirection={"row"}>
                     <Heading fontSize={SectionFontSizes}

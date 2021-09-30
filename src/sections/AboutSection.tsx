@@ -18,7 +18,7 @@ export default function AboutSection() {
                  backgroundSize={"100% 100%"}
                  backgroundRepeat={"no-repeat"}
                  bgImage={["url('/static/svg/bg2Mobile.svg')", "url('/static/svg/bg2Mobile.svg')", "url('/static/svg/bg2Desktop.svg')", "url('/static/svg/bg2Desktop.svg')"]}
-                 pb={["7em","7em","7em","7em","7em",]}
+                 pb={["7em","9em","9em","10em"]}
                >
                 <SimpleGrid
                     width={"100%"}
@@ -28,9 +28,11 @@ export default function AboutSection() {
                     columns={24}
                 >
                     <GridItem
-                        pt={["70px", "70px", "0","50px","0px"]}
+                        pt={["70px", "70px", "70px","70px","90px"]}
                         id={"about"}
-                        display={"flex"} flexDirection={"row"}
+                        display={"flex"}
+                        flexDirection={"row"}
+                        alignItems={"flex-end"}
                         colStart={[3, 3, 3, 3, 3]} colEnd={[23, 22, 14, 14, 14]}>
                         <Heading fontSize={SectionFontSizes}
                                  variant="services"

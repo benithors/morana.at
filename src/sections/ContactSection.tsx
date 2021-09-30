@@ -8,15 +8,16 @@ export default function ContactSection() {
             width={"100%"}
             maxW={["100%", "100%", "1440px"]}
             zIndex={2}
-            pt={["0em", "2em","2em", "3em"]}
+
             mb={"5em"}
             columns={[12, 12, 12, 12, 12]}
             id={"contact"}
             pb={"5em"}
         >
-            <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[11, 11, 11, 12, 12]}
+            <GridItem colStart={[2, 2, 2, 2, 2]} colEnd={[11, 11, 11, 12, 12]}
                       display={"flex"} flexDirection={"row"}
-                      pt={["65px", "65px", "80px","0px","80px"]}>
+                      pt={["70px", "70px", "70px","70px","90px"]}
+                      id={"contact"}>
                 <Heading fontSize={SectionFontSizes}
                          variant="services"
                          textAlign={"center"}
@@ -31,7 +32,7 @@ export default function ContactSection() {
             </GridItem>
 
 
-            <GridItem colStart={[2, 2, 2, 2, 1]} colEnd={[12, 11, 11, 12, 12]}
+            <GridItem colStart={[2, 2, 2, 2, 2]} colEnd={[12, 11, 11, 12, 12]}
                       display={"flex"}
                       flexDirection="row"
                       pt={["12em", "12em" ,"15em"]}
@@ -69,7 +70,7 @@ export default function ContactSection() {
 
 
             <GridItem  pt={"0.5em"}
-                       colStart={[1, 1, 2, 2, 1]} colEnd={[13, 13, 13, 13, 13]}>
+                       colStart={[1, 1, 2, 2, 2]} colEnd={[13, 13, 13, 13, 13]}>
                 <Box display={"flex"} justifyContent={["center", "center","start", "start"]}>
                     <Link
                         fontSize={Button2FontSizes}
