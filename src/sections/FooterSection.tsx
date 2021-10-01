@@ -27,7 +27,7 @@ export default function FooterSection() {
             >
 
                 <GridItem
-                    colStart={[5, 7, 8, 8, 8]} colEnd={[21, 19, 18, 18, 18]}
+                    colStart={[5, 7, 8, 8, 9]} colEnd={[21, 19, 18, 18, 17]}
                     display={"block"}
                     position={"relative"}
                     alignSelf={"center"}
@@ -38,14 +38,13 @@ export default function FooterSection() {
                 </GridItem>
 
 
-                <GridItem colStart={2} colEnd={[24, 24, 24, 24, 23]}
+                <GridItem colStart={[2,2,2,2,21]} colEnd={[24, 24, 24, 24, 23]}
                           justifySelf={["center", "center", "center", "center", "flex-end"]}
                           justifyContent={"space-between"}
                           display={"flex"}
                           flexDirection={"row"}
-
                           mb={"2em"}
-                          pt={"1.5em"}
+                          pt={["1.5em","1.5em","1.5em","1.5em","14em"]}
 
                 >
                     <Link href="mailto:oana.moraru@morana.at" passHref={true}
@@ -85,13 +84,13 @@ export default function FooterSection() {
                           justifyContent={"space-between"}
                           pt={"3em"}>
                     <Box>
-                        <Text fontSize={["10px", "12px", "12px", "14px"]} fontFamily={"AbeeZee"} color={["white", "white", "white"]}>
+                        <Text fontSize={["10px", "12px", "12px", "14px", "16px"]} fontFamily={"AbeeZee"} color={["white", "white", "white"]}>
                             Copyright @Morana.at
                         </Text>
                     </Box>
                     <Box display={["none", "none", "block"]}>
                         <Link href="/privacy">
-                            <Text color={"brand.secondary"} fontSize={["10px", "12px", "12px", "14px"]} fontFamily={"AbeeZee"}>
+                            <Text color={"brand.secondary"} fontSize={["10px", "12px", "12px", "14px", "16px"]} fontFamily={"AbeeZee"}>
                                 Privacy
                             </Text>
                         </Link>
