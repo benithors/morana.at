@@ -23,6 +23,7 @@ const MoranaImageContainer = (props: IProps) => {
                     layout={"responsive"}
                     priority={props.priority}
                     loading={"lazy"}
+                    quality={100}
                 />
             </Box>
             <Box>

@@ -17,7 +17,7 @@ export default function ContactSection() {
             <GridItem colStart={[2, 2, 2, 2, 2]} colEnd={[11, 11, 11, 12, 12]}
                       display={"flex"} flexDirection={"row"}
                       pt={["70px", "70px", "70px","70px","90px"]}
-                      id={"contact"}>
+                     >
                 <Heading fontSize={SectionFontSizes}
                          variant="services"
                          textAlign={"center"}
@@ -25,7 +25,7 @@ export default function ContactSection() {
                     /
                 </Heading>
 
-                <Heading fontSize={SectionFontSizes}
+                <Heading fontSize={SectionFontSizes}  id={"contact"}
                          variant="services" textAlign={"center"} whiteSpace={"break-spaces"}>
                     {" "} Contact
                 </Heading>
@@ -35,7 +35,7 @@ export default function ContactSection() {
             <GridItem colStart={[2, 2, 2, 2, 2]} colEnd={[12, 11, 11, 12, 12]}
                       display={"flex"}
                       flexDirection="row"
-                      pt={["12em", "12em" ,"15em"]}
+                      pt={["12em", "12em" ,"15em" ,"15em" ,"20em"]}
                       justifySelf={"start"}
             >
                 <Heading variant="header2"

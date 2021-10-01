@@ -12,7 +12,7 @@ export default function ExpierenceSection() {
         zIndex={2}
         width={"100%"}
         maxW={["100%", "100%", "1440px"]}
-        pt={["2.5em", "2.5em", "5em"]}
+        pt={["2.5em", "2.5em", "5em" ,"5em", "1em"]}
         columns={12}
         pb={"4em"}>
 
@@ -22,12 +22,12 @@ export default function ExpierenceSection() {
 
             <SimpleGrid
                 zIndex={2}
-                pt={["2em", "2em", "3em"]} columns={[12, 12, 12, 12, 3]}>
+                pt={["2em", "2em", "3em"]} columns={[12, 12, 12, 12, 24]}>
 
-                <GridItem colStart={[1, 1, 1, 1, 1]} colEnd={[11, 11, 11, 11, 1]}>
+                <GridItem colStart={[1, 1, 1, 1, 1]} colEnd={[13, 13, 13, 13, 9]}>
                     <Experience
                         title={"Experience"}>
-                        <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} color={"white"} spacing={spacing} fontSize={BasicTextSizes} maxW={"350px"}>
+                        <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} color={"white"} spacing={spacing} fontSize={BasicTextSizes} >
                             <ListItem>Freelance Product Owner, Scrum Master, UX/UI-Designer at Morana.at</ListItem>
                             <ListItem>Team Lead, Lead Product Owner, Scrum Master at XXXLdigital</ListItem>
                             <ListItem>Business Analyst, Requirements Engineer, UX/Usability Expert and Trainer at BearingPoint</ListItem>
@@ -37,7 +37,7 @@ export default function ExpierenceSection() {
                     </Experience>
                 </GridItem>
 
-                <GridItem colStart={[1, 1, 1, 1, 2]} colEnd={[12, 12, 11, 11, 2]} pt={["2em", "2em", "4em", "4em", "0em"]}>
+                <GridItem colStart={[1, 1, 1, 1, 10]} colEnd={[12, 12, 11, 11, 16]} pt={["2em", "2em", "4em", "4em", "0em"]}>
                     <Experience
                         title={"Capabilities\n"}>
                         <Box display={["block", "block", "flex", "flex", "block"]} flexDirection={"row"}>
@@ -76,7 +76,7 @@ export default function ExpierenceSection() {
                     </Box>
                 </GridItem>
 
-                <GridItem colStart={[1, 1, 1, 1, 3]} colEnd={[11, 11, 11, 11, 3]} pt={["4em", "4em", "4em", "4em", "0em"]}>
+                <GridItem colStart={[1, 1, 1, 1, 17]} colEnd={[13, 13, 13, 13, 25]} pt={["4em", "4em", "4em", "4em", "0em"]}>
                     <Experience
                         title={"Work & Life"}>
                         <UnorderedList fontFamily={"ABeeZee"} pt={"17px"} color={"white"} spacing={spacing} fontSize={BasicTextSizes}>

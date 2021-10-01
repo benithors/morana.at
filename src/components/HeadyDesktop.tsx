@@ -92,7 +92,7 @@ const HeadyDesktop = () => {
                     </Box>
 
                     <Heading
-                         color={"white"} fontSize={["20px", "20px","20px","20px","22px"]} height={height} pt={ptServices}>
+                         color={"white"} fontSize={["20px", "20px","20px","20px","26px"]} height={height} pt={ptServices}>
                         Morana.at
                     </Heading>
                 </GridItem>

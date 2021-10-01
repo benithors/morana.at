@@ -5,7 +5,6 @@ import {BasicTextLineHeight, BasicTextSizes, Button2FontSizes, SectionFontSizes}
 import Oana2 from "../../public/static/images/Oana2.png"
 import ExpierenceSection from "./ExperienceSection";
 import Link from "next/link";
-import {headerHeightPx} from "../components/HeadyDesktop";
 
 export default function AboutSection() {
     return (
@@ -17,14 +16,14 @@ export default function AboutSection() {
                  overflowX={"hidden"}
                  backgroundSize={"100% 100%"}
                  backgroundRepeat={"no-repeat"}
-                 bgImage={["url('/static/svg/bg2Mobile.svg')", "url('/static/svg/bg2Mobile.svg')", "url('/static/svg/bg2Desktop.svg')", "url('/static/svg/bg2Desktop.svg')"]}
-                 pb={["7em","9em","9em","10em"]}
+                 bgImage={["url('/static/svg/bg2Mobile.svg')", "url('/static/svg/bg2Mobile.svg')", "url('/static/svg/bg2Ipad.svg')", "url('/static/svg/bg2Ipad.svg')", "url('/static/svg/bg2Desktop.svg')"]}
+                 pb={["7em","9em","9em","10em","18em"]}
                >
                 <SimpleGrid
                     width={"100%"}
                     maxW={["100%", "100%", "1440px"]}
                     zIndex={2}
-                    pt={["15em", "14em", "18em", "18em"]}
+                    pt={["15em", "14em", "18em", "13em"]}
                     columns={24}
                 >
                     <GridItem
@@ -50,7 +49,7 @@ export default function AboutSection() {
                     </GridItem>
                 </SimpleGrid>
 
-                <SimpleGrid pt={["1em", "2em", "3.5em"]}
+                <SimpleGrid pt={["1em", "2em", "3.5em", "3.5em", "1.5em"]}
                             width={"100%"}
                             maxW={["100%", "100%", "1440px"]}
                             columns={24}
@@ -59,7 +58,7 @@ export default function AboutSection() {
 
                     <GridItem
                         pt={["0em", "0em", "0em", "0em", "2em",]}
-                        colStart={[2, 2, 5, 5, 3]} colEnd={[23, 23, 14, 14, 10]}
+                        colStart={[2, 2, 5, 5, 3]} colEnd={[23, 23, 14, 14, 11]}
                         display={["none", "none", "flex"]}
                         position={"relative"}
                         boxSizing={"border-box"}
@@ -71,7 +70,7 @@ export default function AboutSection() {
                     <GridItem display={"flex"}
                               flexDirection="column"
                               zIndex={2}
-                              colStart={[5, 4, 16, 16, 11]} colEnd={[21, 21, 21, 21, 23]}
+                              colStart={[5, 4, 16, 16, 13]} colEnd={[21, 21, 21, 21, 23]}
                               pt={["0px", "0px", "25px", "0px"]}
 
                     >
@@ -102,7 +101,7 @@ export default function AboutSection() {
                     <GridItem display={"flex"}
                               flexDirection="column"
                               zIndex={2}
-                              colStart={[3, 3, 3, 3, 11]} colEnd={23}
+                              colStart={[3, 3, 3, 3, 13]} colEnd={23}
                     >
                         <Text
                             variant={"primary"}
