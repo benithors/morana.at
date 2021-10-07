@@ -7,7 +7,8 @@ import {BasicTextLineHeight, BasicTextSizes, Header1FontSizes, Header2FontSizes}
 
 
 const privacy = () => {
-    const HeadingPaddingTop1 = "2em";
+    const HeadingPaddingTop1 = "3em";
+    const pt = "2.5em";
     return (
         <Box display={"flex"} justifyContent={"center"} w={"100vw"} id={"home"}>
             <SimpleGrid display="flex"
@@ -27,10 +28,10 @@ const privacy = () => {
                      backgroundImage={["url('/static/svg/bgImprintMobile.svg')", "url('/static/svg/bgImprintMobile.svg')", "url('/static/svg/bgImprintDesktop.svg')"]}
                      backgroundSize={"100% 100%"}
                      backgroundRepeat={"no-repeat"}
-                     pb={["10em","10em","15em"]}>
+                     pb={["10em","10em","20em","22em"]}>
 
 
-                    <SimpleGrid pt={["4em", "4em", "10em"]}
+                    <SimpleGrid pt={["4em", "4em", "4em"]}
                                 maxW={["100%", "100%", "1440px"]}
                                 columns={[12, 12, 12, 12]}
                                 width={"100%"}
@@ -45,7 +46,7 @@ const privacy = () => {
                                      pt={"1em"}
                                      fontSize={Header1FontSizes}
                                      textAlign={["center", "center", "start"]}
-                                     alignSelf={"center"}>
+                                     alignSelf={["center", "center","start","start", "start"]}>
                                 Imprint
                             </Heading>
                         </GridItem>
@@ -55,7 +56,7 @@ const privacy = () => {
                                      variant={"heading4"}
                                      pt={HeadingPaddingTop1}
                                      color={"white"}
-                                     fontSize={Header1FontSizes}>
+                                     fontSize={Header2FontSizes}>
                                 Company
                             </Heading>
 
@@ -80,8 +81,8 @@ const privacy = () => {
                             </Text>
 
 
-                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"}
-                                     fontSize={Header2FontSizes}>
+                            <Heading textAlign={"start"} variant="heading4" pt={pt} color={"brand.secondary"}
+                                     fontSize={BasicTextSizes}>
                                 Business purpose
                             </Heading>
                             <Text
@@ -95,7 +96,7 @@ const privacy = () => {
                             </Text>
 
                             <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"}
-                                     fontSize={Header1FontSizes}>
+                                     fontSize={Header2FontSizes} >
                                 Contact
                             </Heading>
 
@@ -119,8 +120,8 @@ const privacy = () => {
                                 oana.moraru@morana.at
                             </Text>
 
-                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"}
-                                     fontSize={Header2FontSizes}>
+                            <Heading textAlign={"start"} variant="heading4" pt={pt} color={"brand.secondary"}
+                                     fontSize={BasicTextSizes}>
                                 UID-Number
                             </Heading>
                             <Text
@@ -144,10 +145,10 @@ const privacy = () => {
 
 
                             <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"}
-                                     fontSize={Header1FontSizes}>
+                                     fontSize={Header2FontSizes}>
                                 Professional Law
                             </Heading>
-                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"} fontSize={["22px", "22px", "24px", "26px"]}>
+                            <Heading textAlign={"start"} variant="heading4" pt={"1em"} color={"brand.secondary"} fontSize={BasicTextSizes}>
                                 Commerce Order (Gewerbeordnung)
                             </Heading>
                             <Text
@@ -160,8 +161,8 @@ const privacy = () => {
                                 www.ris.bka.gv.at
                             </Text>
 
-                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"}
-                                     fontSize={Header2FontSizes}>
+                            <Heading textAlign={"start"} variant="heading4" pt={pt} color={"brand.secondary"}
+                                     fontSize={BasicTextSizes}>
                                 Supervisory authority/commercial authority
                             </Heading>
                             <Text
@@ -191,7 +192,7 @@ const privacy = () => {
                                 You can also send any complaints to the above e-mail address.
                             </Text>
                             <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"}
-                                     fontSize={Header1FontSizes}>
+                                     fontSize={Header2FontSizes}>
                                 Liability for the content of this website
                             </Heading>
 
@@ -218,7 +219,7 @@ const privacy = () => {
                             </Text>
 
                             <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"}
-                                     fontSize={Header1FontSizes}>
+                                     fontSize={Header2FontSizes}>
                                 Copyright notice
                             </Heading>
                             <Text
@@ -232,13 +233,13 @@ const privacy = () => {
                             </Text>
 
                             <Heading textAlign={"start"} variant="heading4" pt={HeadingPaddingTop1} color={"white"}
-                                     fontSize={Header1FontSizes}>
+                                     fontSize={Header2FontSizes}>
                                 Recording of data on this website
                             </Heading>
 
 
-                            <Heading textAlign={"start"} variant="heading4" pt={"15px"} color={"brand.secondary"}
-                                     fontSize={Header2FontSizes}>
+                            <Heading textAlign={"start"} variant="heading4" pt={"1em"} color={"brand.secondary"}
+                                     fontSize={BasicTextSizes}>
                                 Cookies
                             </Heading>
 

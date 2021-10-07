@@ -13,8 +13,6 @@ M
 public/static/svg/bg3Ipad.svg,2\e\2e4c3f2e9ace40aa3c6f7e073776308fa147cb3e
 O
 public/static/svg/bg2Mobile.svg,b\f\bfd6214ebd5dfc553ce790307e2d3ebe68045b08
-E
-src/pages/privacy.tsx,f\3\f339e6795d36f438d8504f28284cca89e1e8cd66
 M
 src/components/Experience.tsx,6\1\615a074b274a011157a872e37af2e4e9fb8df01f
 O
