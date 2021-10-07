@@ -44,12 +44,12 @@ export default function FooterSection() {
                           display={"flex"}
                           flexDirection={"row"}
                           mb={"2em"}
-                          pt={["1.5em","1.5em","1.5em","1.5em","14em"]}
+                          pt={["1.5em","1.5em","1.5em","1.5em","12em"]}
 
                 >
                     <Link href="mailto:oana.moraru@morana.at" passHref={true}
                     >
-                        <Box w={["40px", "40px", "70px", "70px", "70px"]} mr={"0.5em"}>
+                        <Box w={["40px", "40px", "60px", "70px", "70px"]} mr={["0.5em","0.5em","0.5em","0.5em","0.8em",]} pt={["2px","2px","4px"]}>
 
 
                             <Image
@@ -63,7 +63,7 @@ export default function FooterSection() {
                     </Link>
                     <Link href="https://at.linkedin.com/in/oana-moraru" passHref={true}
                     >
-                        <Box w={["40px", "40px", "70px", "70px", "70px"]} ml={"0.5em"}>
+                        <Box w={["40px", "40px", "60px", "70px", "70px"]} ml={["0.5em","0.5em","0.5em","0.5em","0.8em",]}>
 
                             <Image
                                 src={linkedInSvg}

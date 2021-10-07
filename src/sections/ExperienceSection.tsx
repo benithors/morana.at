@@ -12,7 +12,7 @@ export default function ExpierenceSection() {
         zIndex={2}
         width={"100%"}
         maxW={["100%", "100%", "1440px"]}
-        pt={["2.5em", "2.5em", "5em" ,"5em", "1em"]}
+        pt={["1em", "1em", "2em" ,"3em", "1em"]}
         columns={12}
         pb={"4em"}>
 

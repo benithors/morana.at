@@ -86,7 +86,7 @@ export default function AboutSection() {
                     <GridItem display={["flex", "flex", "none"]}
                               flexDirection="column"
                               zIndex={2}
-                              colStart={[5, 4, 0, 0, 0]} colEnd={[21, 23, 0, 0, 0]}
+                              colStart={[5, 3, 0, 0, 0]} colEnd={[21, 23, 0, 0, 0]}
 
                     >
                         <Box

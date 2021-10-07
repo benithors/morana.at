@@ -15,3 +15,15 @@ O
 public/static/svg/bg2Mobile.svg,b\f\bfd6214ebd5dfc553ce790307e2d3ebe68045b08
 E
 src/pages/privacy.tsx,f\3\f339e6795d36f438d8504f28284cca89e1e8cd66
+M
+src/components/Experience.tsx,6\1\615a074b274a011157a872e37af2e4e9fb8df01f
+O
+src/components/HeadyDesktop.tsx,8\e\8e638fd9b1c13db6520185f51f7a7c23499ebde0
+Q
+!src/components/ResponsiveSizes.ts,b\b\bba16194419996ce5abc63b8f0cb598e41cb2b93
+P
+ public/static/svg/bg3Desktop.svg,0\4\047c21f5720c7f672eda7b6e4c85cde0699559ef
+P
+ public/static/svg/bg2Desktop.svg,c\7\c7544de68b728f74bbdda918dd299c8ae14a1eae
+M
+public/static/svg/bg2Ipad.svg,9\a\9a158d535216369fafd448f694e46e6e0a14cbc6
