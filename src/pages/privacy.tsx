@@ -31,7 +31,7 @@ const privacy = () => {
                      pb={["10em","10em","20em","22em"]}>
 
 
-                    <SimpleGrid pt={["4em", "4em", "4em"]}
+                    <SimpleGrid pt={["4em", "4em", "6em"]}
                                 maxW={["100%", "100%", "1440px"]}
                                 columns={[12, 12, 12, 12]}
                                 width={"100%"}
@@ -46,7 +46,7 @@ const privacy = () => {
                                      pt={"1em"}
                                      fontSize={Header1FontSizes}
                                      textAlign={["center", "center", "start"]}
-                                     alignSelf={["center", "center","start","start", "start"]}>
+                                     alignSelf={"start"}>
                                 Imprint
                             </Heading>
                         </GridItem>
