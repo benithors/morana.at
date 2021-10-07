@@ -77,7 +77,7 @@ export default function FooterSection() {
                     </Link>
                 </GridItem>
 
-                <GridItem colStart={[3, 3, 3, 3,3]} colEnd={[12, 12, 23, 23, 23]}
+                <GridItem colStart={[3, 3, 3, 3,3]} colEnd={[23, 23, 23, 23, 23]}
                           mb={"2em"}
                           display={"flex"}
                           flexDirection={"row"}
@@ -88,10 +88,10 @@ export default function FooterSection() {
                             Copyright @Morana.at
                         </Text>
                     </Box>
-                    <Box display={["none", "none", "block"]}>
-                        <Link href="/privacy">
+                    <Box>
+                        <Link href="/imprint">
                             <Text color={"brand.secondary"} fontSize={["10px", "12px", "12px", "14px", "16px"]} fontFamily={"AbeeZee"}>
-                                Privacy
+                                Imprint
                             </Text>
                         </Link>
                     </Box>

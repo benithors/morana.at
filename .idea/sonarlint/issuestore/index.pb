@@ -15,8 +15,6 @@ O
 public/static/svg/bg2Mobile.svg,b\f\bfd6214ebd5dfc553ce790307e2d3ebe68045b08
 M
 src/components/Experience.tsx,6\1\615a074b274a011157a872e37af2e4e9fb8df01f
-O
-src/components/HeadyDesktop.tsx,8\e\8e638fd9b1c13db6520185f51f7a7c23499ebde0
 Q
 !src/components/ResponsiveSizes.ts,b\b\bba16194419996ce5abc63b8f0cb598e41cb2b93
 P
@@ -25,3 +23,13 @@ P
  public/static/svg/bg2Desktop.svg,c\7\c7544de68b728f74bbdda918dd299c8ae14a1eae
 M
 public/static/svg/bg2Ipad.svg,9\a\9a158d535216369fafd448f694e46e6e0a14cbc6
+O
+src/sections/ContactSection.tsx,2\c\2c57c192b0e1a57d389cf9511e5c9f3b37bc7f05
+W
+'src/components/MoranaImageContainer.tsx,a\7\a7b395bcba37686e4caf31cc30ad341f7ad72856
+P
+ src/sections/ServicesSection.tsx,3\b\3b573a1a64e845c363d356e15a2d30ae14b12c4e
+M
+src/sections/AboutSection.tsx,a\e\ae3dfcb39d5fec2e607261b1087f900a7cbd0031
+R
+"src/sections/ExperienceSection.tsx,1\a\1a423bc6c3e70bc96c0e43b56431c30f8039c41c

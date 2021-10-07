@@ -34,14 +34,14 @@ const HeadyDesktop = () => {
         if (router.pathname == '/') {
             router.push('/#contact');
         } else {
-            router.push('/privacy#contact');
+            router.push('/imprint#contact');
             onClose();
         }
         onClose();
     }
 
-    function jumpToPrivacy(){
-        router.push('/privacy');
+    function jumpToImprint(){
+        router.push('/imprint');
         onClose();
     }
 
@@ -65,7 +65,7 @@ const HeadyDesktop = () => {
                 width={"100%"}
                 columns={24}
                 maxW={["100%", "100%", "1440px"]}
-                id={"privacy"}
+                id={"imprint"}
             >
 
 
@@ -174,11 +174,11 @@ const HeadyDesktop = () => {
                                 </Box>
 
 
-                                <Box pt={menuSpacing}  onClick={jumpToPrivacy}>
+                                <Box pt={menuSpacing}  onClick={jumpToImprint}>
 
 
                                     <Text variant="footerTextImprint">
-                                        Privacy
+                                        Imprint
                                     </Text>
                                 </Box>
 

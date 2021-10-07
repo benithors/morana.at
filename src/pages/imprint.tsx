@@ -6,7 +6,7 @@ import ContactSection from "../sections/ContactSection";
 import {BasicTextLineHeight, BasicTextSizes, Header1FontSizes, Header2FontSizes} from "../components/ResponsiveSizes";
 
 
-const privacy = () => {
+const imprint = () => {
     const HeadingPaddingTop1 = "3em";
     const pt = "2.5em";
     return (
@@ -269,4 +269,4 @@ const privacy = () => {
 
 }
 
-export default privacy
+export default imprint
