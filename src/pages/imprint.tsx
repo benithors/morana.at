@@ -67,7 +67,7 @@ const imprint = () => {
                                 textAlign={"start"}
                                 pt={"1.5em"}
                                 alignSelf={["center", "center", "flex-start"]}>
-                                Dipl.-Ing. Oana-Aurora
+                                Dipl.-Ing. Oana-Aurora Moraru
                             </Text>
 
                             <Text
